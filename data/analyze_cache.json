@@ -1,0 +1,3209 @@
+{
+  "cache_info": {
+    "description": "Cache for /analyze endpoint requests",
+    "created": "2025-11-03",
+    "total_requests": 50,
+    "last_updated": "2025-11-03T23:22:27.424071"
+  },
+  "requests": {
+    "2e021e85e7d7c8a78389c82d69b9a621": {
+      "text": "Aaj meeting thodi late start honar ahe, so thoda wait kara.",
+      "text_hash": "2e021e85e7d7c8a78389c82d69b9a621",
+      "response": {
+        "text": "Aaj meeting thodi late start honar ahe, so thoda wait kara.",
+        "language": {
+          "code": "mar",
+          "name": "Marathi",
+          "confidence": 0.57,
+          "is_romanized": true,
+          "is_code_mixed": true
+        },
+        "sentiment": {
+          "label": "neutral",
+          "score": 0.35
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": "Today the meeting will start a little late, so wait a little.",
+        "toxicity_score": 0.009,
+        "romanized_conversion": {
+          "applied": true,
+          "native_script": "आज meeting थोदि late start होणार आहे, so थोडा wait करा."
+        }
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T19:19:08.083266",
+      "request_count": 10
+    },
+    "a9f7d6dada4956cf70e1083228020476": {
+      "text": "This is a wonderful product. I highly recommend it to everyone!",
+      "text_hash": "a9f7d6dada4956cf70e1083228020476",
+      "response": {
+        "text": "This is a wonderful product. I highly recommend it to everyone!",
+        "language": {
+          "code": "eng",
+          "name": "English",
+          "confidence": 1.0,
+          "is_romanized": false,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "positive",
+          "score": 0.94
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": null,
+        "toxicity_score": 0.0
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T21:24:21.775957",
+      "request_count": 2
+    },
+    "798ac5cb4a9a3ef1d7b1e273c24115a5": {
+      "text": "Yaar ye movie bahut mast hai! Must watch bro, ekdum zabardast!",
+      "text_hash": "798ac5cb4a9a3ef1d7b1e273c24115a5",
+      "response": {
+        "text": "Yaar ye movie bahut mast hai! Must watch bro, ekdum zabardast!",
+        "language": {
+          "code": "hin",
+          "name": "Hindi",
+          "confidence": 0.79,
+          "is_romanized": true,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "positive",
+          "score": 0.65
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": "Man, this movie is so cool!Must watch bro, awesome!",
+        "toxicity_score": 0.715,
+        "romanized_conversion": {
+          "applied": true,
+          "native_script": "यार ये मूवी बहुत मस्त है! Must watch ब्रो, एक्दुम् जबरदस्त!"
+        }
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T21:24:26.503810",
+      "request_count": 2
+    },
+    "014f59186a70f635a5522e0bfdeef3d5": {
+      "text": "aaj mausam bahut acha hai",
+      "text_hash": "014f59186a70f635a5522e0bfdeef3d5",
+      "response": {
+        "text": "aaj mausam bahut acha hai",
+        "language": {
+          "code": "hin",
+          "name": "Hindi",
+          "confidence": 0.74,
+          "is_romanized": true,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "positive",
+          "score": 0.49
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": "the weather is very nice today",
+        "toxicity_score": 0.003,
+        "romanized_conversion": {
+          "applied": true,
+          "native_script": "आज मौसम् बहुत अच है"
+        }
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T21:24:31.597339",
+      "request_count": 2
+    },
+    "80abfdc7be5d37235428259c01928bbb": {
+      "text": "आज हवामान खूप छान आहे",
+      "text_hash": "80abfdc7be5d37235428259c01928bbb",
+      "response": {
+        "text": "आज हवामान खूप छान आहे",
+        "language": {
+          "code": "mar",
+          "name": "Marathi",
+          "confidence": 1.0,
+          "is_romanized": false,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "positive",
+          "score": 0.78
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": "The weather is very nice today",
+        "toxicity_score": 0.001
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T21:54:29.084078",
+      "request_count": 5
+    },
+    "f186f086aafdca7d29a323424bbcab61": {
+      "text": "This fucking product is terrible!",
+      "text_hash": "f186f086aafdca7d29a323424bbcab61",
+      "response": {
+        "text": "This fucking product is terrible!",
+        "language": {
+          "code": "eng",
+          "name": "English",
+          "confidence": 1.0,
+          "is_romanized": false,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "negative",
+          "score": 0.95
+        },
+        "profanity": {
+          "detected": true,
+          "severity": "extreme"
+        },
+        "translation": null,
+        "toxicity_score": 0.978
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T21:24:36.817283",
+      "request_count": 2
+    },
+    "3ad3306b4e16246628d6fdb895f74a67": {
+      "text": "enji vi@original_ngv\n\nI'm sorry but Bahubali is carried by Ramya Krishna and Rana.\nThey stole the screen every frame they were in.\nSSR truly is the God of casting.",
+      "text_hash": "3ad3306b4e16246628d6fdb895f74a67",
+      "response": {
+        "original_text": "enji vi@original_ngv\n\nI'm sorry but Bahubali is carried by Ramya Krishna and Rana.\nThey stole the screen every frame they were in.\nSSR truly is the God of casting.",
+        "cleaned_text": "enji vi i'm sorry but bahubali is carried by ramya krishna and rana. they stole the screen every frame they were in. ssr truly is the god of casting.",
+        "preprocessing": {
+          "normalization_level": null,
+          "preserve_emojis": true,
+          "punctuation_mode": "preserve"
+        },
+        "profanity": {
+          "has_profanity": false,
+          "severity_score": 0,
+          "max_severity": null,
+          "detected_words": [],
+          "word_count": 0,
+          "severity_breakdown": {
+            "extreme": [],
+            "moderate": [],
+            "mild": []
+          }
+        },
+        "domains": {
+          "financial": false,
+          "temporal": false,
+          "technical": false
+        },
+        "language": {
+          "language": "eng",
+          "confidence": 0.9979282021522522,
+          "method": "ensemble_glotlid_preferred_high_confidence",
+          "text_length": 163,
+          "is_short_text": false,
+          "is_very_short_text": false,
+          "composition": {
+            "indic_percentage": 0.0,
+            "latin_percentage": 78.52760736196319,
+            "numeric_percentage": 0.0,
+            "punctuation_percentage": 1.8404907975460123,
+            "other_percentage": 19.631901840490798,
+            "script_counts": {},
+            "is_code_mixed": false,
+            "dominant_script": "latin"
+          },
+          "script_analysis": {
+            "detected_script": null,
+            "script_counts": {}
+          },
+          "glotlid_analysis": {
+            "detected_language": "eng",
+            "confidence": 0.9979282021522522,
+            "is_code_mixed": false
+          },
+          "romanized_analysis": {
+            "detected_language": "hin",
+            "confidence": 0.85
+          },
+          "language_info": {
+            "is_indian_language": false,
+            "is_international_language": true,
+            "is_code_mixed": false,
+            "is_romanized": false,
+            "language_name": "English"
+          },
+          "detection_config": {
+            "min_text_length": 3,
+            "glotlid_threshold": 0.5,
+            "high_confidence_threshold": 0.8,
+            "medium_confidence_threshold": 0.6,
+            "low_confidence_threshold": 0.4,
+            "glotlid_override_threshold": 0.9,
+            "romanized_early_detection_threshold": 0.75,
+            "strong_script_threshold": 50,
+            "code_mixed_min_threshold": 20,
+            "code_mixed_max_threshold": 50,
+            "minor_script_min_threshold": 5,
+            "minor_script_max_threshold": 20,
+            "latin_dominance_threshold": 70,
+            "short_text_threshold": 10,
+            "use_indic_nlp_enhanced": true,
+            "code_mixed_min_devanagari_chars": 3,
+            "code_mixed_min_latin_chars": 5,
+            "code_mixed_token_threshold": 0.15,
+            "code_mixed_min_markers": 2,
+            "soft_code_mixing_threshold": 0.05,
+            "aggressive_code_mixing_threshold": 0.15,
+            "adaptive_threshold_short_text": 0.12,
+            "adaptive_threshold_medium_text": 0.1,
+            "adaptive_threshold_long_text": 0.08,
+            "very_short_text_threshold": 5,
+            "short_text_romanized_threshold": 0.85,
+            "short_text_glotlid_threshold": 0.4,
+            "short_text_script_threshold": 25,
+            "disable_early_detection_threshold": 8,
+            "ensemble_enabled": true,
+            "glotlid_high_confidence_threshold": 0.9,
+            "ensemble_weight_glotlid_default": 0.6,
+            "ensemble_weight_romanized_default": 0.4,
+            "ensemble_min_combined_confidence": 0.65,
+            "ensemble_conf_gap_threshold": 0.3,
+            "ensemble_latin_threshold_high": 80,
+            "ensemble_latin_threshold_medium": 70,
+            "hybrid_conversion_enabled": true,
+            "preserve_english_tokens": true,
+            "preserve_capitalized_words": true,
+            "preserve_all_caps": true,
+            "english_word_min_length": 2,
+            "min_conversion_confidence": 0.3,
+            "prefer_dictionary_over_itrans": true
+          },
+          "ensemble_analysis": {
+            "final_language": "eng",
+            "final_confidence": 0.9979282021522522,
+            "detection_method": "glotlid_preferred_high_confidence",
+            "ensemble_scores": {
+              "glotlid_score": 0.9979282021522522,
+              "romanized_score": 0.85,
+              "latin_percentage": 100.0,
+              "combined_score": 0.9979282021522522
+            },
+            "glotlid_prediction": {
+              "language": "eng",
+              "confidence": 0.9979282021522522,
+              "all_predictions": [
+                [
+                  "eng",
+                  "Latn",
+                  0.9979282021522522
+                ],
+                [
+                  "nuj",
+                  "Latn",
+                  0.0005600644508376718
+                ],
+                [
+                  "vie",
+                  "Latn",
+                  0.0003996135201305151
+                ]
+              ]
+            },
+            "romanized_prediction": {
+              "language": "hin",
+              "confidence": 0.85
+            },
+            "decision_explanation": "GLotLID confidence (0.998) exceeds threshold (0.9). Trusting GLotLID completely.",
+            "is_code_mixed": false
+          }
+        },
+        "sentiment": {
+          "label": "negative",
+          "confidence": 0.4084613621234894,
+          "model_used": "XLM-RoBERTa",
+          "all_probabilities": [
+            [
+              0.4084613621234894,
+              0.2514347732067108,
+              0.34010380506515503
+            ]
+          ]
+        },
+        "toxicity": {
+          "toxic": 0.0005038686795160174,
+          "severe_toxic": 0.00010324399045202881,
+          "obscene": 0.000264805305050686,
+          "threat": 7.825178909115493e-05,
+          "insult": 0.00022836228890810162,
+          "identity_hate": 0.00012734030315186828
+        },
+        "translations": {
+          "hindi": "enji vi@original_ngv\n\nमुझे खेद है, लेकिन बाहुबली को राम्या कृष्णा और राणा लेकर चल रहे हैं।\nवे जिस भी फ्रेम में थे, उन्होंने स्क्रीन चुरा ली।\nएसएसआर वास्तव में कास्टिंग के देवता हैं।"
+        },
+        "statistics": {
+          "text_length": 163,
+          "word_count": 29,
+          "language_detection": {
+            "language": "eng",
+            "confidence": 0.9979282021522522,
+            "method": "ensemble_glotlid_preferred_high_confidence",
+            "text_length": 163,
+            "is_short_text": false,
+            "is_very_short_text": false,
+            "composition": {
+              "indic_percentage": 0.0,
+              "latin_percentage": 78.52760736196319,
+              "numeric_percentage": 0.0,
+              "punctuation_percentage": 1.8404907975460123,
+              "other_percentage": 19.631901840490798,
+              "script_counts": {},
+              "is_code_mixed": false,
+              "dominant_script": "latin"
+            },
+            "script_analysis": {
+              "detected_script": null,
+              "script_counts": {}
+            },
+            "glotlid_analysis": {
+              "detected_language": "eng",
+              "confidence": 0.9979282021522522,
+              "is_code_mixed": false
+            },
+            "romanized_analysis": {
+              "detected_language": "hin",
+              "confidence": 0.85
+            },
+            "language_info": {
+              "is_indian_language": false,
+              "is_international_language": true,
+              "is_code_mixed": false,
+              "is_romanized": false,
+              "language_name": "English"
+            },
+            "detection_config": {
+              "min_text_length": 3,
+              "glotlid_threshold": 0.5,
+              "high_confidence_threshold": 0.8,
+              "medium_confidence_threshold": 0.6,
+              "low_confidence_threshold": 0.4,
+              "glotlid_override_threshold": 0.9,
+              "romanized_early_detection_threshold": 0.75,
+              "strong_script_threshold": 50,
+              "code_mixed_min_threshold": 20,
+              "code_mixed_max_threshold": 50,
+              "minor_script_min_threshold": 5,
+              "minor_script_max_threshold": 20,
+              "latin_dominance_threshold": 70,
+              "short_text_threshold": 10,
+              "use_indic_nlp_enhanced": true,
+              "code_mixed_min_devanagari_chars": 3,
+              "code_mixed_min_latin_chars": 5,
+              "code_mixed_token_threshold": 0.15,
+              "code_mixed_min_markers": 2,
+              "soft_code_mixing_threshold": 0.05,
+              "aggressive_code_mixing_threshold": 0.15,
+              "adaptive_threshold_short_text": 0.12,
+              "adaptive_threshold_medium_text": 0.1,
+              "adaptive_threshold_long_text": 0.08,
+              "very_short_text_threshold": 5,
+              "short_text_romanized_threshold": 0.85,
+              "short_text_glotlid_threshold": 0.4,
+              "short_text_script_threshold": 25,
+              "disable_early_detection_threshold": 8,
+              "ensemble_enabled": true,
+              "glotlid_high_confidence_threshold": 0.9,
+              "ensemble_weight_glotlid_default": 0.6,
+              "ensemble_weight_romanized_default": 0.4,
+              "ensemble_min_combined_confidence": 0.65,
+              "ensemble_conf_gap_threshold": 0.3,
+              "ensemble_latin_threshold_high": 80,
+              "ensemble_latin_threshold_medium": 70,
+              "hybrid_conversion_enabled": true,
+              "preserve_english_tokens": true,
+              "preserve_capitalized_words": true,
+              "preserve_all_caps": true,
+              "english_word_min_length": 2,
+              "min_conversion_confidence": 0.3,
+              "prefer_dictionary_over_itrans": true
+            },
+            "ensemble_analysis": {
+              "final_language": "eng",
+              "final_confidence": 0.9979282021522522,
+              "detection_method": "glotlid_preferred_high_confidence",
+              "ensemble_scores": {
+                "glotlid_score": 0.9979282021522522,
+                "romanized_score": 0.85,
+                "latin_percentage": 100.0,
+                "combined_score": 0.9979282021522522
+              },
+              "glotlid_prediction": {
+                "language": "eng",
+                "confidence": 0.9979282021522522,
+                "all_predictions": [
+                  [
+                    "eng",
+                    "Latn",
+                    0.9979282021522522
+                  ],
+                  [
+                    "nuj",
+                    "Latn",
+                    0.0005600644508376718
+                  ],
+                  [
+                    "vie",
+                    "Latn",
+                    0.0003996135201305151
+                  ]
+                ]
+              },
+              "romanized_prediction": {
+                "language": "hin",
+                "confidence": 0.85
+              },
+              "decision_explanation": "GLotLID confidence (0.998) exceeds threshold (0.9). Trusting GLotLID completely.",
+              "is_code_mixed": false
+            }
+          },
+          "preprocessing_preview": {
+            "original": "enji vi@original_ngv\n\nI'm sorry but Bahubali is carried by Ramya Krishna and Rana.\nThey stole the sc...",
+            "cleaned": "enji vi i'm sorry but bahubali is carried by ramya krishna and rana. they stole the screen every fra..."
+          }
+        }
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": false
+      },
+      "timestamp": "2025-11-03T21:40:51.892678",
+      "request_count": 3
+    },
+    "2db9c74510e0f3b5379b068b6b411a44": {
+      "text": "GLORY UNLEASHED! 🇮🇳\nCongratulations Team India Women on becoming the CHAMPIONS OF THE WORLD! You roared to victory with fire and dominance. Every Indian salutes your epic triumph. Celebrate loud! 🔥",
+      "text_hash": "2db9c74510e0f3b5379b068b6b411a44",
+      "response": {
+        "original_text": "GLORY UNLEASHED! 🇮🇳\nCongratulations Team India Women on becoming the CHAMPIONS OF THE WORLD! You roared to victory with fire and dominance. Every Indian salutes your epic triumph. Celebrate loud! 🔥",
+        "cleaned_text": "glory unleashed! india congratulations team india women on becoming the champions of the world! you roared to victory with fire and dominance. every indian salutes your epic triumph. celebrate loud! fire",
+        "preprocessing": {
+          "normalization_level": null,
+          "preserve_emojis": true,
+          "punctuation_mode": "preserve"
+        },
+        "profanity": {
+          "has_profanity": false,
+          "severity_score": 0,
+          "max_severity": null,
+          "detected_words": [],
+          "word_count": 0,
+          "severity_breakdown": {
+            "extreme": [],
+            "moderate": [],
+            "mild": []
+          }
+        },
+        "domains": {
+          "financial": false,
+          "temporal": false,
+          "technical": false
+        },
+        "language": {
+          "language": "eng",
+          "confidence": 0.9987102746963501,
+          "method": "ensemble_glotlid_preferred_high_confidence",
+          "text_length": 197,
+          "is_short_text": false,
+          "is_very_short_text": false,
+          "composition": {
+            "indic_percentage": 0.0,
+            "latin_percentage": 80.71065989847716,
+            "numeric_percentage": 0.0,
+            "punctuation_percentage": 2.5380710659898478,
+            "other_percentage": 16.751269035532996,
+            "script_counts": {},
+            "is_code_mixed": false,
+            "dominant_script": "latin"
+          },
+          "script_analysis": {
+            "detected_script": null,
+            "script_counts": {}
+          },
+          "glotlid_analysis": {
+            "detected_language": "eng",
+            "confidence": 0.9987102746963501,
+            "is_code_mixed": false
+          },
+          "romanized_analysis": {
+            "detected_language": "hin",
+            "confidence": 0.85
+          },
+          "language_info": {
+            "is_indian_language": false,
+            "is_international_language": true,
+            "is_code_mixed": false,
+            "is_romanized": false,
+            "language_name": "English"
+          },
+          "detection_config": {
+            "min_text_length": 3,
+            "glotlid_threshold": 0.5,
+            "high_confidence_threshold": 0.8,
+            "medium_confidence_threshold": 0.6,
+            "low_confidence_threshold": 0.4,
+            "glotlid_override_threshold": 0.9,
+            "romanized_early_detection_threshold": 0.75,
+            "strong_script_threshold": 50,
+            "code_mixed_min_threshold": 20,
+            "code_mixed_max_threshold": 50,
+            "minor_script_min_threshold": 5,
+            "minor_script_max_threshold": 20,
+            "latin_dominance_threshold": 70,
+            "short_text_threshold": 10,
+            "use_indic_nlp_enhanced": true,
+            "code_mixed_min_devanagari_chars": 3,
+            "code_mixed_min_latin_chars": 5,
+            "code_mixed_token_threshold": 0.15,
+            "code_mixed_min_markers": 2,
+            "soft_code_mixing_threshold": 0.05,
+            "aggressive_code_mixing_threshold": 0.15,
+            "adaptive_threshold_short_text": 0.12,
+            "adaptive_threshold_medium_text": 0.1,
+            "adaptive_threshold_long_text": 0.08,
+            "very_short_text_threshold": 5,
+            "short_text_romanized_threshold": 0.85,
+            "short_text_glotlid_threshold": 0.4,
+            "short_text_script_threshold": 25,
+            "disable_early_detection_threshold": 8,
+            "ensemble_enabled": true,
+            "glotlid_high_confidence_threshold": 0.9,
+            "ensemble_weight_glotlid_default": 0.6,
+            "ensemble_weight_romanized_default": 0.4,
+            "ensemble_min_combined_confidence": 0.65,
+            "ensemble_conf_gap_threshold": 0.3,
+            "ensemble_latin_threshold_high": 80,
+            "ensemble_latin_threshold_medium": 70,
+            "hybrid_conversion_enabled": true,
+            "preserve_english_tokens": true,
+            "preserve_capitalized_words": true,
+            "preserve_all_caps": true,
+            "english_word_min_length": 2,
+            "min_conversion_confidence": 0.3,
+            "prefer_dictionary_over_itrans": true
+          },
+          "ensemble_analysis": {
+            "final_language": "eng",
+            "final_confidence": 0.9987102746963501,
+            "detection_method": "glotlid_preferred_high_confidence",
+            "ensemble_scores": {
+              "glotlid_score": 0.9987102746963501,
+              "romanized_score": 0.85,
+              "latin_percentage": 100.0,
+              "combined_score": 0.9987102746963501
+            },
+            "glotlid_prediction": {
+              "language": "eng",
+              "confidence": 0.9987102746963501,
+              "all_predictions": [
+                [
+                  "eng",
+                  "Latn",
+                  0.9987102746963501
+                ],
+                [
+                  "vie",
+                  "Latn",
+                  0.00026834552409127355
+                ],
+                [
+                  "ind",
+                  "Latn",
+                  9.896275150822476e-05
+                ]
+              ]
+            },
+            "romanized_prediction": {
+              "language": "hin",
+              "confidence": 0.85
+            },
+            "decision_explanation": "GLotLID confidence (0.999) exceeds threshold (0.9). Trusting GLotLID completely.",
+            "is_code_mixed": false
+          }
+        },
+        "sentiment": {
+          "label": "positive",
+          "confidence": 0.8036129474639893,
+          "model_used": "XLM-RoBERTa",
+          "all_probabilities": [
+            [
+              0.08598822355270386,
+              0.11039881408214569,
+              0.8036129474639893
+            ]
+          ]
+        },
+        "toxicity": {
+          "toxic": 0.007021639496088028,
+          "severe_toxic": 5.370379949454218e-05,
+          "obscene": 0.0008588834316469729,
+          "threat": 8.631573291495442e-05,
+          "insult": 0.0008249630336649716,
+          "identity_hate": 0.00018155480211135
+        },
+        "translations": {
+          "hindi": "महिमा उजागर!🇮🇳\nविश्व चैंपियन बनने पर भारतीय महिला टीम को बधाई!आपने आग और प्रभुत्व के साथ विजय की दहाड़ लगाई।हर भारतीय आपकी महान विजय को सलाम करता है।ज़ोर से जश्न मनाओ!🔥"
+        },
+        "statistics": {
+          "text_length": 197,
+          "word_count": 31,
+          "language_detection": {
+            "language": "eng",
+            "confidence": 0.9987102746963501,
+            "method": "ensemble_glotlid_preferred_high_confidence",
+            "text_length": 197,
+            "is_short_text": false,
+            "is_very_short_text": false,
+            "composition": {
+              "indic_percentage": 0.0,
+              "latin_percentage": 80.71065989847716,
+              "numeric_percentage": 0.0,
+              "punctuation_percentage": 2.5380710659898478,
+              "other_percentage": 16.751269035532996,
+              "script_counts": {},
+              "is_code_mixed": false,
+              "dominant_script": "latin"
+            },
+            "script_analysis": {
+              "detected_script": null,
+              "script_counts": {}
+            },
+            "glotlid_analysis": {
+              "detected_language": "eng",
+              "confidence": 0.9987102746963501,
+              "is_code_mixed": false
+            },
+            "romanized_analysis": {
+              "detected_language": "hin",
+              "confidence": 0.85
+            },
+            "language_info": {
+              "is_indian_language": false,
+              "is_international_language": true,
+              "is_code_mixed": false,
+              "is_romanized": false,
+              "language_name": "English"
+            },
+            "detection_config": {
+              "min_text_length": 3,
+              "glotlid_threshold": 0.5,
+              "high_confidence_threshold": 0.8,
+              "medium_confidence_threshold": 0.6,
+              "low_confidence_threshold": 0.4,
+              "glotlid_override_threshold": 0.9,
+              "romanized_early_detection_threshold": 0.75,
+              "strong_script_threshold": 50,
+              "code_mixed_min_threshold": 20,
+              "code_mixed_max_threshold": 50,
+              "minor_script_min_threshold": 5,
+              "minor_script_max_threshold": 20,
+              "latin_dominance_threshold": 70,
+              "short_text_threshold": 10,
+              "use_indic_nlp_enhanced": true,
+              "code_mixed_min_devanagari_chars": 3,
+              "code_mixed_min_latin_chars": 5,
+              "code_mixed_token_threshold": 0.15,
+              "code_mixed_min_markers": 2,
+              "soft_code_mixing_threshold": 0.05,
+              "aggressive_code_mixing_threshold": 0.15,
+              "adaptive_threshold_short_text": 0.12,
+              "adaptive_threshold_medium_text": 0.1,
+              "adaptive_threshold_long_text": 0.08,
+              "very_short_text_threshold": 5,
+              "short_text_romanized_threshold": 0.85,
+              "short_text_glotlid_threshold": 0.4,
+              "short_text_script_threshold": 25,
+              "disable_early_detection_threshold": 8,
+              "ensemble_enabled": true,
+              "glotlid_high_confidence_threshold": 0.9,
+              "ensemble_weight_glotlid_default": 0.6,
+              "ensemble_weight_romanized_default": 0.4,
+              "ensemble_min_combined_confidence": 0.65,
+              "ensemble_conf_gap_threshold": 0.3,
+              "ensemble_latin_threshold_high": 80,
+              "ensemble_latin_threshold_medium": 70,
+              "hybrid_conversion_enabled": true,
+              "preserve_english_tokens": true,
+              "preserve_capitalized_words": true,
+              "preserve_all_caps": true,
+              "english_word_min_length": 2,
+              "min_conversion_confidence": 0.3,
+              "prefer_dictionary_over_itrans": true
+            },
+            "ensemble_analysis": {
+              "final_language": "eng",
+              "final_confidence": 0.9987102746963501,
+              "detection_method": "glotlid_preferred_high_confidence",
+              "ensemble_scores": {
+                "glotlid_score": 0.9987102746963501,
+                "romanized_score": 0.85,
+                "latin_percentage": 100.0,
+                "combined_score": 0.9987102746963501
+              },
+              "glotlid_prediction": {
+                "language": "eng",
+                "confidence": 0.9987102746963501,
+                "all_predictions": [
+                  [
+                    "eng",
+                    "Latn",
+                    0.9987102746963501
+                  ],
+                  [
+                    "vie",
+                    "Latn",
+                    0.00026834552409127355
+                  ],
+                  [
+                    "ind",
+                    "Latn",
+                    9.896275150822476e-05
+                  ]
+                ]
+              },
+              "romanized_prediction": {
+                "language": "hin",
+                "confidence": 0.85
+              },
+              "decision_explanation": "GLotLID confidence (0.999) exceeds threshold (0.9). Trusting GLotLID completely.",
+              "is_code_mixed": false
+            }
+          },
+          "preprocessing_preview": {
+            "original": "GLORY UNLEASHED! 🇮🇳\nCongratulations Team India Women on becoming the CHAMPIONS OF THE WORLD! You roa...",
+            "cleaned": "glory unleashed! india congratulations team india women on becoming the champions of the world! you ..."
+          }
+        }
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": false
+      },
+      "timestamp": "2025-11-03T21:42:06.509906",
+      "request_count": 2
+    },
+    "c16f26c245f846165320ba144997affb": {
+      "text": "It was only a matter of time, like I’ve said for the last 18 months. You girls have shown character that will resonate with every young Indian, and beyond. You KILLED IT. 👊\nHarman and your team of champions, take a bow. God bless. \n@BCCIWomen #CWC25 #India",
+      "text_hash": "c16f26c245f846165320ba144997affb",
+      "response": {
+        "text": "It was only a matter of time, like I’ve said for the last 18 months. You girls have shown character that will resonate with every young Indian, and beyond. You KILLED IT. 👊\nHarman and your team of champions, take a bow. God bless. \n@BCCIWomen #CWC25 #India",
+        "language": {
+          "code": "eng",
+          "name": "English",
+          "confidence": 1.0,
+          "is_romanized": false,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "positive",
+          "score": 0.71
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": null,
+        "toxicity_score": 0.016
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T21:42:43.139246",
+      "request_count": 1
+    },
+    "1b0bd67b222de223e73e4d024ff85b2b": {
+      "text": "Inspiration for generations to come, you’ve made every Indian proud with your fearless cricket and belief throughout. You guys deserve all the accolades and enjoy the moment to the fullest. Well done Harman and the team. Jai Hind 🇮🇳🇮🇳",
+      "text_hash": "1b0bd67b222de223e73e4d024ff85b2b",
+      "response": {
+        "text": "Inspiration for generations to come, you’ve made every Indian proud with your fearless cricket and belief throughout. You guys deserve all the accolades and enjoy the moment to the fullest. Well done Harman and the team. Jai Hind 🇮🇳🇮🇳",
+        "language": {
+          "code": "eng",
+          "name": "English",
+          "confidence": 0.99,
+          "is_romanized": false,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "positive",
+          "score": 0.76
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": null,
+        "toxicity_score": 0.003
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T21:43:13.444476",
+      "request_count": 1
+    },
+    "911c87e5728726d092481593b017c202": {
+      "text": "जिताया होगा सेमीफाइनल जीजस ने!\nफाइनल तो हमारे भगवान ने जिताया है।\n\n#शेफाली_वर्मा",
+      "text_hash": "911c87e5728726d092481593b017c202",
+      "response": {
+        "text": "जिताया होगा सेमीफाइनल जीजस ने!\nफाइनल तो हमारे भगवान ने जिताया है।\n\n#शेफाली_वर्मा",
+        "language": {
+          "code": "hin",
+          "name": "Hindi",
+          "confidence": 1.0,
+          "is_romanized": false,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "positive",
+          "score": 0.53
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": "Jesus would have won the semi-finals!\nOur God has won the final.\n\n#Shefali_Verma",
+        "toxicity_score": 0.001
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T21:43:43.435757",
+      "request_count": 1
+    },
+    "f16235dd2858849a8ac0b12fdc6bd6d3": {
+      "text": "★तुलसी - ढोल गवार शुद्र पशु नारी।सकल ताड़ना के अधिकारी।। \n\n★मनु - स्त्रियों को स्वतंत्र नहीं छोड़ना चाहिए केवल पिता ,पुत्र अथवा पति के अधीन रहना \n\n★लड़कियां दोनों से - अबे चल न चू****",
+      "text_hash": "f16235dd2858849a8ac0b12fdc6bd6d3",
+      "response": {
+        "text": "★तुलसी - ढोल गवार शुद्र पशु नारी।सकल ताड़ना के अधिकारी।। \n\n★मनु - स्त्रियों को स्वतंत्र नहीं छोड़ना चाहिए केवल पिता ,पुत्र अथवा पति के अधीन रहना \n\n★लड़कियां दोनों से - अबे चल न चू****",
+        "language": {
+          "code": "hin_mixed",
+          "name": "Hindi",
+          "confidence": 0.62,
+          "is_romanized": false,
+          "is_code_mixed": true
+        },
+        "sentiment": {
+          "label": "neutral",
+          "score": 0.4
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": "★Tulsi - Dhol, Guvar, Shudra, animal, woman. Officer of gross chastisement.\n\n★Manu - Women should not be left independent and should only be under the control of father, son or husband.\n\n★Girls to both - Hey don't go away****",
+        "toxicity_score": 0.12
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T21:44:34.420240",
+      "request_count": 1
+    },
+    "5e83f7738e54731d7bb19557a158f7c3": {
+      "text": "अबे गवार दोहा किस संदर्भ में कहा गया तुझे पता नहीं, मगर नफरत के चलते तू ओर कर भी क्या सकता है",
+      "text_hash": "5e83f7738e54731d7bb19557a158f7c3",
+      "response": {
+        "text": "अबे गवार दोहा किस संदर्भ में कहा गया तुझे पता नहीं, मगर नफरत के चलते तू ओर कर भी क्या सकता है",
+        "language": {
+          "code": "hin",
+          "name": "Hindi",
+          "confidence": 1.0,
+          "is_romanized": false,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "negative",
+          "score": 0.53
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": null,
+        "toxicity_score": 0.003
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T21:45:52.534492",
+      "request_count": 1
+    },
+    "fa2ff017d6f33c2cf54f3462783494af": {
+      "text": "Tarna ka mtlb pitna hi hota hai, BJp wale Khud bolte hai tu kon hai\n",
+      "text_hash": "fa2ff017d6f33c2cf54f3462783494af",
+      "response": {
+        "text": "Tarna ka mtlb pitna hi hota hai, BJp wale Khud bolte hai tu kon hai\n",
+        "language": {
+          "code": "mar",
+          "name": "Marathi",
+          "confidence": 0.65,
+          "is_romanized": true,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "negative",
+          "score": 0.4
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": "Tarna ka matlb pitna hi hota hai, BJp vale Khud bolte hai who are you",
+        "toxicity_score": 0.804,
+        "romanized_conversion": {
+          "applied": true,
+          "native_script": "Tarna क म्त्ल्ब् पित्न hi होता है, BJp वले Khud बोल्ते है तू कोण है"
+        }
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T21:46:07.102147",
+      "request_count": 1
+    },
+    "acf3cc348a3843493a9eb4b92365327a": {
+      "text": "तरणा म्हणजे मार, भाजपवालेच म्हणतात तुम्ही कोण?",
+      "text_hash": "acf3cc348a3843493a9eb4b92365327a",
+      "response": {
+        "text": "तरणा म्हणजे मार, भाजपवालेच म्हणतात तुम्ही कोण?",
+        "language": {
+          "code": "mar",
+          "name": "Marathi",
+          "confidence": 1.0,
+          "is_romanized": false,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "negative",
+          "score": 0.68
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": "Tarna means kill, BJP says who are you?",
+        "toxicity_score": 0.025
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T21:47:22.509442",
+      "request_count": 2
+    },
+    "222e1db53573388798d09b61e8922b22": {
+      "text": "Arun Yadav@ArunKoslii\n\nजिताया होगा सेमीफाइनल जीजस ने!\nफाइनल तो हमारे भगवान ने जिताया है।\n\n#शेफाली_वर्मा",
+      "text_hash": "222e1db53573388798d09b61e8922b22",
+      "response": {
+        "text": "Arun Yadav@ArunKoslii\n\nजिताया होगा सेमीफाइनल जीजस ने!\nफाइनल तो हमारे भगवान ने जिताया है।\n\n#शेफाली_वर्मा",
+        "language": {
+          "code": "hin",
+          "name": "Hindi",
+          "confidence": 0.94,
+          "is_romanized": false,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "positive",
+          "score": 0.49
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": "Arun Yadav@ArunKoslii\n\nJesus would have won the semi-finals!\nOur God has won the final.\n\n#Shefali_Verma",
+        "toxicity_score": 0.001
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T21:48:14.702150",
+      "request_count": 1
+    },
+    "b6935080f3b2f9fb3d01eb8492801a0d": {
+      "text": "Arun Yadav@ArunKoslii\n\nTranslated from Hindi\nJesus won the semi-final!  \nThe final was won by our God.  \n\n#Shefali_Verma",
+      "text_hash": "b6935080f3b2f9fb3d01eb8492801a0d",
+      "response": {
+        "text": "Arun Yadav@ArunKoslii\n\nTranslated from Hindi\nJesus won the semi-final!  \nThe final was won by our God.  \n\n#Shefali_Verma",
+        "language": {
+          "code": "eng",
+          "name": "English",
+          "confidence": 0.99,
+          "is_romanized": false,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "positive",
+          "score": 0.43
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": null,
+        "toxicity_score": 0.001
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T21:49:49.670023",
+      "request_count": 1
+    },
+    "4af7b7389ff734545a5e5bcadc9b36e0": {
+      "text": "Aniket bhai kya ho raha hai ye? Diwali manaoge saath mein ? 😂😂😁💣🎒\n",
+      "text_hash": "4af7b7389ff734545a5e5bcadc9b36e0",
+      "response": {
+        "text": "Aniket bhai kya ho raha hai ye? Diwali manaoge saath mein ? 😂😂😁💣🎒\n",
+        "language": {
+          "code": "hin",
+          "name": "Hindi",
+          "confidence": 0.96,
+          "is_romanized": false,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "negative",
+          "score": 0.41
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": null,
+        "toxicity_score": 0.058
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T21:52:12.286732",
+      "request_count": 1
+    },
+    "b70068833b7f98a0a051c968fc6aba5b": {
+      "text": "no bro \nall indians are my brothers and sisters",
+      "text_hash": "b70068833b7f98a0a051c968fc6aba5b",
+      "response": {
+        "text": "no bro \nall indians are my brothers and sisters",
+        "language": {
+          "code": "hin",
+          "name": "Hindi",
+          "confidence": 0.84,
+          "is_romanized": true,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "neutral",
+          "score": 0.42
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": "no bro all Indians are my brothers and sisters",
+        "toxicity_score": 0.005,
+        "romanized_conversion": {
+          "applied": true,
+          "native_script": "no ब्रो all इन्दिअन्स् are my ब्रोथेर्स् and सिस्तेर्स्"
+        }
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T21:53:14.314573",
+      "request_count": 1
+    },
+    "58229270ec28712622320cb7b31c8db7": {
+      "text": "Zaleel kar raha hai mereko🙂🙂\n",
+      "text_hash": "58229270ec28712622320cb7b31c8db7",
+      "response": {
+        "text": "Zaleel kar raha hai mereko🙂🙂\n",
+        "language": {
+          "code": "hin_mixed",
+          "name": "Hindi",
+          "confidence": 0.51,
+          "is_romanized": true,
+          "is_code_mixed": true
+        },
+        "sentiment": {
+          "label": "negative",
+          "score": 0.63
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": "Zaleel is making me 🙂🙂🙂🙂",
+        "toxicity_score": 0.026,
+        "romanized_conversion": {
+          "applied": true,
+          "native_script": "Zaleel कर रह है मेरेको🙂🙂🙂🙂"
+        }
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T21:53:46.591248",
+      "request_count": 1
+    },
+    "aa5adc8b6eb466dc1bef3ae4cbfafc2b": {
+      "text": "masha'Allah boys played well 🙂👍\n",
+      "text_hash": "aa5adc8b6eb466dc1bef3ae4cbfafc2b",
+      "response": {
+        "text": "masha'Allah boys played well 🙂👍\n",
+        "language": {
+          "code": "eng",
+          "name": "English",
+          "confidence": 1.0,
+          "is_romanized": false,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "positive",
+          "score": 0.61
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": null,
+        "toxicity_score": 0.004
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T21:54:54.396631",
+      "request_count": 1
+    },
+    "b31c7fb24a5375844df8db0d08f6cb60": {
+      "text": "neutral 😮😮\nmodel don't like secularism it seems",
+      "text_hash": "b31c7fb24a5375844df8db0d08f6cb60",
+      "response": {
+        "text": "neutral 😮😮\nmodel don't like secularism it seems",
+        "language": {
+          "code": "eng",
+          "name": "English",
+          "confidence": 1.0,
+          "is_romanized": false,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "negative",
+          "score": 0.8
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": null,
+        "toxicity_score": 0.001
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T21:55:38.088590",
+      "request_count": 1
+    },
+    "b09b818b86b2e63997b6ff2ae6905a50": {
+      "text": "Ameen bhai training toh apka department tha",
+      "text_hash": "b09b818b86b2e63997b6ff2ae6905a50",
+      "response": {
+        "text": "Ameen bhai training toh apka department tha",
+        "language": {
+          "code": "hin",
+          "name": "Hindi",
+          "confidence": 0.76,
+          "is_romanized": true,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "neutral",
+          "score": 0.36
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": "Ameen bhai training was your department",
+        "toxicity_score": 0.001,
+        "romanized_conversion": {
+          "applied": true,
+          "native_script": "Ameen भाई training तोह् अप्क department था"
+        }
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T21:56:28.472172",
+      "request_count": 2
+    },
+    "7e6ce687f37898fe03af738336e5eae7": {
+      "text": "Chhod jyada bakchodi horha",
+      "text_hash": "7e6ce687f37898fe03af738336e5eae7",
+      "response": {
+        "text": "Chhod jyada bakchodi horha",
+        "language": {
+          "code": "hin",
+          "name": "Hindi",
+          "confidence": 0.71,
+          "is_romanized": true,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "negative",
+          "score": 0.41
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": "Chhod more bakchodi hohrh",
+        "toxicity_score": 0.102,
+        "romanized_conversion": {
+          "applied": true,
+          "native_script": "Chhod ज्यादा बक्चोदि होर्ह"
+        }
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T21:56:47.726096",
+      "request_count": 1
+    },
+    "1961ae749d853643ffb1093ae0130438": {
+      "text": "Madarchod",
+      "text_hash": "1961ae749d853643ffb1093ae0130438",
+      "response": {
+        "text": "Madarchod",
+        "language": {
+          "code": "slk",
+          "name": "Unknown",
+          "confidence": 0.86,
+          "is_romanized": false,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "negative",
+          "score": 0.35
+        },
+        "profanity": {
+          "detected": true,
+          "severity": "extreme"
+        },
+        "translation": null,
+        "toxicity_score": 0.004
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T21:57:57.472143",
+      "request_count": 1
+    },
+    "81c2b6e9376cfd5ee0186761ba2125a2": {
+      "text": "Bhosdike, Madarchod, gawar Aadmi",
+      "text_hash": "81c2b6e9376cfd5ee0186761ba2125a2",
+      "response": {
+        "text": "Bhosdike, Madarchod, gawar Aadmi",
+        "language": {
+          "code": "hin",
+          "name": "Hindi",
+          "confidence": 0.79,
+          "is_romanized": true,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "positive",
+          "score": 0.34
+        },
+        "profanity": {
+          "detected": true,
+          "severity": "extreme"
+        },
+        "translation": "Bhosdike, Madarchod, Garv Aadmi",
+        "toxicity_score": 0.002,
+        "romanized_conversion": {
+          "applied": true,
+          "native_script": "Bhosdike, Madarchod, गवर् Aadmi"
+        }
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T21:58:23.881119",
+      "request_count": 1
+    },
+    "4254d285fbdc3b2d89988cb368e8c09b": {
+      "text": "Bhosdike, Madarchod.... 😡",
+      "text_hash": "4254d285fbdc3b2d89988cb368e8c09b",
+      "response": {
+        "text": "Bhosdike, Madarchod.... 😡",
+        "language": {
+          "code": "hin",
+          "name": "Hindi",
+          "confidence": 0.85,
+          "is_romanized": false,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "negative",
+          "score": 0.67
+        },
+        "profanity": {
+          "detected": true,
+          "severity": "extreme"
+        },
+        "translation": "Bhosdike, Madarchod....😡",
+        "toxicity_score": 0.009
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T21:59:13.341584",
+      "request_count": 2
+    },
+    "3abc27eb050b78a42dd7ed6f951418d7": {
+      "text": "Madarchod.... 😡",
+      "text_hash": "3abc27eb050b78a42dd7ed6f951418d7",
+      "response": {
+        "text": "Madarchod.... 😡",
+        "language": {
+          "code": "lit",
+          "name": "Unknown",
+          "confidence": 0.49,
+          "is_romanized": false,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "negative",
+          "score": 0.75
+        },
+        "profanity": {
+          "detected": true,
+          "severity": "extreme"
+        },
+        "translation": null,
+        "toxicity_score": 0.001
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T21:59:00.075201",
+      "request_count": 1
+    },
+    "1d3396303cab4f612e6c2c4a80292a44": {
+      "text": "Rajesh Sahu @askrajeshsahu\nसाउथ अफ्रीका ने करिश्मा किया। पहली बार फाइनल में पहुंची.. इसके बाद भी साउथ अफ्रीका के स्टार क्रिकेटर्स या क्रिकेट संघ का कोई बड़ा पदाधिकारी वहां नहीं दिखा.. साउथ अफ्रीका की लड़कियां अकेले भारत और उनके करोड़ों समर्थकों से जूझते हुए दिखाई दीं..",
+      "text_hash": "1d3396303cab4f612e6c2c4a80292a44",
+      "response": {
+        "text": "Rajesh Sahu @askrajeshsahu\nसाउथ अफ्रीका ने करिश्मा किया। पहली बार फाइनल में पहुंची.. इसके बाद भी साउथ अफ्रीका के स्टार क्रिकेटर्स या क्रिकेट संघ का कोई बड़ा पदाधिकारी वहां नहीं दिखा.. साउथ अफ्रीका की लड़कियां अकेले भारत और उनके करोड़ों समर्थकों से जूझते हुए दिखाई दीं..",
+        "language": {
+          "code": "hin",
+          "name": "Hindi",
+          "confidence": 0.87,
+          "is_romanized": false,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "negative",
+          "score": 0.37
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": "Rajesh Sahu @askrajeshsahu\nSouth Africa did a miracle.Reached the final for the first time.. Even after this, no star cricketers of South Africa or any big official of the Cricket Association were seen there.. The girls of South Africa were seen alone fighting against India and their crores of supporters..",
+        "toxicity_score": 0.001
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T22:02:40.502805",
+      "request_count": 1
+    },
+    "d1825e2823d9aac5546b4d00da7aa911": {
+      "text": "Jet fuel can't melt steel beams",
+      "text_hash": "d1825e2823d9aac5546b4d00da7aa911",
+      "response": {
+        "text": "Jet fuel can't melt steel beams",
+        "language": {
+          "code": "eng",
+          "name": "English",
+          "confidence": 1.0,
+          "is_romanized": false,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "negative",
+          "score": 0.55
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": null,
+        "toxicity_score": 0.002
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T22:03:44.808852",
+      "request_count": 1
+    },
+    "aec980f1ad217b57d20df5fe4e6c1746": {
+      "text": "Innale “Thalassery Files” kandavarundo? 👀\nNjan personally feel cheythu movie decent aanu — good performances but little slow second half.\nWhat’s your take guys?",
+      "text_hash": "aec980f1ad217b57d20df5fe4e6c1746",
+      "response": {
+        "text": "Innale “Thalassery Files” kandavarundo? 👀\nNjan personally feel cheythu movie decent aanu — good performances but little slow second half.\nWhat’s your take guys?",
+        "language": {
+          "code": "eng",
+          "name": "English",
+          "confidence": 0.91,
+          "is_romanized": false,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "positive",
+          "score": 0.41
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": null,
+        "toxicity_score": 0.001
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T22:06:21.930863",
+      "request_count": 2
+    },
+    "c2e6fdc078080baf87ad8c122e6e3c1d": {
+      "text": "Paatha “Love City” movie… ayyo romba boring da 😩",
+      "text_hash": "c2e6fdc078080baf87ad8c122e6e3c1d",
+      "response": {
+        "text": "Paatha “Love City” movie… ayyo romba boring da 😩",
+        "language": {
+          "code": "zne",
+          "name": "Unknown",
+          "confidence": 0.88,
+          "is_romanized": false,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "negative",
+          "score": 0.79
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": null,
+        "toxicity_score": 0.001
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T22:07:47.129313",
+      "request_count": 2
+    },
+    "8451257ccc59cf551eec0b889fd09c12": {
+      "text": "Saw “Minnal Murali Returns” yesterday… okayish movie da 🤔\n",
+      "text_hash": "8451257ccc59cf551eec0b889fd09c12",
+      "response": {
+        "text": "Saw “Minnal Murali Returns” yesterday… okayish movie da 🤔\n",
+        "language": {
+          "code": "hin",
+          "name": "Hindi",
+          "confidence": 0.85,
+          "is_romanized": true,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "positive",
+          "score": 0.46
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": "Saw “Minnal Murali Returns” Yesterday… Okayish Movie The 🤔🤔🤔",
+        "toxicity_score": 0.0,
+        "romanized_conversion": {
+          "applied": true,
+          "native_script": "Saw ““मिन्नल् Murali Returns” येस्तेर्दय्…… ओकयिश् मूवी द 🤔🤔🤔"
+        }
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T22:07:56.731655",
+      "request_count": 1
+    },
+    "9bee5c812f4cda88c7abe678b94a862f": {
+      "text": "🎉 Just watched “Vettaiyan” — semma mass da! 🔥\n",
+      "text_hash": "9bee5c812f4cda88c7abe678b94a862f",
+      "response": {
+        "text": "🎉 Just watched “Vettaiyan” — semma mass da! 🔥\n",
+        "language": {
+          "code": "hin",
+          "name": "Hindi",
+          "confidence": 0.85,
+          "is_romanized": false,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "positive",
+          "score": 0.42
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": null,
+        "toxicity_score": 0.004
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T22:08:09.426087",
+      "request_count": 1
+    },
+    "d1caeca1767d2adec25f867a92376e0f": {
+      "text": "Just watched “Jatt Express” last night 🚜🔥\nMovie full paisa vasool yaar! Songs, comedy, te action – sab kuch on point 💯\n#PunjabiCinema #MovieReview",
+      "text_hash": "d1caeca1767d2adec25f867a92376e0f",
+      "response": {
+        "text": "Just watched “Jatt Express” last night 🚜🔥\nMovie full paisa vasool yaar! Songs, comedy, te action – sab kuch on point 💯\n#PunjabiCinema #MovieReview",
+        "language": {
+          "code": "eng",
+          "name": "English",
+          "confidence": 0.71,
+          "is_romanized": false,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "positive",
+          "score": 0.41
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": null,
+        "toxicity_score": 0.003
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T22:08:40.957709",
+      "request_count": 1
+    },
+    "4b37913ab7685d7c800e6351fad22646": {
+      "text": "Dekhi “Chandigarh Nights”… thik-thak laggi 🤔\nNa bohot changi, na buri. Time pass type movie aa.\n#PunjabiMovies #Review",
+      "text_hash": "4b37913ab7685d7c800e6351fad22646",
+      "response": {
+        "text": "Dekhi “Chandigarh Nights”… thik-thak laggi 🤔\nNa bohot changi, na buri. Time pass type movie aa.\n#PunjabiMovies #Review",
+        "language": {
+          "code": "hin",
+          "name": "Hindi",
+          "confidence": 0.66,
+          "is_romanized": true,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "positive",
+          "score": 0.34
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": "Dekhi “”Chandigarh Nights”… Thick-Thick Laggi 🤔🤔🤔 Neither very good, nor bad. Time passed this type of movie. ##punjbimovies ##review",
+        "toxicity_score": 0.027,
+        "romanized_conversion": {
+          "applied": true,
+          "native_script": "Dekhi ““चन्दिगर्ह् Nights”… थिक्-थक् लग्गि 🤔🤔🤔 ना बहुत चन्गि, ना बुरि. Time पस्स् त्य्पे मूवी आ. ##पुन्जबिमोविएस् ##रेविएव्"
+        }
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T22:08:51.400822",
+      "request_count": 1
+    },
+    "2a2fb175d4271c98f977524753683956": {
+      "text": "Bhai “Dil Da Scene” movie taan pura flop laggi 😩\nStory weak, acting bhi average si. Paisa waste ho gaya yaar 💸\n#MovieReview #PunjabiCinema",
+      "text_hash": "2a2fb175d4271c98f977524753683956",
+      "response": {
+        "text": "Bhai “Dil Da Scene” movie taan pura flop laggi 😩\nStory weak, acting bhi average si. Paisa waste ho gaya yaar 💸\n#MovieReview #PunjabiCinema",
+        "language": {
+          "code": "hin",
+          "name": "Hindi",
+          "confidence": 0.42,
+          "is_romanized": true,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "negative",
+          "score": 0.7
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": "Bhai ““Dil The Scene” Movie Tan Pur flop Laggi 😩😩😩 Story वेएक, acting is also average. Paisa waste ho gaya यार 💸💸💸 ##मूवीरेवीव ##पुन्जबीकिनेम",
+        "toxicity_score": 0.018,
+        "romanized_conversion": {
+          "applied": true,
+          "native_script": "भाई ““दिल् द Scene” मूवी तान् पुर fलोप् लग्गि 😩😩😩 Story वेअक्, acting भि अवेरगे सि. पैसा वस्ते हो गय यार 💸💸💸 ##मोविएरेविएव् ##पुन्जबिcइनेम"
+        }
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T22:09:03.489844",
+      "request_count": 1
+    },
+    "3c6354892195b521a0e413f5a74eeb2c": {
+      "text": "ਕੱਲ੍ਹ “ਜੱਟ ਐਕਸਪ੍ਰੈਸ” ਵੇਖੀ ਸੀ 🎬 ਬਹੁਤ ਵਧੀਆ ਫਿਲਮ ਹੈ! ਗਾਣੇ, ਕਾਮੇਡੀ ਤੇ ਐਕਸ਼ਨ — ਸਭ ਕੁਝ ਮਜ਼ੇਦਾਰ ਸੀ 💥 ਰਾਜਾ ਵਰਗਾ ਐਕਟਿੰਗ ਕੀਤੀ ਹੀਰੋ ਨੇ!\n#ਪੰਜਾਬੀਸਿਨੇਮਾ #ਫਿਲਮਰੀਵਿਊ",
+      "text_hash": "3c6354892195b521a0e413f5a74eeb2c",
+      "response": {
+        "text": "ਕੱਲ੍ਹ “ਜੱਟ ਐਕਸਪ੍ਰੈਸ” ਵੇਖੀ ਸੀ 🎬 ਬਹੁਤ ਵਧੀਆ ਫਿਲਮ ਹੈ! ਗਾਣੇ, ਕਾਮੇਡੀ ਤੇ ਐਕਸ਼ਨ — ਸਭ ਕੁਝ ਮਜ਼ੇਦਾਰ ਸੀ 💥 ਰਾਜਾ ਵਰਗਾ ਐਕਟਿੰਗ ਕੀਤੀ ਹੀਰੋ ਨੇ!\n#ਪੰਜਾਬੀਸਿਨੇਮਾ #ਫਿਲਮਰੀਵਿਊ",
+        "language": {
+          "code": "pan",
+          "name": "Punjabi",
+          "confidence": 1.0,
+          "is_romanized": false,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "positive",
+          "score": 0.47
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": "Watched “Jatt Express” yesterday 🎬 Very good movie!Songs, comedy and action — everything was fun 💥 Hero acted like a king!\n#PunjabiCinema #FilmReview",
+        "toxicity_score": 0.002
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T22:10:00.980058",
+      "request_count": 1
+    },
+    "965dfc849c417a0a8c68eebdc08870be": {
+      "text": "ഇന്നലെ “തളസേരി ഫയൽസ്” കണ്ടു 🎬 ഒരുപാട് നന്നായി! കഥയും അഭിനയവും സൂപ്പർ 👏 രണ്ടാം പകുതി അല്പം നീണ്ടെങ്കിലും ആകെ കാണാൻ പറ്റിയ മൂവി ❤️\n#മലയാളസിനിമ #റിവ്യൂ",
+      "text_hash": "965dfc849c417a0a8c68eebdc08870be",
+      "response": {
+        "text": "ഇന്നലെ “തളസേരി ഫയൽസ്” കണ്ടു 🎬 ഒരുപാട് നന്നായി! കഥയും അഭിനയവും സൂപ്പർ 👏 രണ്ടാം പകുതി അല്പം നീണ്ടെങ്കിലും ആകെ കാണാൻ പറ്റിയ മൂവി ❤️\n#മലയാളസിനിമ #റിവ്യൂ",
+        "language": {
+          "code": "mal",
+          "name": "Malayalam",
+          "confidence": 1.0,
+          "is_romanized": false,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "positive",
+          "score": 0.53
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": "Watched “Thalaseri Files” yesterday 🎬 Very good!The story and acting are super 👏 The second half is a bit long but the whole movie is worth watching ❤️\n#MalayalamCinema #Review",
+        "toxicity_score": 0.001
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T22:10:21.457674",
+      "request_count": 1
+    },
+    "aa45dea0ab78637b4bbda5695d9a2d96": {
+      "text": "کل “لاہور ڈائری” دیکھی 🎬 بہت زبردست فلم ہے! کہانی، موسیقی، اور اداکاری – سب کچھ لاجواب 👏 آخر تک دلچسپ رہی۔\n#اردوسنیما #فلمریویو",
+      "text_hash": "aa45dea0ab78637b4bbda5695d9a2d96",
+      "response": {
+        "text": "کل “لاہور ڈائری” دیکھی 🎬 بہت زبردست فلم ہے! کہانی، موسیقی، اور اداکاری – سب کچھ لاجواب 👏 آخر تک دلچسپ رہی۔\n#اردوسنیما #فلمریویو",
+        "language": {
+          "code": "urd",
+          "name": "Hindi",
+          "confidence": 0.94,
+          "is_romanized": false,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "positive",
+          "score": 0.82
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": "Watched \"Lahore Diary\" yesterday 🎬 Very awesome movie!The story, the music, and the acting – everything was fantastic 👏 kept it interesting till the end.\n#UrduCinema #FilmReview",
+        "toxicity_score": 0.001
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T22:11:16.508066",
+      "request_count": 1
+    },
+    "f69b5d3f68d01baa37c602764810685c": {
+      "text": "“دل کی دنیا” دیکھ کر مایوسی ہوئی 😩 کہانی کمزور، گانے لمبے، اور انجام بالکل خراب۔ پیسے ضائع گئے!\n#اردوسنیما",
+      "text_hash": "f69b5d3f68d01baa37c602764810685c",
+      "response": {
+        "text": "“دل کی دنیا” دیکھ کر مایوسی ہوئی 😩 کہانی کمزور، گانے لمبے، اور انجام بالکل خراب۔ پیسے ضائع گئے!\n#اردوسنیما",
+        "language": {
+          "code": "urd",
+          "name": "Hindi",
+          "confidence": 0.95,
+          "is_romanized": false,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "negative",
+          "score": 0.91
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": "Disappointing to watch “Dil Ki Dunya” 😩 story is weak, songs are long, and the ending is totally bad.Money wasted!\n#Urducinema",
+        "toxicity_score": 0.13
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T22:11:55.633948",
+      "request_count": 1
+    },
+    "bcedc450f8481e89b1445069acdc3dd9": {
+      "text": "wow",
+      "text_hash": "bcedc450f8481e89b1445069acdc3dd9",
+      "response": {
+        "original_text": "wow",
+        "cleaned_text": "wow",
+        "preprocessing": {
+          "normalization_level": null,
+          "preserve_emojis": true,
+          "punctuation_mode": "preserve"
+        },
+        "profanity": {
+          "has_profanity": false,
+          "severity_score": 0,
+          "max_severity": null,
+          "detected_words": [],
+          "word_count": 0,
+          "severity_breakdown": {
+            "extreme": [],
+            "moderate": [],
+            "mild": []
+          }
+        },
+        "domains": {
+          "financial": false,
+          "temporal": false,
+          "technical": false
+        },
+        "language": {
+          "language": "kin",
+          "confidence": 0.7,
+          "method": "glotlid_very_short_text",
+          "text_length": 3,
+          "is_short_text": true,
+          "is_very_short_text": true,
+          "composition": {
+            "indic_percentage": 0.0,
+            "latin_percentage": 100.0,
+            "numeric_percentage": 0.0,
+            "punctuation_percentage": 0.0,
+            "other_percentage": 0.0,
+            "script_counts": {},
+            "is_code_mixed": false,
+            "dominant_script": "latin"
+          },
+          "script_analysis": {
+            "detected_script": null,
+            "script_counts": {}
+          },
+          "glotlid_analysis": {
+            "detected_language": "kin",
+            "confidence": 0.9979000687599182,
+            "is_code_mixed": false
+          },
+          "romanized_analysis": {
+            "detected_language": "hin",
+            "confidence": 0.85
+          },
+          "language_info": {
+            "is_indian_language": false,
+            "is_international_language": false,
+            "is_code_mixed": false,
+            "is_romanized": false,
+            "language_name": "Unknown"
+          },
+          "detection_config": {
+            "min_text_length": 3,
+            "glotlid_threshold": 0.5,
+            "high_confidence_threshold": 0.8,
+            "medium_confidence_threshold": 0.6,
+            "low_confidence_threshold": 0.4,
+            "glotlid_override_threshold": 0.9,
+            "romanized_early_detection_threshold": 0.75,
+            "strong_script_threshold": 50,
+            "code_mixed_min_threshold": 20,
+            "code_mixed_max_threshold": 50,
+            "minor_script_min_threshold": 5,
+            "minor_script_max_threshold": 20,
+            "latin_dominance_threshold": 70,
+            "short_text_threshold": 10,
+            "use_indic_nlp_enhanced": true,
+            "code_mixed_min_devanagari_chars": 3,
+            "code_mixed_min_latin_chars": 5,
+            "code_mixed_token_threshold": 0.15,
+            "code_mixed_min_markers": 2,
+            "soft_code_mixing_threshold": 0.05,
+            "aggressive_code_mixing_threshold": 0.15,
+            "adaptive_threshold_short_text": 0.12,
+            "adaptive_threshold_medium_text": 0.1,
+            "adaptive_threshold_long_text": 0.08,
+            "very_short_text_threshold": 5,
+            "short_text_romanized_threshold": 0.85,
+            "short_text_glotlid_threshold": 0.4,
+            "short_text_script_threshold": 25,
+            "disable_early_detection_threshold": 8,
+            "ensemble_enabled": true,
+            "glotlid_high_confidence_threshold": 0.9,
+            "ensemble_weight_glotlid_default": 0.6,
+            "ensemble_weight_romanized_default": 0.4,
+            "ensemble_min_combined_confidence": 0.65,
+            "ensemble_conf_gap_threshold": 0.3,
+            "ensemble_latin_threshold_high": 80,
+            "ensemble_latin_threshold_medium": 70,
+            "hybrid_conversion_enabled": true,
+            "preserve_english_tokens": true,
+            "preserve_capitalized_words": true,
+            "preserve_all_caps": true,
+            "english_word_min_length": 2,
+            "min_conversion_confidence": 0.3,
+            "prefer_dictionary_over_itrans": true
+          },
+          "original_language": "kin",
+          "ensemble_analysis": {
+            "final_language": "kin",
+            "final_confidence": 0.9979000687599182,
+            "detection_method": "glotlid_preferred_high_confidence",
+            "ensemble_scores": {
+              "glotlid_score": 0.9979000687599182,
+              "romanized_score": 0.85,
+              "latin_percentage": 100.0,
+              "combined_score": 0.9979000687599182
+            },
+            "glotlid_prediction": {
+              "language": "kin",
+              "confidence": 0.9979000687599182,
+              "all_predictions": [
+                [
+                  "kin",
+                  "Latn",
+                  0.9979000687599182
+                ],
+                [
+                  "eng",
+                  "Latn",
+                  0.0018671815050765872
+                ],
+                [
+                  "und",
+                  "Tglg",
+                  0.00014746279339306056
+                ]
+              ]
+            },
+            "romanized_prediction": {
+              "language": "hin",
+              "confidence": 0.85
+            },
+            "decision_explanation": "GLotLID confidence (0.998) exceeds threshold (0.9). Trusting GLotLID completely.",
+            "is_code_mixed": false
+          }
+        },
+        "sentiment": {
+          "label": "positive",
+          "confidence": 0.4100503623485565,
+          "model_used": "XLM-RoBERTa",
+          "all_probabilities": [
+            [
+              0.2761402726173401,
+              0.3138093650341034,
+              0.4100503623485565
+            ]
+          ]
+        },
+        "toxicity": {
+          "toxic": 0.0009329999447800219,
+          "severe_toxic": 7.616091897943988e-05,
+          "obscene": 0.0003036998677998781,
+          "threat": 6.78129872540012e-05,
+          "insult": 0.0002517591055948287,
+          "identity_hate": 0.00011569804337341338
+        },
+        "translations": {},
+        "statistics": {
+          "text_length": 3,
+          "word_count": 1,
+          "language_detection": {
+            "language": "kin",
+            "confidence": 0.7,
+            "method": "glotlid_very_short_text",
+            "text_length": 3,
+            "is_short_text": true,
+            "is_very_short_text": true,
+            "composition": {
+              "indic_percentage": 0.0,
+              "latin_percentage": 100.0,
+              "numeric_percentage": 0.0,
+              "punctuation_percentage": 0.0,
+              "other_percentage": 0.0,
+              "script_counts": {},
+              "is_code_mixed": false,
+              "dominant_script": "latin"
+            },
+            "script_analysis": {
+              "detected_script": null,
+              "script_counts": {}
+            },
+            "glotlid_analysis": {
+              "detected_language": "kin",
+              "confidence": 0.9979000687599182,
+              "is_code_mixed": false
+            },
+            "romanized_analysis": {
+              "detected_language": "hin",
+              "confidence": 0.85
+            },
+            "language_info": {
+              "is_indian_language": false,
+              "is_international_language": false,
+              "is_code_mixed": false,
+              "is_romanized": false,
+              "language_name": "Unknown"
+            },
+            "detection_config": {
+              "min_text_length": 3,
+              "glotlid_threshold": 0.5,
+              "high_confidence_threshold": 0.8,
+              "medium_confidence_threshold": 0.6,
+              "low_confidence_threshold": 0.4,
+              "glotlid_override_threshold": 0.9,
+              "romanized_early_detection_threshold": 0.75,
+              "strong_script_threshold": 50,
+              "code_mixed_min_threshold": 20,
+              "code_mixed_max_threshold": 50,
+              "minor_script_min_threshold": 5,
+              "minor_script_max_threshold": 20,
+              "latin_dominance_threshold": 70,
+              "short_text_threshold": 10,
+              "use_indic_nlp_enhanced": true,
+              "code_mixed_min_devanagari_chars": 3,
+              "code_mixed_min_latin_chars": 5,
+              "code_mixed_token_threshold": 0.15,
+              "code_mixed_min_markers": 2,
+              "soft_code_mixing_threshold": 0.05,
+              "aggressive_code_mixing_threshold": 0.15,
+              "adaptive_threshold_short_text": 0.12,
+              "adaptive_threshold_medium_text": 0.1,
+              "adaptive_threshold_long_text": 0.08,
+              "very_short_text_threshold": 5,
+              "short_text_romanized_threshold": 0.85,
+              "short_text_glotlid_threshold": 0.4,
+              "short_text_script_threshold": 25,
+              "disable_early_detection_threshold": 8,
+              "ensemble_enabled": true,
+              "glotlid_high_confidence_threshold": 0.9,
+              "ensemble_weight_glotlid_default": 0.6,
+              "ensemble_weight_romanized_default": 0.4,
+              "ensemble_min_combined_confidence": 0.65,
+              "ensemble_conf_gap_threshold": 0.3,
+              "ensemble_latin_threshold_high": 80,
+              "ensemble_latin_threshold_medium": 70,
+              "hybrid_conversion_enabled": true,
+              "preserve_english_tokens": true,
+              "preserve_capitalized_words": true,
+              "preserve_all_caps": true,
+              "english_word_min_length": 2,
+              "min_conversion_confidence": 0.3,
+              "prefer_dictionary_over_itrans": true
+            },
+            "original_language": "kin",
+            "ensemble_analysis": {
+              "final_language": "kin",
+              "final_confidence": 0.9979000687599182,
+              "detection_method": "glotlid_preferred_high_confidence",
+              "ensemble_scores": {
+                "glotlid_score": 0.9979000687599182,
+                "romanized_score": 0.85,
+                "latin_percentage": 100.0,
+                "combined_score": 0.9979000687599182
+              },
+              "glotlid_prediction": {
+                "language": "kin",
+                "confidence": 0.9979000687599182,
+                "all_predictions": [
+                  [
+                    "kin",
+                    "Latn",
+                    0.9979000687599182
+                  ],
+                  [
+                    "eng",
+                    "Latn",
+                    0.0018671815050765872
+                  ],
+                  [
+                    "und",
+                    "Tglg",
+                    0.00014746279339306056
+                  ]
+                ]
+              },
+              "romanized_prediction": {
+                "language": "hin",
+                "confidence": 0.85
+              },
+              "decision_explanation": "GLotLID confidence (0.998) exceeds threshold (0.9). Trusting GLotLID completely.",
+              "is_code_mixed": false
+            }
+          },
+          "preprocessing_preview": {
+            "original": "wow",
+            "cleaned": "wow"
+          }
+        }
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": false
+      },
+      "timestamp": "2025-11-03T23:03:34.794233",
+      "request_count": 1
+    },
+    "b73d6f2b3eecb34a25c09f20d8d623e3": {
+      "text": "\"नवीनचंद्र मेहता कॉलेज दादर में है\" which translate to \"Navinchandra Mehta College is located at Dadar\"",
+      "text_hash": "b73d6f2b3eecb34a25c09f20d8d623e3",
+      "response": {
+        "text": "\"नवीनचंद्र मेहता कॉलेज दादर में है\" which translate to \"Navinchandra Mehta College is located at Dadar\"",
+        "language": {
+          "code": "eng",
+          "name": "English",
+          "confidence": 0.83,
+          "is_romanized": false,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "neutral",
+          "score": 0.56
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": null,
+        "toxicity_score": 0.0
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T23:04:10.255621",
+      "request_count": 1
+    },
+    "8e5a1a011fc89620235ca0f4ab83a5d6": {
+      "text": "You know the MCA college Navinchandra Mehta college?  वाहा का मैनेजमेंट थर्ड क्लास है",
+      "text_hash": "8e5a1a011fc89620235ca0f4ab83a5d6",
+      "response": {
+        "original_text": "You know the MCA college Navinchandra Mehta college?  वाहा का मैनेजमेंट थर्ड क्लास है",
+        "cleaned_text": "you know the mca college navinchandra mehta college? वाहा का मैनेजमेंट थर्ड क्लास है",
+        "preprocessing": {
+          "normalization_level": null,
+          "preserve_emojis": true,
+          "punctuation_mode": "preserve"
+        },
+        "profanity": {
+          "has_profanity": false,
+          "severity_score": 0,
+          "max_severity": null,
+          "detected_words": [],
+          "word_count": 0,
+          "severity_breakdown": {
+            "extreme": [],
+            "moderate": [],
+            "mild": []
+          }
+        },
+        "domains": {
+          "financial": false,
+          "temporal": false,
+          "technical": false
+        },
+        "language": {
+          "language": "hi",
+          "confidence": 0.95,
+          "method": "script_analysis",
+          "text_length": 85,
+          "is_short_text": false,
+          "is_very_short_text": false,
+          "composition": {
+            "indic_percentage": 183.52941176470588,
+            "latin_percentage": 51.76470588235295,
+            "numeric_percentage": 0.0,
+            "punctuation_percentage": 1.1764705882352942,
+            "other_percentage": -136.47058823529412,
+            "script_counts": {
+              "hi": 26,
+              "mr": 26,
+              "kK": 26,
+              "sa": 26,
+              "ne": 26,
+              "sd": 26
+            },
+            "is_code_mixed": true,
+            "dominant_script": "indic"
+          },
+          "script_analysis": {
+            "detected_script": "hi",
+            "script_counts": {
+              "hi": 26,
+              "mr": 26,
+              "kK": 26,
+              "sa": 26,
+              "ne": 26,
+              "sd": 26
+            }
+          },
+          "glotlid_analysis": {
+            "detected_language": "eng",
+            "confidence": 0.37874487042427063,
+            "is_code_mixed": true
+          },
+          "romanized_analysis": {
+            "detected_language": null,
+            "confidence": 0.0
+          },
+          "language_info": {
+            "is_indian_language": true,
+            "is_international_language": false,
+            "is_code_mixed": false,
+            "is_romanized": false,
+            "language_name": "Hindi"
+          },
+          "detection_config": {
+            "min_text_length": 3,
+            "glotlid_threshold": 0.5,
+            "high_confidence_threshold": 0.8,
+            "medium_confidence_threshold": 0.6,
+            "low_confidence_threshold": 0.4,
+            "glotlid_override_threshold": 0.9,
+            "romanized_early_detection_threshold": 0.75,
+            "strong_script_threshold": 50,
+            "code_mixed_min_threshold": 20,
+            "code_mixed_max_threshold": 50,
+            "minor_script_min_threshold": 5,
+            "minor_script_max_threshold": 20,
+            "latin_dominance_threshold": 70,
+            "short_text_threshold": 10,
+            "use_indic_nlp_enhanced": true,
+            "code_mixed_min_devanagari_chars": 3,
+            "code_mixed_min_latin_chars": 5,
+            "code_mixed_token_threshold": 0.15,
+            "code_mixed_min_markers": 2,
+            "soft_code_mixing_threshold": 0.05,
+            "aggressive_code_mixing_threshold": 0.15,
+            "adaptive_threshold_short_text": 0.12,
+            "adaptive_threshold_medium_text": 0.1,
+            "adaptive_threshold_long_text": 0.08,
+            "very_short_text_threshold": 5,
+            "short_text_romanized_threshold": 0.85,
+            "short_text_glotlid_threshold": 0.4,
+            "short_text_script_threshold": 25,
+            "disable_early_detection_threshold": 8,
+            "ensemble_enabled": true,
+            "glotlid_high_confidence_threshold": 0.9,
+            "ensemble_weight_glotlid_default": 0.6,
+            "ensemble_weight_romanized_default": 0.4,
+            "ensemble_min_combined_confidence": 0.65,
+            "ensemble_conf_gap_threshold": 0.3,
+            "ensemble_latin_threshold_high": 80,
+            "ensemble_latin_threshold_medium": 70,
+            "hybrid_conversion_enabled": true,
+            "preserve_english_tokens": true,
+            "preserve_capitalized_words": true,
+            "preserve_all_caps": true,
+            "english_word_min_length": 2,
+            "min_conversion_confidence": 0.3,
+            "prefer_dictionary_over_itrans": true
+          },
+          "original_language": "hi",
+          "ensemble_analysis": {
+            "final_language": "eng",
+            "final_confidence": 0.37874487042427063,
+            "detection_method": "glotlid_only",
+            "ensemble_scores": {
+              "glotlid_score": 0.37874487042427063,
+              "romanized_score": 0.0,
+              "latin_percentage": 74.57627118644068,
+              "combined_score": 0.37874487042427063
+            },
+            "glotlid_prediction": {
+              "language": "eng",
+              "confidence": 0.37874487042427063,
+              "all_predictions": [
+                [
+                  "eng",
+                  "Latn",
+                  0.37874487042427063
+                ],
+                [
+                  "hin",
+                  "Deva",
+                  0.2790878415107727
+                ],
+                [
+                  "tel",
+                  "Latn",
+                  0.04364164546132088
+                ]
+              ]
+            },
+            "romanized_prediction": {
+              "language": null,
+              "confidence": 0.0
+            },
+            "decision_explanation": "No romanized detection available. Using GLotLID eng (0.379)",
+            "is_code_mixed": true
+          }
+        },
+        "sentiment": {
+          "label": "negative",
+          "confidence": 0.5833009481430054,
+          "model_used": "IndicBERT-v2",
+          "all_probabilities": [
+            [
+              0.5833009481430054,
+              0.4166991114616394
+            ]
+          ]
+        },
+        "toxicity": {
+          "toxic": 0.0005112932412885129,
+          "severe_toxic": 0.00010269315680488944,
+          "obscene": 0.000267825264018029,
+          "threat": 7.962249947013333e-05,
+          "insult": 0.00022942095529288054,
+          "identity_hate": 0.0001289743959205225
+        },
+        "translations": {
+          "english": "You know the MCA college Navinchandra Mehta college?Waha's management is third class"
+        },
+        "statistics": {
+          "language_detection": {
+            "language": "hi",
+            "confidence": 0.95,
+            "method": "script_analysis",
+            "text_length": 85,
+            "is_short_text": false,
+            "is_very_short_text": false,
+            "composition": {
+              "indic_percentage": 183.52941176470588,
+              "latin_percentage": 51.76470588235295,
+              "numeric_percentage": 0.0,
+              "punctuation_percentage": 1.1764705882352942,
+              "other_percentage": -136.47058823529412,
+              "script_counts": {
+                "hi": 26,
+                "mr": 26,
+                "kK": 26,
+                "sa": 26,
+                "ne": 26,
+                "sd": 26
+              },
+              "is_code_mixed": true,
+              "dominant_script": "indic"
+            },
+            "script_analysis": {
+              "detected_script": "hi",
+              "script_counts": {
+                "hi": 26,
+                "mr": 26,
+                "kK": 26,
+                "sa": 26,
+                "ne": 26,
+                "sd": 26
+              }
+            },
+            "glotlid_analysis": {
+              "detected_language": "eng",
+              "confidence": 0.37874487042427063,
+              "is_code_mixed": true
+            },
+            "romanized_analysis": {
+              "detected_language": null,
+              "confidence": 0.0
+            },
+            "language_info": {
+              "is_indian_language": true,
+              "is_international_language": false,
+              "is_code_mixed": false,
+              "is_romanized": false,
+              "language_name": "Hindi"
+            },
+            "detection_config": {
+              "min_text_length": 3,
+              "glotlid_threshold": 0.5,
+              "high_confidence_threshold": 0.8,
+              "medium_confidence_threshold": 0.6,
+              "low_confidence_threshold": 0.4,
+              "glotlid_override_threshold": 0.9,
+              "romanized_early_detection_threshold": 0.75,
+              "strong_script_threshold": 50,
+              "code_mixed_min_threshold": 20,
+              "code_mixed_max_threshold": 50,
+              "minor_script_min_threshold": 5,
+              "minor_script_max_threshold": 20,
+              "latin_dominance_threshold": 70,
+              "short_text_threshold": 10,
+              "use_indic_nlp_enhanced": true,
+              "code_mixed_min_devanagari_chars": 3,
+              "code_mixed_min_latin_chars": 5,
+              "code_mixed_token_threshold": 0.15,
+              "code_mixed_min_markers": 2,
+              "soft_code_mixing_threshold": 0.05,
+              "aggressive_code_mixing_threshold": 0.15,
+              "adaptive_threshold_short_text": 0.12,
+              "adaptive_threshold_medium_text": 0.1,
+              "adaptive_threshold_long_text": 0.08,
+              "very_short_text_threshold": 5,
+              "short_text_romanized_threshold": 0.85,
+              "short_text_glotlid_threshold": 0.4,
+              "short_text_script_threshold": 25,
+              "disable_early_detection_threshold": 8,
+              "ensemble_enabled": true,
+              "glotlid_high_confidence_threshold": 0.9,
+              "ensemble_weight_glotlid_default": 0.6,
+              "ensemble_weight_romanized_default": 0.4,
+              "ensemble_min_combined_confidence": 0.65,
+              "ensemble_conf_gap_threshold": 0.3,
+              "ensemble_latin_threshold_high": 80,
+              "ensemble_latin_threshold_medium": 70,
+              "hybrid_conversion_enabled": true,
+              "preserve_english_tokens": true,
+              "preserve_capitalized_words": true,
+              "preserve_all_caps": true,
+              "english_word_min_length": 2,
+              "min_conversion_confidence": 0.3,
+              "prefer_dictionary_over_itrans": true
+            },
+            "original_language": "hi",
+            "ensemble_analysis": {
+              "final_language": "eng",
+              "final_confidence": 0.37874487042427063,
+              "detection_method": "glotlid_only",
+              "ensemble_scores": {
+                "glotlid_score": 0.37874487042427063,
+                "romanized_score": 0.0,
+                "latin_percentage": 74.57627118644068,
+                "combined_score": 0.37874487042427063
+              },
+              "glotlid_prediction": {
+                "language": "eng",
+                "confidence": 0.37874487042427063,
+                "all_predictions": [
+                  [
+                    "eng",
+                    "Latn",
+                    0.37874487042427063
+                  ],
+                  [
+                    "hin",
+                    "Deva",
+                    0.2790878415107727
+                  ],
+                  [
+                    "tel",
+                    "Latn",
+                    0.04364164546132088
+                  ]
+                ]
+              },
+              "romanized_prediction": {
+                "language": null,
+                "confidence": 0.0
+              },
+              "decision_explanation": "No romanized detection available. Using GLotLID eng (0.379)",
+              "is_code_mixed": true
+            }
+          }
+        }
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": false
+      },
+      "timestamp": "2025-11-03T23:15:18.047252",
+      "request_count": 4
+    },
+    "0a496697154e220dd1913265c1513993": {
+      "text": "You know the MCA college Navinchandra Mehta college?  वह क मनजमट थरड कलस ह",
+      "text_hash": "0a496697154e220dd1913265c1513993",
+      "response": {
+        "original_text": "You know the MCA college Navinchandra Mehta college?  वह क मनजमट थरड कलस ह",
+        "cleaned_text": "you know the mca college navinchandra mehta college? वह क मनजमट थरड कलस ह",
+        "preprocessing": {
+          "normalization_level": null,
+          "preserve_emojis": true,
+          "punctuation_mode": "preserve"
+        },
+        "profanity": {
+          "has_profanity": false,
+          "severity_score": 0,
+          "max_severity": null,
+          "detected_words": [],
+          "word_count": 0,
+          "severity_breakdown": {
+            "extreme": [],
+            "moderate": [],
+            "mild": []
+          }
+        },
+        "domains": {
+          "financial": false,
+          "temporal": false,
+          "technical": false
+        },
+        "language": {
+          "language": "hi",
+          "confidence": 0.95,
+          "method": "script_analysis",
+          "text_length": 85,
+          "is_short_text": false,
+          "is_very_short_text": false,
+          "composition": {
+            "indic_percentage": 183.52941176470588,
+            "latin_percentage": 51.76470588235295,
+            "numeric_percentage": 0.0,
+            "punctuation_percentage": 1.1764705882352942,
+            "other_percentage": -136.47058823529412,
+            "script_counts": {
+              "hi": 26,
+              "mr": 26,
+              "kK": 26,
+              "sa": 26,
+              "ne": 26,
+              "sd": 26
+            },
+            "is_code_mixed": true,
+            "dominant_script": "indic"
+          },
+          "script_analysis": {
+            "detected_script": "hi",
+            "script_counts": {
+              "hi": 26,
+              "mr": 26,
+              "kK": 26,
+              "sa": 26,
+              "ne": 26,
+              "sd": 26
+            }
+          },
+          "glotlid_analysis": {
+            "detected_language": "eng",
+            "confidence": 0.37874487042427063,
+            "is_code_mixed": true
+          },
+          "romanized_analysis": {
+            "detected_language": null,
+            "confidence": 0.0
+          },
+          "language_info": {
+            "is_indian_language": true,
+            "is_international_language": false,
+            "is_code_mixed": false,
+            "is_romanized": false,
+            "language_name": "Hindi"
+          },
+          "detection_config": {
+            "min_text_length": 3,
+            "glotlid_threshold": 0.5,
+            "high_confidence_threshold": 0.8,
+            "medium_confidence_threshold": 0.6,
+            "low_confidence_threshold": 0.4,
+            "glotlid_override_threshold": 0.9,
+            "romanized_early_detection_threshold": 0.75,
+            "strong_script_threshold": 50,
+            "code_mixed_min_threshold": 20,
+            "code_mixed_max_threshold": 50,
+            "minor_script_min_threshold": 5,
+            "minor_script_max_threshold": 20,
+            "latin_dominance_threshold": 70,
+            "short_text_threshold": 10,
+            "use_indic_nlp_enhanced": true,
+            "code_mixed_min_devanagari_chars": 3,
+            "code_mixed_min_latin_chars": 5,
+            "code_mixed_token_threshold": 0.15,
+            "code_mixed_min_markers": 2,
+            "soft_code_mixing_threshold": 0.05,
+            "aggressive_code_mixing_threshold": 0.15,
+            "adaptive_threshold_short_text": 0.12,
+            "adaptive_threshold_medium_text": 0.1,
+            "adaptive_threshold_long_text": 0.08,
+            "very_short_text_threshold": 5,
+            "short_text_romanized_threshold": 0.85,
+            "short_text_glotlid_threshold": 0.4,
+            "short_text_script_threshold": 25,
+            "disable_early_detection_threshold": 8,
+            "ensemble_enabled": true,
+            "glotlid_high_confidence_threshold": 0.9,
+            "ensemble_weight_glotlid_default": 0.6,
+            "ensemble_weight_romanized_default": 0.4,
+            "ensemble_min_combined_confidence": 0.65,
+            "ensemble_conf_gap_threshold": 0.3,
+            "ensemble_latin_threshold_high": 80,
+            "ensemble_latin_threshold_medium": 70,
+            "hybrid_conversion_enabled": true,
+            "preserve_english_tokens": true,
+            "preserve_capitalized_words": true,
+            "preserve_all_caps": true,
+            "english_word_min_length": 2,
+            "min_conversion_confidence": 0.3,
+            "prefer_dictionary_over_itrans": true
+          },
+          "original_language": "hi",
+          "ensemble_analysis": {
+            "final_language": "eng",
+            "final_confidence": 0.37874487042427063,
+            "detection_method": "glotlid_only",
+            "ensemble_scores": {
+              "glotlid_score": 0.37874487042427063,
+              "romanized_score": 0.0,
+              "latin_percentage": 74.57627118644068,
+              "combined_score": 0.37874487042427063
+            },
+            "glotlid_prediction": {
+              "language": "eng",
+              "confidence": 0.37874487042427063,
+              "all_predictions": [
+                [
+                  "eng",
+                  "Latn",
+                  0.37874487042427063
+                ],
+                [
+                  "hin",
+                  "Deva",
+                  0.2790878415107727
+                ],
+                [
+                  "tel",
+                  "Latn",
+                  0.04364164546132088
+                ]
+              ]
+            },
+            "romanized_prediction": {
+              "language": null,
+              "confidence": 0.0
+            },
+            "decision_explanation": "No romanized detection available. Using GLotLID eng (0.379)",
+            "is_code_mixed": true
+          }
+        },
+        "sentiment": {
+          "label": "negative",
+          "confidence": 0.6299190521240234,
+          "model_used": "IndicBERT-v2",
+          "all_probabilities": [
+            [
+              0.6299190521240234,
+              0.37008094787597656
+            ]
+          ]
+        },
+        "toxicity": {
+          "toxic": 0.001299954834394157,
+          "severe_toxic": 6.820450653322041e-05,
+          "obscene": 0.0004253496299497783,
+          "threat": 6.474390829680488e-05,
+          "insult": 0.00029855474713258445,
+          "identity_hate": 0.00010585982818156481
+        },
+        "translations": {
+          "english": "You know the MCA college Navinchandra Mehta college?He is a member of the third class."
+        },
+        "statistics": {
+          "language_detection": {
+            "language": "hi",
+            "confidence": 0.95,
+            "method": "script_analysis",
+            "text_length": 85,
+            "is_short_text": false,
+            "is_very_short_text": false,
+            "composition": {
+              "indic_percentage": 183.52941176470588,
+              "latin_percentage": 51.76470588235295,
+              "numeric_percentage": 0.0,
+              "punctuation_percentage": 1.1764705882352942,
+              "other_percentage": -136.47058823529412,
+              "script_counts": {
+                "hi": 26,
+                "mr": 26,
+                "kK": 26,
+                "sa": 26,
+                "ne": 26,
+                "sd": 26
+              },
+              "is_code_mixed": true,
+              "dominant_script": "indic"
+            },
+            "script_analysis": {
+              "detected_script": "hi",
+              "script_counts": {
+                "hi": 26,
+                "mr": 26,
+                "kK": 26,
+                "sa": 26,
+                "ne": 26,
+                "sd": 26
+              }
+            },
+            "glotlid_analysis": {
+              "detected_language": "eng",
+              "confidence": 0.37874487042427063,
+              "is_code_mixed": true
+            },
+            "romanized_analysis": {
+              "detected_language": null,
+              "confidence": 0.0
+            },
+            "language_info": {
+              "is_indian_language": true,
+              "is_international_language": false,
+              "is_code_mixed": false,
+              "is_romanized": false,
+              "language_name": "Hindi"
+            },
+            "detection_config": {
+              "min_text_length": 3,
+              "glotlid_threshold": 0.5,
+              "high_confidence_threshold": 0.8,
+              "medium_confidence_threshold": 0.6,
+              "low_confidence_threshold": 0.4,
+              "glotlid_override_threshold": 0.9,
+              "romanized_early_detection_threshold": 0.75,
+              "strong_script_threshold": 50,
+              "code_mixed_min_threshold": 20,
+              "code_mixed_max_threshold": 50,
+              "minor_script_min_threshold": 5,
+              "minor_script_max_threshold": 20,
+              "latin_dominance_threshold": 70,
+              "short_text_threshold": 10,
+              "use_indic_nlp_enhanced": true,
+              "code_mixed_min_devanagari_chars": 3,
+              "code_mixed_min_latin_chars": 5,
+              "code_mixed_token_threshold": 0.15,
+              "code_mixed_min_markers": 2,
+              "soft_code_mixing_threshold": 0.05,
+              "aggressive_code_mixing_threshold": 0.15,
+              "adaptive_threshold_short_text": 0.12,
+              "adaptive_threshold_medium_text": 0.1,
+              "adaptive_threshold_long_text": 0.08,
+              "very_short_text_threshold": 5,
+              "short_text_romanized_threshold": 0.85,
+              "short_text_glotlid_threshold": 0.4,
+              "short_text_script_threshold": 25,
+              "disable_early_detection_threshold": 8,
+              "ensemble_enabled": true,
+              "glotlid_high_confidence_threshold": 0.9,
+              "ensemble_weight_glotlid_default": 0.6,
+              "ensemble_weight_romanized_default": 0.4,
+              "ensemble_min_combined_confidence": 0.65,
+              "ensemble_conf_gap_threshold": 0.3,
+              "ensemble_latin_threshold_high": 80,
+              "ensemble_latin_threshold_medium": 70,
+              "hybrid_conversion_enabled": true,
+              "preserve_english_tokens": true,
+              "preserve_capitalized_words": true,
+              "preserve_all_caps": true,
+              "english_word_min_length": 2,
+              "min_conversion_confidence": 0.3,
+              "prefer_dictionary_over_itrans": true
+            },
+            "original_language": "hi",
+            "ensemble_analysis": {
+              "final_language": "eng",
+              "final_confidence": 0.37874487042427063,
+              "detection_method": "glotlid_only",
+              "ensemble_scores": {
+                "glotlid_score": 0.37874487042427063,
+                "romanized_score": 0.0,
+                "latin_percentage": 74.57627118644068,
+                "combined_score": 0.37874487042427063
+              },
+              "glotlid_prediction": {
+                "language": "eng",
+                "confidence": 0.37874487042427063,
+                "all_predictions": [
+                  [
+                    "eng",
+                    "Latn",
+                    0.37874487042427063
+                  ],
+                  [
+                    "hin",
+                    "Deva",
+                    0.2790878415107727
+                  ],
+                  [
+                    "tel",
+                    "Latn",
+                    0.04364164546132088
+                  ]
+                ]
+              },
+              "romanized_prediction": {
+                "language": null,
+                "confidence": 0.0
+              },
+              "decision_explanation": "No romanized detection available. Using GLotLID eng (0.379)",
+              "is_code_mixed": true
+            }
+          }
+        }
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": false
+      },
+      "timestamp": "2025-11-03T23:18:57.990275",
+      "request_count": 3
+    },
+    "393ae101768b386edaf469152c5c89f4": {
+      "text": "You know the MCA college Navinchandra Mehta college? वहा का मैनेजमेंट थर्ड क्लास है",
+      "text_hash": "393ae101768b386edaf469152c5c89f4",
+      "response": {
+        "text": "You know the MCA college Navinchandra Mehta college? वहा का मैनेजमेंट थर्ड क्लास है",
+        "language": {
+          "code": "hi_mixed",
+          "name": "Hindi",
+          "confidence": 0.5,
+          "is_romanized": false,
+          "is_code_mixed": true
+        },
+        "sentiment": {
+          "label": "negative",
+          "score": 0.69
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": "You know the MCA college Navinchandra Mehta college?The management there is third class",
+        "toxicity_score": 0.001
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T23:21:23.658865",
+      "request_count": 3
+    },
+    "5bb940a05b330cb879a3e3452929a766": {
+      "text": "You know the MCA college Navinchandra Mehta college?  वहा का मैनेजमेंट थर्ड क्लास है",
+      "text_hash": "5bb940a05b330cb879a3e3452929a766",
+      "response": {
+        "text": "You know the MCA college Navinchandra Mehta college?  वहा का मैनेजमेंट थर्ड क्लास है",
+        "language": {
+          "code": "hi",
+          "name": "Hindi",
+          "confidence": 0.95,
+          "is_romanized": false,
+          "is_code_mixed": false
+        },
+        "sentiment": {
+          "label": "negative",
+          "score": 0.69
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": "You know the MCA college Navinchandra Mehta college?The management there is third class",
+        "toxicity_score": 0.001
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T23:16:50.661244",
+      "request_count": 2
+    },
+    "1748e42ca28c21d8bce388f36f7e58da": {
+      "text": "You know the MCA college Navinchandra Mehta college?  वहा का मैनेजमेंट थर्ड क्लास है 😡",
+      "text_hash": "1748e42ca28c21d8bce388f36f7e58da",
+      "response": {
+        "text": "You know the MCA college Navinchandra Mehta college?  वहा का मैनेजमेंट थर्ड क्लास है 😡",
+        "language": {
+          "code": "hi_mixed",
+          "name": "Hindi",
+          "confidence": 0.49,
+          "is_romanized": false,
+          "is_code_mixed": true
+        },
+        "sentiment": {
+          "label": "negative",
+          "score": 0.94
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": "You know the MCA college Navinchandra Mehta college?The management there is third class.",
+        "toxicity_score": 0.001
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T23:21:48.597151",
+      "request_count": 5
+    },
+    "223fccc4c87c6080f6db0eb36896ddd0": {
+      "text": "You know the MCA college Navinchandra Mehta college?   वहा का मैनेजमेंट थर्ड क्लास है 😡",
+      "text_hash": "223fccc4c87c6080f6db0eb36896ddd0",
+      "response": {
+        "text": "You know the MCA college Navinchandra Mehta college?   वहा का मैनेजमेंट थर्ड क्लास है 😡",
+        "language": {
+          "code": "hi_mixed",
+          "name": "Hindi",
+          "confidence": 0.49,
+          "is_romanized": false,
+          "is_code_mixed": true
+        },
+        "sentiment": {
+          "label": "negative",
+          "score": 0.94
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": "You know the MCA college Navinchandra Mehta college?The management there is third class.",
+        "toxicity_score": 0.001
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T23:22:06.093224",
+      "request_count": 1
+    },
+    "76f869b4f2bf458c7b7953ef08863d14": {
+      "text": "You know the MCA college Navinchandra Mehta college? वहा का मैनेजमेंट थर्ड क्लास है 😡",
+      "text_hash": "76f869b4f2bf458c7b7953ef08863d14",
+      "response": {
+        "text": "You know the MCA college Navinchandra Mehta college? वहा का मैनेजमेंट थर्ड क्लास है 😡",
+        "language": {
+          "code": "hi_mixed",
+          "name": "Hindi",
+          "confidence": 0.49,
+          "is_romanized": false,
+          "is_code_mixed": true
+        },
+        "sentiment": {
+          "label": "negative",
+          "score": 0.94
+        },
+        "profanity": {
+          "detected": false,
+          "severity": null
+        },
+        "translation": "You know the MCA college Navinchandra Mehta college?The management there is third class.",
+        "toxicity_score": 0.001
+      },
+      "request_params": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve",
+        "check_profanity": true,
+        "detect_domains": true,
+        "compact": true
+      },
+      "timestamp": "2025-11-03T23:22:27.424071",
+      "request_count": 1
+    }
+  }
+}

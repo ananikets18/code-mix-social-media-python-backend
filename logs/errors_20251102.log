@@ -1,0 +1,13 @@
+2025-11-02 14:19:16 | demo_logger | ERROR | <module>:26 | This is an ERROR message ❌
+2025-11-02 14:19:37 | inference | ERROR | wrapper:149 | Failed predict_sentiment after 0.00ms: In predict_sentiment: 'text' cannot be empty
+2025-11-02 14:22:38 | preprocessing | ERROR | wrapper:149 | Failed preprocess_text after 0.00ms: got an unexpected keyword argument 'emoji_mode'
+2025-11-02 14:22:38 | preprocessing | ERROR | wrapper:149 | Failed preprocess_text after 0.00ms: In preprocess_text: 'text' cannot be empty
+2025-11-02 14:22:50 | preprocessing | ERROR | wrapper:149 | Failed preprocess_text after 0.00ms: In preprocess_text: 'text' cannot be empty
+2025-11-02 16:18:15 | api | ERROR | submit_user_feedback:539 | Error recording user feedback: record_user_feedback() got an unexpected keyword argument 'detected_language'
+2025-11-02 16:18:21 | api | ERROR | submit_user_feedback:539 | Error recording user feedback: record_user_feedback() got an unexpected keyword argument 'detected_language'
+2025-11-02 16:18:26 | api | ERROR | submit_user_feedback:539 | Error recording user feedback: record_user_feedback() got an unexpected keyword argument 'detected_language'
+2025-11-02 16:18:32 | api | ERROR | submit_user_feedback:539 | Error recording user feedback: record_user_feedback() got an unexpected keyword argument 'detected_language'
+2025-11-02 16:18:41 | api | ERROR | submit_user_feedback:539 | Error recording user feedback: record_user_feedback() got an unexpected keyword argument 'detected_language'
+2025-11-02 16:18:47 | api | ERROR | submit_user_feedback:539 | Error recording user feedback: record_user_feedback() got an unexpected keyword argument 'detected_language'
+2025-11-02 16:22:48 | api | ERROR | submit_user_feedback:539 | Error recording user feedback: record_user_feedback() got an unexpected keyword argument 'detected_language'
+2025-11-02 16:22:54 | api | ERROR | submit_user_feedback:539 | Error recording user feedback: record_user_feedback() got an unexpected keyword argument 'detected_language'

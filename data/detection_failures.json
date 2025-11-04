@@ -1,0 +1,1108 @@
+[
+  {
+    "failure_id": "fail_20251102_162713_b928568b",
+    "timestamp": "2025-11-02T16:27:13.841351",
+    "detection_summary": {
+      "text": "Tu kashala me sangu!",
+      "detected_language": "ido",
+      "confidence": 0.6,
+      "method": "glotlid_latin",
+      "expected_language": null,
+      "failure_reasons": [
+        "obscure_language_ido"
+      ]
+    },
+    "full_analysis": {
+      "original_text": "Tu kashala me sangu!",
+      "cleaned_text": "tu kashala me sangu!",
+      "preprocessing": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve"
+      },
+      "profanity": {
+        "has_profanity": false,
+        "severity_score": 0,
+        "max_severity": null,
+        "detected_words": [],
+        "word_count": 0,
+        "severity_breakdown": {
+          "extreme": [],
+          "moderate": [],
+          "mild": []
+        }
+      },
+      "domains": {
+        "financial": false,
+        "temporal": false,
+        "technical": false
+      },
+      "language": {
+        "language": "ido",
+        "confidence": 0.6,
+        "method": "glotlid_latin",
+        "text_length": 20,
+        "is_short_text": false,
+        "composition": {
+          "indic_percentage": 0.0,
+          "latin_percentage": 80.0,
+          "numeric_percentage": 0.0,
+          "punctuation_percentage": 5.0,
+          "other_percentage": 15.0,
+          "script_counts": {},
+          "is_code_mixed": false,
+          "dominant_script": "latin"
+        },
+        "script_analysis": {
+          "detected_script": null,
+          "script_counts": {}
+        },
+        "glotlid_analysis": {
+          "detected_language": "ido",
+          "confidence": 0.2229003757238388,
+          "is_code_mixed": true
+        },
+        "language_info": {
+          "is_indian_language": false,
+          "is_international_language": false,
+          "is_code_mixed": false,
+          "is_romanized": false,
+          "language_name": "Unknown"
+        },
+        "detection_config": {
+          "min_text_length": 3,
+          "glotlid_threshold": 0.5,
+          "high_confidence_threshold": 0.8,
+          "medium_confidence_threshold": 0.6,
+          "low_confidence_threshold": 0.4,
+          "strong_script_threshold": 50,
+          "code_mixed_min_threshold": 20,
+          "code_mixed_max_threshold": 50,
+          "minor_script_min_threshold": 5,
+          "minor_script_max_threshold": 20,
+          "latin_dominance_threshold": 70,
+          "short_text_threshold": 10
+        }
+      },
+      "sentiment": {
+        "label": "negative",
+        "confidence": 0.3483598232269287,
+        "model_used": "XLM-RoBERTa",
+        "all_probabilities": [
+          [
+            0.3483598232269287,
+            0.3180611729621887,
+            0.33357900381088257
+          ]
+        ]
+      },
+      "toxicity": {
+        "toxic": 0.7564270496368408,
+        "severe_toxic": 0.0007696024258621037,
+        "obscene": 0.023676874116063118,
+        "threat": 0.00313896918669343,
+        "insult": 0.06096810847520828,
+        "identity_hate": 0.007138681132346392
+      },
+      "translations": {
+        "english": "Stay up to be!"
+      },
+      "statistics": {
+        "text_length": 20,
+        "word_count": 4,
+        "language_detection": {
+          "language": "ido",
+          "confidence": 0.6,
+          "method": "glotlid_latin",
+          "text_length": 20,
+          "is_short_text": false,
+          "composition": {
+            "indic_percentage": 0.0,
+            "latin_percentage": 80.0,
+            "numeric_percentage": 0.0,
+            "punctuation_percentage": 5.0,
+            "other_percentage": 15.0,
+            "script_counts": {},
+            "is_code_mixed": false,
+            "dominant_script": "latin"
+          },
+          "script_analysis": {
+            "detected_script": null,
+            "script_counts": {}
+          },
+          "glotlid_analysis": {
+            "detected_language": "ido",
+            "confidence": 0.2229003757238388,
+            "is_code_mixed": true
+          },
+          "language_info": {
+            "is_indian_language": false,
+            "is_international_language": false,
+            "is_code_mixed": false,
+            "is_romanized": false,
+            "language_name": "Unknown"
+          },
+          "detection_config": {
+            "min_text_length": 3,
+            "glotlid_threshold": 0.5,
+            "high_confidence_threshold": 0.8,
+            "medium_confidence_threshold": 0.6,
+            "low_confidence_threshold": 0.4,
+            "strong_script_threshold": 50,
+            "code_mixed_min_threshold": 20,
+            "code_mixed_max_threshold": 50,
+            "minor_script_min_threshold": 5,
+            "minor_script_max_threshold": 20,
+            "latin_dominance_threshold": 70,
+            "short_text_threshold": 10
+          }
+        },
+        "preprocessing_preview": {
+          "original": "Tu kashala me sangu!",
+          "cleaned": "tu kashala me sangu!"
+        }
+      }
+    },
+    "metadata": {
+      "text_length": 20,
+      "word_count": 4,
+      "is_code_mixed": false,
+      "is_romanized": false,
+      "dominant_script": "latin"
+    }
+  },
+  {
+    "failure_id": "fail_historical_20251102_162839_b928568b",
+    "timestamp": "2025-11-02T16:28:39.962824",
+    "source": "manual_import",
+    "detection_summary": {
+      "text": "Tu kashala me sangu!",
+      "detected_language": "ido",
+      "confidence": 0.6,
+      "glotlid_confidence": 0.2229003757238388,
+      "method": "glotlid_latin",
+      "expected_language": "mar",
+      "failure_reasons": [
+        "obscure_language_ido",
+        "low_glotlid_confidence_0.22",
+        "latin_script_likely_romanized"
+      ],
+      "user_note": "Romanized Marathi incorrectly detected as constructed language 'ido'"
+    },
+    "full_analysis": {
+      "original_text": "Tu kashala me sangu!",
+      "cleaned_text": "tu kashala me sangu!",
+      "preprocessing": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve"
+      },
+      "profanity": {
+        "has_profanity": false,
+        "severity_score": 0,
+        "max_severity": null,
+        "detected_words": [],
+        "word_count": 0,
+        "severity_breakdown": {
+          "extreme": [],
+          "moderate": [],
+          "mild": []
+        }
+      },
+      "domains": {
+        "financial": false,
+        "temporal": false,
+        "technical": false
+      },
+      "language": {
+        "language": "ido",
+        "confidence": 0.6,
+        "method": "glotlid_latin",
+        "text_length": 20,
+        "is_short_text": false,
+        "composition": {
+          "indic_percentage": 0.0,
+          "latin_percentage": 80.0,
+          "numeric_percentage": 0.0,
+          "punctuation_percentage": 5.0,
+          "other_percentage": 15.0,
+          "script_counts": {},
+          "is_code_mixed": false,
+          "dominant_script": "latin"
+        },
+        "script_analysis": {
+          "detected_script": null,
+          "script_counts": {}
+        },
+        "glotlid_analysis": {
+          "detected_language": "ido",
+          "confidence": 0.2229003757238388,
+          "is_code_mixed": true
+        },
+        "language_info": {
+          "is_indian_language": false,
+          "is_international_language": false,
+          "is_code_mixed": false,
+          "is_romanized": false,
+          "language_name": "Unknown"
+        },
+        "detection_config": {
+          "min_text_length": 3,
+          "glotlid_threshold": 0.5,
+          "high_confidence_threshold": 0.8,
+          "medium_confidence_threshold": 0.6,
+          "low_confidence_threshold": 0.4,
+          "strong_script_threshold": 50,
+          "code_mixed_min_threshold": 20,
+          "code_mixed_max_threshold": 50,
+          "minor_script_min_threshold": 5,
+          "minor_script_max_threshold": 20,
+          "latin_dominance_threshold": 70,
+          "short_text_threshold": 10
+        }
+      },
+      "sentiment": {
+        "label": "negative",
+        "confidence": 0.3483598232269287,
+        "model_used": "XLM-RoBERTa",
+        "all_probabilities": [
+          [
+            0.3483598232269287,
+            0.3180611729621887,
+            0.33357900381088257
+          ]
+        ]
+      },
+      "toxicity": {
+        "toxic": 0.7564270496368408,
+        "severe_toxic": 0.0007696024258621037,
+        "obscene": 0.023676874116063118,
+        "threat": 0.00313896918669343,
+        "insult": 0.06096810847520828,
+        "identity_hate": 0.007138681132346392
+      },
+      "translations": {
+        "english": "Stay up to be!"
+      },
+      "statistics": {
+        "text_length": 20,
+        "word_count": 4,
+        "language_detection": {
+          "language": "ido",
+          "confidence": 0.6,
+          "method": "glotlid_latin",
+          "text_length": 20,
+          "is_short_text": false,
+          "composition": {
+            "indic_percentage": 0.0,
+            "latin_percentage": 80.0,
+            "numeric_percentage": 0.0,
+            "punctuation_percentage": 5.0,
+            "other_percentage": 15.0,
+            "script_counts": {},
+            "is_code_mixed": false,
+            "dominant_script": "latin"
+          },
+          "script_analysis": {
+            "detected_script": null,
+            "script_counts": {}
+          },
+          "glotlid_analysis": {
+            "detected_language": "ido",
+            "confidence": 0.2229003757238388,
+            "is_code_mixed": true
+          },
+          "language_info": {
+            "is_indian_language": false,
+            "is_international_language": false,
+            "is_code_mixed": false,
+            "is_romanized": false,
+            "language_name": "Unknown"
+          },
+          "detection_config": {
+            "min_text_length": 3,
+            "glotlid_threshold": 0.5,
+            "high_confidence_threshold": 0.8,
+            "medium_confidence_threshold": 0.6,
+            "low_confidence_threshold": 0.4,
+            "strong_script_threshold": 50,
+            "code_mixed_min_threshold": 20,
+            "code_mixed_max_threshold": 50,
+            "minor_script_min_threshold": 5,
+            "minor_script_max_threshold": 20,
+            "latin_dominance_threshold": 70,
+            "short_text_threshold": 10
+          }
+        },
+        "preprocessing_preview": {
+          "original": "Tu kashala me sangu!",
+          "cleaned": "tu kashala me sangu!"
+        }
+      }
+    },
+    "metadata": {
+      "text_length": 20,
+      "word_count": 4,
+      "is_code_mixed": false,
+      "is_romanized": true,
+      "dominant_script": "latin",
+      "actual_language": "mar",
+      "language_family": "Indo-Aryan"
+    }
+  },
+  {
+    "failure_id": "fail_20251103_170330_a110fe69",
+    "timestamp": "2025-11-03T17:03:30.012864",
+    "detection_summary": {
+      "text": "NPTEL course ka final submission aaj tha 😅 coding assignment khup maza gaya, final marks 87/100 🎉 @NMITD ka experience best hai!",
+      "detected_language": "mar",
+      "confidence": 0.4590909090909091,
+      "method": "romanized_indic_latin",
+      "expected_language": null,
+      "failure_reasons": [
+        "low_confidence_0.46"
+      ]
+    },
+    "full_analysis": {
+      "original_text": "NPTEL course ka final submission aaj tha 😅 coding assignment khup maza gaya, final marks 87/100 🎉 @NMITD ka experience best hai!",
+      "cleaned_text": "nptel course ka final submission aaj tha grinning_face_with_sweat coding assignment khup maza gaya, final marks 87/100 party_popper ka experience best hai!",
+      "preprocessing": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve"
+      },
+      "profanity": {
+        "has_profanity": false,
+        "severity_score": 0,
+        "max_severity": null,
+        "detected_words": [],
+        "word_count": 0,
+        "severity_breakdown": {
+          "extreme": [],
+          "moderate": [],
+          "mild": []
+        }
+      },
+      "domains": {
+        "financial": false,
+        "temporal": false,
+        "technical": false
+      },
+      "language": {
+        "language": "mar",
+        "original_language": "mar",
+        "confidence": 0.4590909090909091,
+        "method": "romanized_indic_latin",
+        "text_length": 128,
+        "is_short_text": false,
+        "is_very_short_text": false,
+        "composition": {
+          "indic_percentage": 0.0,
+          "latin_percentage": 75.0,
+          "numeric_percentage": 3.90625,
+          "punctuation_percentage": 1.5625,
+          "other_percentage": 19.53125,
+          "script_counts": {},
+          "is_code_mixed": false,
+          "dominant_script": "latin"
+        },
+        "script_analysis": {
+          "detected_script": null,
+          "script_counts": {}
+        },
+        "glotlid_analysis": {
+          "detected_language": "eng",
+          "confidence": 0.3735891282558441,
+          "is_code_mixed": true
+        },
+        "language_info": {
+          "is_indian_language": true,
+          "is_international_language": false,
+          "is_code_mixed": false,
+          "is_romanized": true,
+          "language_name": "Marathi"
+        },
+        "detection_config": {
+          "min_text_length": 3,
+          "glotlid_threshold": 0.5,
+          "high_confidence_threshold": 0.8,
+          "medium_confidence_threshold": 0.6,
+          "low_confidence_threshold": 0.4,
+          "glotlid_override_threshold": 0.9,
+          "romanized_early_detection_threshold": 0.75,
+          "strong_script_threshold": 50,
+          "code_mixed_min_threshold": 20,
+          "code_mixed_max_threshold": 50,
+          "minor_script_min_threshold": 5,
+          "minor_script_max_threshold": 20,
+          "latin_dominance_threshold": 70,
+          "short_text_threshold": 10,
+          "use_indic_nlp_enhanced": true,
+          "code_mixed_min_devanagari_chars": 3,
+          "code_mixed_min_latin_chars": 5,
+          "code_mixed_token_threshold": 0.15,
+          "code_mixed_min_markers": 2,
+          "very_short_text_threshold": 5,
+          "short_text_romanized_threshold": 0.85,
+          "short_text_glotlid_threshold": 0.4,
+          "short_text_script_threshold": 25,
+          "disable_early_detection_threshold": 8
+        }
+      },
+      "sentiment": {
+        "label": "positive",
+        "confidence": 0.5985983610153198,
+        "model_used": "XLM-RoBERTa",
+        "all_probabilities": [
+          [
+            0.17801660299301147,
+            0.2233850657939911,
+            0.5985983610153198
+          ]
+        ]
+      },
+      "toxicity": {
+        "toxic": 0.0029039792716503143,
+        "severe_toxic": 5.678171510226093e-05,
+        "obscene": 0.0006189941777847707,
+        "threat": 6.61650556139648e-05,
+        "insult": 0.00044816499575972557,
+        "identity_hate": 0.00012259565119165927
+      },
+      "translations": {
+        "english": "NPTEL course ka final submission today tha 😅 coding assignment very much my gaya, final marks 87/100 🎉 @NMITD ka experience best hai!",
+        "conversion_applied": true,
+        "converted_to_devanagari": "NPTEL course ka final submission आज tha 😅 coding assignment खूप माझा gaya, final marks 87/100 🎉 @NMITD ka experience best hai!"
+      },
+      "statistics": {
+        "text_length": 128,
+        "word_count": 22,
+        "language_detection": {
+          "language": "mar",
+          "original_language": "mar",
+          "confidence": 0.4590909090909091,
+          "method": "romanized_indic_latin",
+          "text_length": 128,
+          "is_short_text": false,
+          "is_very_short_text": false,
+          "composition": {
+            "indic_percentage": 0.0,
+            "latin_percentage": 75.0,
+            "numeric_percentage": 3.90625,
+            "punctuation_percentage": 1.5625,
+            "other_percentage": 19.53125,
+            "script_counts": {},
+            "is_code_mixed": false,
+            "dominant_script": "latin"
+          },
+          "script_analysis": {
+            "detected_script": null,
+            "script_counts": {}
+          },
+          "glotlid_analysis": {
+            "detected_language": "eng",
+            "confidence": 0.3735891282558441,
+            "is_code_mixed": true
+          },
+          "language_info": {
+            "is_indian_language": true,
+            "is_international_language": false,
+            "is_code_mixed": false,
+            "is_romanized": true,
+            "language_name": "Marathi"
+          },
+          "detection_config": {
+            "min_text_length": 3,
+            "glotlid_threshold": 0.5,
+            "high_confidence_threshold": 0.8,
+            "medium_confidence_threshold": 0.6,
+            "low_confidence_threshold": 0.4,
+            "glotlid_override_threshold": 0.9,
+            "romanized_early_detection_threshold": 0.75,
+            "strong_script_threshold": 50,
+            "code_mixed_min_threshold": 20,
+            "code_mixed_max_threshold": 50,
+            "minor_script_min_threshold": 5,
+            "minor_script_max_threshold": 20,
+            "latin_dominance_threshold": 70,
+            "short_text_threshold": 10,
+            "use_indic_nlp_enhanced": true,
+            "code_mixed_min_devanagari_chars": 3,
+            "code_mixed_min_latin_chars": 5,
+            "code_mixed_token_threshold": 0.15,
+            "code_mixed_min_markers": 2,
+            "very_short_text_threshold": 5,
+            "short_text_romanized_threshold": 0.85,
+            "short_text_glotlid_threshold": 0.4,
+            "short_text_script_threshold": 25,
+            "disable_early_detection_threshold": 8
+          }
+        },
+        "preprocessing_preview": {
+          "original": "NPTEL course ka final submission aaj tha 😅 coding assignment khup maza gaya, final marks 87/100 🎉 @N...",
+          "cleaned": "nptel course ka final submission aaj tha grinning_face_with_sweat coding assignment khup maza gaya, ..."
+        }
+      }
+    },
+    "metadata": {
+      "text_length": 128,
+      "word_count": 22,
+      "is_code_mixed": false,
+      "is_romanized": true,
+      "dominant_script": "latin"
+    }
+  },
+  {
+    "failure_id": "fail_20251103_170456_a110fe69",
+    "timestamp": "2025-11-03T17:04:56.635976",
+    "detection_summary": {
+      "text": "NPTEL course ka final submission aaj tha 😅 coding assignment khup maza gaya, final marks 87/100 🎉 @NMITD ka experience best hai!",
+      "detected_language": "mar",
+      "confidence": 0.4590909090909091,
+      "method": "romanized_indic_latin",
+      "expected_language": null,
+      "failure_reasons": [
+        "low_confidence_0.46"
+      ]
+    },
+    "full_analysis": {
+      "original_text": "NPTEL course ka final submission aaj tha 😅 coding assignment khup maza gaya, final marks 87/100 🎉 @NMITD ka experience best hai!",
+      "cleaned_text": "nptel course ka final submission aaj tha grinning_face_with_sweat coding assignment khup maza gaya, final marks 87/100 party_popper ka experience best hai!",
+      "preprocessing": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve"
+      },
+      "profanity": {
+        "has_profanity": false,
+        "severity_score": 0,
+        "max_severity": null,
+        "detected_words": [],
+        "word_count": 0,
+        "severity_breakdown": {
+          "extreme": [],
+          "moderate": [],
+          "mild": []
+        }
+      },
+      "domains": {
+        "financial": false,
+        "temporal": false,
+        "technical": false
+      },
+      "language": {
+        "language": "mar",
+        "original_language": "mar",
+        "confidence": 0.4590909090909091,
+        "method": "romanized_indic_latin",
+        "text_length": 128,
+        "is_short_text": false,
+        "is_very_short_text": false,
+        "composition": {
+          "indic_percentage": 0.0,
+          "latin_percentage": 75.0,
+          "numeric_percentage": 3.90625,
+          "punctuation_percentage": 1.5625,
+          "other_percentage": 19.53125,
+          "script_counts": {},
+          "is_code_mixed": false,
+          "dominant_script": "latin"
+        },
+        "script_analysis": {
+          "detected_script": null,
+          "script_counts": {}
+        },
+        "glotlid_analysis": {
+          "detected_language": "eng",
+          "confidence": 0.3735891282558441,
+          "is_code_mixed": true
+        },
+        "language_info": {
+          "is_indian_language": true,
+          "is_international_language": false,
+          "is_code_mixed": false,
+          "is_romanized": true,
+          "language_name": "Marathi"
+        },
+        "detection_config": {
+          "min_text_length": 3,
+          "glotlid_threshold": 0.5,
+          "high_confidence_threshold": 0.8,
+          "medium_confidence_threshold": 0.6,
+          "low_confidence_threshold": 0.4,
+          "glotlid_override_threshold": 0.9,
+          "romanized_early_detection_threshold": 0.75,
+          "strong_script_threshold": 50,
+          "code_mixed_min_threshold": 20,
+          "code_mixed_max_threshold": 50,
+          "minor_script_min_threshold": 5,
+          "minor_script_max_threshold": 20,
+          "latin_dominance_threshold": 70,
+          "short_text_threshold": 10,
+          "use_indic_nlp_enhanced": true,
+          "code_mixed_min_devanagari_chars": 3,
+          "code_mixed_min_latin_chars": 5,
+          "code_mixed_token_threshold": 0.15,
+          "code_mixed_min_markers": 2,
+          "very_short_text_threshold": 5,
+          "short_text_romanized_threshold": 0.85,
+          "short_text_glotlid_threshold": 0.4,
+          "short_text_script_threshold": 25,
+          "disable_early_detection_threshold": 8
+        }
+      },
+      "sentiment": {
+        "label": "positive",
+        "confidence": 0.5985983610153198,
+        "model_used": "XLM-RoBERTa",
+        "all_probabilities": [
+          [
+            0.17801660299301147,
+            0.2233850657939911,
+            0.5985983610153198
+          ]
+        ]
+      },
+      "toxicity": {
+        "toxic": 0.0029039792716503143,
+        "severe_toxic": 5.678171510226093e-05,
+        "obscene": 0.0006189941777847707,
+        "threat": 6.61650556139648e-05,
+        "insult": 0.00044816499575972557,
+        "identity_hate": 0.00012259565119165927
+      },
+      "translations": {
+        "english": "NPTEL course ka final submission today tha 😅 coding assignment very much my gaya, final marks 87/100 🎉 @NMITD ka experience best hai!",
+        "conversion_applied": true,
+        "converted_to_devanagari": "NPTEL course ka final submission आज tha 😅 coding assignment खूप माझा gaya, final marks 87/100 🎉 @NMITD ka experience best hai!"
+      },
+      "statistics": {
+        "text_length": 128,
+        "word_count": 22,
+        "language_detection": {
+          "language": "mar",
+          "original_language": "mar",
+          "confidence": 0.4590909090909091,
+          "method": "romanized_indic_latin",
+          "text_length": 128,
+          "is_short_text": false,
+          "is_very_short_text": false,
+          "composition": {
+            "indic_percentage": 0.0,
+            "latin_percentage": 75.0,
+            "numeric_percentage": 3.90625,
+            "punctuation_percentage": 1.5625,
+            "other_percentage": 19.53125,
+            "script_counts": {},
+            "is_code_mixed": false,
+            "dominant_script": "latin"
+          },
+          "script_analysis": {
+            "detected_script": null,
+            "script_counts": {}
+          },
+          "glotlid_analysis": {
+            "detected_language": "eng",
+            "confidence": 0.3735891282558441,
+            "is_code_mixed": true
+          },
+          "language_info": {
+            "is_indian_language": true,
+            "is_international_language": false,
+            "is_code_mixed": false,
+            "is_romanized": true,
+            "language_name": "Marathi"
+          },
+          "detection_config": {
+            "min_text_length": 3,
+            "glotlid_threshold": 0.5,
+            "high_confidence_threshold": 0.8,
+            "medium_confidence_threshold": 0.6,
+            "low_confidence_threshold": 0.4,
+            "glotlid_override_threshold": 0.9,
+            "romanized_early_detection_threshold": 0.75,
+            "strong_script_threshold": 50,
+            "code_mixed_min_threshold": 20,
+            "code_mixed_max_threshold": 50,
+            "minor_script_min_threshold": 5,
+            "minor_script_max_threshold": 20,
+            "latin_dominance_threshold": 70,
+            "short_text_threshold": 10,
+            "use_indic_nlp_enhanced": true,
+            "code_mixed_min_devanagari_chars": 3,
+            "code_mixed_min_latin_chars": 5,
+            "code_mixed_token_threshold": 0.15,
+            "code_mixed_min_markers": 2,
+            "very_short_text_threshold": 5,
+            "short_text_romanized_threshold": 0.85,
+            "short_text_glotlid_threshold": 0.4,
+            "short_text_script_threshold": 25,
+            "disable_early_detection_threshold": 8
+          }
+        },
+        "preprocessing_preview": {
+          "original": "NPTEL course ka final submission aaj tha 😅 coding assignment khup maza gaya, final marks 87/100 🎉 @N...",
+          "cleaned": "nptel course ka final submission aaj tha grinning_face_with_sweat coding assignment khup maza gaya, ..."
+        }
+      }
+    },
+    "metadata": {
+      "text_length": 128,
+      "word_count": 22,
+      "is_code_mixed": false,
+      "is_romanized": true,
+      "dominant_script": "latin"
+    }
+  },
+  {
+    "failure_id": "fail_20251103_232138_35d693a1",
+    "timestamp": "2025-11-03T23:21:38.456042",
+    "detection_summary": {
+      "text": "You know the MCA college Navinchandra Mehta college?  वहा का मैनेजमेंट थर्ड क्लास है 😡",
+      "detected_language": "hi_mixed",
+      "confidence": 0.4906976744186047,
+      "method": "code_mixed_analysis",
+      "expected_language": null,
+      "failure_reasons": [
+        "low_confidence_0.49"
+      ]
+    },
+    "full_analysis": {
+      "original_text": "You know the MCA college Navinchandra Mehta college?  वहा का मैनेजमेंट थर्ड क्लास है 😡",
+      "cleaned_text": "you know the mca college navinchandra mehta college? वहा का मैनेजमेंट थर्ड क्लास है enraged_face",
+      "preprocessing": {
+        "normalization_level": null,
+        "preserve_emojis": true,
+        "punctuation_mode": "preserve"
+      },
+      "profanity": {
+        "has_profanity": false,
+        "severity_score": 0,
+        "max_severity": null,
+        "detected_words": [],
+        "word_count": 0,
+        "severity_breakdown": {
+          "extreme": [],
+          "moderate": [],
+          "mild": []
+        }
+      },
+      "domains": {
+        "financial": false,
+        "temporal": false,
+        "technical": false
+      },
+      "language": {
+        "language": "hi_mixed",
+        "confidence": 0.4906976744186047,
+        "method": "code_mixed_analysis",
+        "text_length": 86,
+        "is_short_text": false,
+        "is_very_short_text": false,
+        "composition": {
+          "indic_percentage": 29.069767441860467,
+          "latin_percentage": 51.162790697674424,
+          "numeric_percentage": 0.0,
+          "punctuation_percentage": 1.1627906976744187,
+          "other_percentage": 18.6046511627907,
+          "script_counts": {
+            "hi": 25,
+            "mr": 25,
+            "kK": 25,
+            "sa": 25,
+            "ne": 25,
+            "sd": 25
+          },
+          "is_code_mixed": true,
+          "dominant_script": "latin"
+        },
+        "script_analysis": {
+          "detected_script": "hi",
+          "script_counts": {
+            "hi": 25,
+            "mr": 25,
+            "kK": 25,
+            "sa": 25,
+            "ne": 25,
+            "sd": 25
+          }
+        },
+        "glotlid_analysis": {
+          "detected_language": "eng",
+          "confidence": 0.4219217598438263,
+          "is_code_mixed": true
+        },
+        "romanized_analysis": {
+          "detected_language": null,
+          "confidence": 0.0
+        },
+        "language_info": {
+          "is_indian_language": true,
+          "is_international_language": false,
+          "is_code_mixed": true,
+          "is_romanized": false,
+          "language_name": "Hindi"
+        },
+        "detection_config": {
+          "min_text_length": 3,
+          "glotlid_threshold": 0.5,
+          "high_confidence_threshold": 0.8,
+          "medium_confidence_threshold": 0.6,
+          "low_confidence_threshold": 0.4,
+          "glotlid_override_threshold": 0.9,
+          "romanized_early_detection_threshold": 0.75,
+          "strong_script_threshold": 50,
+          "code_mixed_min_threshold": 20,
+          "code_mixed_max_threshold": 50,
+          "minor_script_min_threshold": 5,
+          "minor_script_max_threshold": 20,
+          "latin_dominance_threshold": 70,
+          "short_text_threshold": 10,
+          "use_indic_nlp_enhanced": true,
+          "code_mixed_min_devanagari_chars": 3,
+          "code_mixed_min_latin_chars": 5,
+          "code_mixed_token_threshold": 0.15,
+          "code_mixed_min_markers": 2,
+          "soft_code_mixing_threshold": 0.05,
+          "aggressive_code_mixing_threshold": 0.15,
+          "adaptive_threshold_short_text": 0.12,
+          "adaptive_threshold_medium_text": 0.1,
+          "adaptive_threshold_long_text": 0.08,
+          "very_short_text_threshold": 5,
+          "short_text_romanized_threshold": 0.85,
+          "short_text_glotlid_threshold": 0.4,
+          "short_text_script_threshold": 25,
+          "disable_early_detection_threshold": 8,
+          "ensemble_enabled": true,
+          "glotlid_high_confidence_threshold": 0.9,
+          "ensemble_weight_glotlid_default": 0.6,
+          "ensemble_weight_romanized_default": 0.4,
+          "ensemble_min_combined_confidence": 0.65,
+          "ensemble_conf_gap_threshold": 0.3,
+          "ensemble_latin_threshold_high": 80,
+          "ensemble_latin_threshold_medium": 70,
+          "hybrid_conversion_enabled": true,
+          "preserve_english_tokens": true,
+          "preserve_capitalized_words": true,
+          "preserve_all_caps": true,
+          "english_word_min_length": 2,
+          "min_conversion_confidence": 0.3,
+          "prefer_dictionary_over_itrans": true
+        },
+        "original_language": "hi_mixed",
+        "ensemble_analysis": {
+          "final_language": "eng",
+          "final_confidence": 0.4219217598438263,
+          "detection_method": "glotlid_only",
+          "ensemble_scores": {
+            "glotlid_score": 0.4219217598438263,
+            "romanized_score": 0.0,
+            "latin_percentage": 74.57627118644068,
+            "combined_score": 0.4219217598438263
+          },
+          "glotlid_prediction": {
+            "language": "eng",
+            "confidence": 0.4219217598438263,
+            "all_predictions": [
+              [
+                "eng",
+                "Latn",
+                0.4219217598438263
+              ],
+              [
+                "hin",
+                "Deva",
+                0.34482046961784363
+              ],
+              [
+                "tel",
+                "Latn",
+                0.019480137154459953
+              ]
+            ]
+          },
+          "romanized_prediction": {
+            "language": null,
+            "confidence": 0.0
+          },
+          "decision_explanation": "No romanized detection available. Using GLotLID eng (0.422)",
+          "is_code_mixed": true
+        }
+      },
+      "sentiment": {
+        "label": "negative",
+        "confidence": 0.9412067532539368,
+        "model_used": "IndicBERT-v2",
+        "all_probabilities": [
+          [
+            0.9412067532539368,
+            0.05879319831728935
+          ]
+        ]
+      },
+      "toxicity": {
+        "toxic": 0.0007287251064553857,
+        "severe_toxic": 8.223419717978686e-05,
+        "obscene": 0.00030013496871106327,
+        "threat": 6.874431710457429e-05,
+        "insult": 0.0002436420472804457,
+        "identity_hate": 0.00011451122554717585
+      },
+      "translations": {
+        "english": "You know the MCA college Navinchandra Mehta college?The management there is third class."
+      },
+      "statistics": {
+        "text_length": 86,
+        "word_count": 15,
+        "language_detection": {
+          "language": "hi_mixed",
+          "confidence": 0.4906976744186047,
+          "method": "code_mixed_analysis",
+          "text_length": 86,
+          "is_short_text": false,
+          "is_very_short_text": false,
+          "composition": {
+            "indic_percentage": 29.069767441860467,
+            "latin_percentage": 51.162790697674424,
+            "numeric_percentage": 0.0,
+            "punctuation_percentage": 1.1627906976744187,
+            "other_percentage": 18.6046511627907,
+            "script_counts": {
+              "hi": 25,
+              "mr": 25,
+              "kK": 25,
+              "sa": 25,
+              "ne": 25,
+              "sd": 25
+            },
+            "is_code_mixed": true,
+            "dominant_script": "latin"
+          },
+          "script_analysis": {
+            "detected_script": "hi",
+            "script_counts": {
+              "hi": 25,
+              "mr": 25,
+              "kK": 25,
+              "sa": 25,
+              "ne": 25,
+              "sd": 25
+            }
+          },
+          "glotlid_analysis": {
+            "detected_language": "eng",
+            "confidence": 0.4219217598438263,
+            "is_code_mixed": true
+          },
+          "romanized_analysis": {
+            "detected_language": null,
+            "confidence": 0.0
+          },
+          "language_info": {
+            "is_indian_language": true,
+            "is_international_language": false,
+            "is_code_mixed": true,
+            "is_romanized": false,
+            "language_name": "Hindi"
+          },
+          "detection_config": {
+            "min_text_length": 3,
+            "glotlid_threshold": 0.5,
+            "high_confidence_threshold": 0.8,
+            "medium_confidence_threshold": 0.6,
+            "low_confidence_threshold": 0.4,
+            "glotlid_override_threshold": 0.9,
+            "romanized_early_detection_threshold": 0.75,
+            "strong_script_threshold": 50,
+            "code_mixed_min_threshold": 20,
+            "code_mixed_max_threshold": 50,
+            "minor_script_min_threshold": 5,
+            "minor_script_max_threshold": 20,
+            "latin_dominance_threshold": 70,
+            "short_text_threshold": 10,
+            "use_indic_nlp_enhanced": true,
+            "code_mixed_min_devanagari_chars": 3,
+            "code_mixed_min_latin_chars": 5,
+            "code_mixed_token_threshold": 0.15,
+            "code_mixed_min_markers": 2,
+            "soft_code_mixing_threshold": 0.05,
+            "aggressive_code_mixing_threshold": 0.15,
+            "adaptive_threshold_short_text": 0.12,
+            "adaptive_threshold_medium_text": 0.1,
+            "adaptive_threshold_long_text": 0.08,
+            "very_short_text_threshold": 5,
+            "short_text_romanized_threshold": 0.85,
+            "short_text_glotlid_threshold": 0.4,
+            "short_text_script_threshold": 25,
+            "disable_early_detection_threshold": 8,
+            "ensemble_enabled": true,
+            "glotlid_high_confidence_threshold": 0.9,
+            "ensemble_weight_glotlid_default": 0.6,
+            "ensemble_weight_romanized_default": 0.4,
+            "ensemble_min_combined_confidence": 0.65,
+            "ensemble_conf_gap_threshold": 0.3,
+            "ensemble_latin_threshold_high": 80,
+            "ensemble_latin_threshold_medium": 70,
+            "hybrid_conversion_enabled": true,
+            "preserve_english_tokens": true,
+            "preserve_capitalized_words": true,
+            "preserve_all_caps": true,
+            "english_word_min_length": 2,
+            "min_conversion_confidence": 0.3,
+            "prefer_dictionary_over_itrans": true
+          },
+          "original_language": "hi_mixed",
+          "ensemble_analysis": {
+            "final_language": "eng",
+            "final_confidence": 0.4219217598438263,
+            "detection_method": "glotlid_only",
+            "ensemble_scores": {
+              "glotlid_score": 0.4219217598438263,
+              "romanized_score": 0.0,
+              "latin_percentage": 74.57627118644068,
+              "combined_score": 0.4219217598438263
+            },
+            "glotlid_prediction": {
+              "language": "eng",
+              "confidence": 0.4219217598438263,
+              "all_predictions": [
+                [
+                  "eng",
+                  "Latn",
+                  0.4219217598438263
+                ],
+                [
+                  "hin",
+                  "Deva",
+                  0.34482046961784363
+                ],
+                [
+                  "tel",
+                  "Latn",
+                  0.019480137154459953
+                ]
+              ]
+            },
+            "romanized_prediction": {
+              "language": null,
+              "confidence": 0.0
+            },
+            "decision_explanation": "No romanized detection available. Using GLotLID eng (0.422)",
+            "is_code_mixed": true
+          }
+        },
+        "preprocessing_preview": {
+          "original": "You know the MCA college Navinchandra Mehta college?  वहा का मैनेजमेंट थर्ड क्लास है 😡",
+          "cleaned": "you know the mca college navinchandra mehta college? वहा का मैनेजमेंट थर्ड क्लास है enraged_face"
+        }
+      }
+    },
+    "metadata": {
+      "text_length": 86,
+      "word_count": 15,
+      "is_code_mixed": true,
+      "is_romanized": false,
+      "dominant_script": "latin"
+    }
+  }
+]

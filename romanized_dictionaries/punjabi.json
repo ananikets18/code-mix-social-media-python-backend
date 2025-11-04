@@ -1,0 +1,125 @@
+{
+  "language": "Punjabi",
+  "script": "Gurmukhi",
+  "iso_code": "pan",
+  "version": "1.0",
+  "word_count": 80,
+  "categories": {
+    "time": {
+      "aaj": "ਅੱਜ",
+      "kal": "ਕੱਲ",
+      "hun": "ਹੁਣ",
+      "baad": "ਬਾਅਦ",
+      "pehle": "ਪਹਿਲੇ",
+      "savere": "ਸਵੇਰੇ",
+      "shaam": "ਸ਼ਾਮ",
+      "raat": "ਰਾਤ"
+    },
+    "pronouns": {
+      "main": "ਮੈਂ",
+      "mai": "ਮੈਂ",
+      "tu": "ਤੂੰ",
+      "tusi": "ਤੁਸੀਂ",
+      "oh": "ਉਹ",
+      "assi": "ਅਸੀਂ",
+      "mera": "ਮੇਰਾ",
+      "meri": "ਮੇਰੀ",
+      "tera": "ਤੇਰਾ",
+      "teri": "ਤੇਰੀ"
+    },
+    "verbs": {
+      "hai": "ਹੈ",
+      "haige": "ਹਾਇਗੇ",
+      "si": "ਸੀ",
+      "hove": "ਹੋਵੇ",
+      "kar": "ਕਰ",
+      "karo": "ਕਰੋ",
+      "karna": "ਕਰਨਾ",
+      "ja": "ਜਾ",
+      "jaa": "ਜਾ",
+      "jao": "ਜਾਓ",
+      "aa": "ਆ",
+      "aao": "ਆਓ",
+      "de": "ਦੇ",
+      "le": "ਲੈ",
+      "bol": "ਬੋਲ",
+      "bolo": "ਬੋਲੋ",
+      "dekh": "ਦੇਖ",
+      "sun": "ਸੁਣ",
+      "kha": "ਖਾ",
+      "pi": "ਪੀ"
+    },
+    "adjectives": {
+      "bahut": "ਬਹੁਤ",
+      "boht": "ਬਹੁਤ",
+      "khush": "ਖੁਸ਼",
+      "dukhi": "ਦੁਖੀ",
+      "changa": "ਚੰਗਾ",
+      "changi": "ਚੰਗੀ",
+      "mast": "ਮਸਤ",
+      "sohna": "ਸੋਹਣਾ",
+      "sohni": "ਸੋਹਣੀ",
+      "vadda": "ਵੱਡਾ",
+      "vaddi": "ਵੱਡੀ",
+      "chota": "ਛੋਟਾ",
+      "choti": "ਛੋਟੀ",
+      "nava": "ਨਵਾਂ",
+      "navi": "ਨਵੀਂ",
+      "purana": "ਪੁਰਾਣਾ"
+    },
+    "question_words": {
+      "ki": "ਕੀ",
+      "kive": "ਕਿਵੇਂ",
+      "kithe": "ਕਿੱਥੇ",
+      "kado": "ਕਦੋਂ",
+      "kyu": "ਕਿਉਂ",
+      "kinna": "ਕਿੰਨਾ",
+      "kaun": "ਕੌਣ"
+    },
+    "negation": {
+      "nahi": "ਨਹੀਂ",
+      "naa": "ਨਾ",
+      "na": "ਨਾ"
+    },
+    "affirmation": {
+      "haan": "ਹਾਂ",
+      "ha": "ਹਾਂ",
+      "theek": "ਠੀਕ",
+      "zaroor": "ਜ਼ਰੂਰ"
+    },
+    "family": {
+      "maa": "ਮਾਂ",
+      "bapu": "ਬਾਪੂ",
+      "papa": "ਪਾਪਾ",
+      "veer": "ਵੀਰ",
+      "bhen": "ਭੈਣ",
+      "puttar": "ਪੁੱਤਰ",
+      "dhee": "ਧੀ"
+    },
+    "common_nouns": {
+      "ghar": "ਘਰ",
+      "kaam": "ਕੰਮ",
+      "lok": "ਲੋਕ",
+      "yaar": "ਯਾਰ",
+      "dost": "ਦੋਸਤ",
+      "gal": "ਗੱਲ",
+      "samaa": "ਸਮਾਂ",
+      "paise": "ਪੈਸੇ",
+      "shahar": "ਸ਼ਹਿਰ",
+      "pind": "ਪਿੰਡ",
+      "desh": "ਦੇਸ਼"
+    },
+    "borrowed_words": {
+      "movie": "ਮੂਵੀ",
+      "phone": "ਫੋਨ",
+      "mobile": "ਮੋਬਾਈਲ",
+      "office": "ਆਫਿਸ",
+      "school": "ਸਕੂਲ",
+      "college": "ਕਾਲਜ",
+      "hospital": "ਹਸਪਤਾਲ",
+      "traffic": "ਟ੍ਰੈਫਿਕ",
+      "bus": "ਬੱਸ",
+      "train": "ਰੇਲਗੱਡੀ"
+    }
+  }
+}

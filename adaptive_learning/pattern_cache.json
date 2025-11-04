@@ -1,0 +1,1758 @@
+{
+  "short_4_indic_17bd1b35": {
+    "signature": "short_4_indic_17bd1b35",
+    "detection_result": {
+      "language": "hin",
+      "confidence": 1.0000079870224,
+      "method": "glotlid_high_confidence",
+      "text_length": 16,
+      "is_short_text": false,
+      "composition": {
+        "indic_percentage": 487.5,
+        "latin_percentage": 0.0,
+        "numeric_percentage": 0.0,
+        "punctuation_percentage": 0.0,
+        "other_percentage": -387.5,
+        "script_counts": {
+          "hi": 13,
+          "mr": 13,
+          "kK": 13,
+          "sa": 13,
+          "ne": 13,
+          "sd": 13
+        },
+        "is_code_mixed": false,
+        "dominant_script": "indic"
+      },
+      "script_analysis": {
+        "detected_script": "hi",
+        "script_counts": {
+          "hi": 13,
+          "mr": 13,
+          "kK": 13,
+          "sa": 13,
+          "ne": 13,
+          "sd": 13
+        }
+      },
+      "glotlid_analysis": {
+        "detected_language": "hin",
+        "confidence": 1.0000079870224,
+        "is_code_mixed": false
+      },
+      "language_info": {
+        "is_indian_language": true,
+        "is_international_language": false,
+        "is_code_mixed": false,
+        "is_romanized": false,
+        "language_name": "Hindi"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10
+      }
+    },
+    "use_count": 2,
+    "confidences": [
+      1.0000079870224,
+      1.0000079870224
+    ],
+    "avg_confidence": 1.0000079870224,
+    "first_seen": "2025-11-03T10:08:55.381183",
+    "last_used": "2025-11-03T10:21:42.762315",
+    "example_text": "यह बहुत अच्छा है"
+  },
+  "short_4_latin_6e5a7e2a": {
+    "signature": "short_4_latin_6e5a7e2a",
+    "detection_result": {
+      "language": "eng",
+      "confidence": 0.9987634420394897,
+      "method": "glotlid_high_confidence",
+      "text_length": 17,
+      "is_short_text": false,
+      "composition": {
+        "indic_percentage": 0.0,
+        "latin_percentage": 82.35294117647058,
+        "numeric_percentage": 0.0,
+        "punctuation_percentage": 0.0,
+        "other_percentage": 17.647058823529413,
+        "script_counts": {},
+        "is_code_mixed": false,
+        "dominant_script": "latin"
+      },
+      "script_analysis": {
+        "detected_script": null,
+        "script_counts": {}
+      },
+      "glotlid_analysis": {
+        "detected_language": "eng",
+        "confidence": 0.9987634420394897,
+        "is_code_mixed": false
+      },
+      "language_info": {
+        "is_indian_language": false,
+        "is_international_language": true,
+        "is_code_mixed": false,
+        "is_romanized": false,
+        "language_name": "English"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10
+      }
+    },
+    "use_count": 2,
+    "confidences": [
+      0.9987634420394897,
+      0.9987634420394897
+    ],
+    "avg_confidence": 0.9987634420394897,
+    "first_seen": "2025-11-03T10:09:02.740783",
+    "last_used": "2025-11-03T10:21:48.601108",
+    "example_text": "This is very good"
+  },
+  "short_4_indic_6b76051a": {
+    "signature": "short_4_indic_6b76051a",
+    "detection_result": {
+      "language": "mar",
+      "confidence": 1.0000100135803223,
+      "method": "glotlid_high_confidence",
+      "text_length": 17,
+      "is_short_text": false,
+      "composition": {
+        "indic_percentage": 494.11764705882354,
+        "latin_percentage": 0.0,
+        "numeric_percentage": 0.0,
+        "punctuation_percentage": 0.0,
+        "other_percentage": -394.11764705882354,
+        "script_counts": {
+          "hi": 14,
+          "mr": 14,
+          "kK": 14,
+          "sa": 14,
+          "ne": 14,
+          "sd": 14
+        },
+        "is_code_mixed": false,
+        "dominant_script": "indic"
+      },
+      "script_analysis": {
+        "detected_script": "hi",
+        "script_counts": {
+          "hi": 14,
+          "mr": 14,
+          "kK": 14,
+          "sa": 14,
+          "ne": 14,
+          "sd": 14
+        }
+      },
+      "glotlid_analysis": {
+        "detected_language": "mar",
+        "confidence": 1.0000100135803223,
+        "is_code_mixed": false
+      },
+      "language_info": {
+        "is_indian_language": true,
+        "is_international_language": false,
+        "is_code_mixed": false,
+        "is_romanized": false,
+        "language_name": "Marathi"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10
+      }
+    },
+    "use_count": 2,
+    "confidences": [
+      1.0000100135803223,
+      1.0000100135803223
+    ],
+    "avg_confidence": 1.0000100135803223,
+    "first_seen": "2025-11-03T10:09:05.187031",
+    "last_used": "2025-11-03T10:21:50.060263",
+    "example_text": "हे खूप चांगले आहे"
+  },
+  "medium_3_latin_c18d012a": {
+    "signature": "medium_3_latin_c18d012a",
+    "detection_result": {
+      "language": "fra",
+      "confidence": 0.9462123513221741,
+      "method": "glotlid",
+      "text_length": 28,
+      "is_short_text": false,
+      "composition": {
+        "indic_percentage": 0.0,
+        "latin_percentage": 82.14285714285714,
+        "numeric_percentage": 0.0,
+        "punctuation_percentage": 7.142857142857142,
+        "other_percentage": 10.714285714285714,
+        "script_counts": {},
+        "is_code_mixed": false,
+        "dominant_script": "latin"
+      },
+      "script_analysis": {
+        "detected_script": null,
+        "script_counts": {}
+      },
+      "glotlid_analysis": {
+        "detected_language": "fra",
+        "confidence": 0.9462123513221741,
+        "is_code_mixed": false
+      },
+      "language_info": {
+        "is_indian_language": false,
+        "is_international_language": true,
+        "is_code_mixed": false,
+        "is_romanized": false,
+        "language_name": "French"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10
+      }
+    },
+    "use_count": 2,
+    "confidences": [
+      0.9462123513221741,
+      0.9462123513221741
+    ],
+    "avg_confidence": 0.9462123513221741,
+    "first_seen": "2025-11-03T10:09:06.939822",
+    "last_used": "2025-11-03T10:21:51.566691",
+    "example_text": "Bonjour, comment allez-vous?"
+  },
+  "short_3_latin_ca6ecba5": {
+    "signature": "short_3_latin_ca6ecba5",
+    "detection_result": {
+      "language": "spa",
+      "confidence": 0.9999942779541016,
+      "method": "glotlid_high_confidence",
+      "text_length": 18,
+      "is_short_text": false,
+      "composition": {
+        "indic_percentage": 0.0,
+        "latin_percentage": 61.111111111111114,
+        "numeric_percentage": 0.0,
+        "punctuation_percentage": 11.11111111111111,
+        "other_percentage": 27.77777777777778,
+        "script_counts": {},
+        "is_code_mixed": false,
+        "dominant_script": "latin"
+      },
+      "script_analysis": {
+        "detected_script": null,
+        "script_counts": {}
+      },
+      "glotlid_analysis": {
+        "detected_language": "spa",
+        "confidence": 0.9999942779541016,
+        "is_code_mixed": false
+      },
+      "language_info": {
+        "is_indian_language": false,
+        "is_international_language": true,
+        "is_code_mixed": false,
+        "is_romanized": false,
+        "language_name": "Spanish"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10
+      }
+    },
+    "use_count": 2,
+    "confidences": [
+      0.9999942779541016,
+      0.9999942779541016
+    ],
+    "avg_confidence": 0.9999942779541016,
+    "first_seen": "2025-11-03T10:09:07.555619",
+    "last_used": "2025-11-03T10:21:54.017937",
+    "example_text": "Hola, ¿cómo estás?"
+  },
+  "medium_6_latin_3d9dec29": {
+    "signature": "medium_6_latin_3d9dec29",
+    "detection_result": {
+      "language": "deu",
+      "confidence": 0.9999978542327881,
+      "method": "glotlid_high_confidence",
+      "text_length": 29,
+      "is_short_text": false,
+      "composition": {
+        "indic_percentage": 0.0,
+        "latin_percentage": 75.86206896551724,
+        "numeric_percentage": 0.0,
+        "punctuation_percentage": 6.896551724137931,
+        "other_percentage": 17.24137931034483,
+        "script_counts": {},
+        "is_code_mixed": false,
+        "dominant_script": "latin"
+      },
+      "script_analysis": {
+        "detected_script": null,
+        "script_counts": {}
+      },
+      "glotlid_analysis": {
+        "detected_language": "deu",
+        "confidence": 0.9999978542327881,
+        "is_code_mixed": false
+      },
+      "language_info": {
+        "is_indian_language": false,
+        "is_international_language": true,
+        "is_code_mixed": false,
+        "is_romanized": false,
+        "language_name": "German"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10
+      }
+    },
+    "use_count": 2,
+    "confidences": [
+      0.9999978542327881,
+      0.9999978542327881
+    ],
+    "avg_confidence": 0.9999978542327881,
+    "first_seen": "2025-11-03T10:09:08.269315",
+    "last_used": "2025-11-03T10:21:55.575597",
+    "example_text": "Guten Tag, wie geht es Ihnen?"
+  },
+  "medium_4_latin_9324b610": {
+    "signature": "medium_4_latin_9324b610",
+    "detection_result": {
+      "language": "por",
+      "confidence": 0.9999333620071411,
+      "method": "glotlid_high_confidence",
+      "text_length": 20,
+      "is_short_text": false,
+      "composition": {
+        "indic_percentage": 0.0,
+        "latin_percentage": 60.0,
+        "numeric_percentage": 0.0,
+        "punctuation_percentage": 10.0,
+        "other_percentage": 30.0,
+        "script_counts": {},
+        "is_code_mixed": false,
+        "dominant_script": "latin"
+      },
+      "script_analysis": {
+        "detected_script": null,
+        "script_counts": {}
+      },
+      "glotlid_analysis": {
+        "detected_language": "por",
+        "confidence": 0.9999333620071411,
+        "is_code_mixed": false
+      },
+      "language_info": {
+        "is_indian_language": false,
+        "is_international_language": true,
+        "is_code_mixed": false,
+        "is_romanized": false,
+        "language_name": "Portuguese"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10
+      }
+    },
+    "use_count": 2,
+    "confidences": [
+      0.9999333620071411,
+      0.9999333620071411
+    ],
+    "avg_confidence": 0.9999333620071411,
+    "first_seen": "2025-11-03T10:09:09.192652",
+    "last_used": "2025-11-03T10:21:56.406068",
+    "example_text": "Olá, como você está?"
+  },
+  "short_3_other_b30f20ab": {
+    "signature": "short_3_other_b30f20ab",
+    "detection_result": {
+      "language": "rus",
+      "confidence": 0.9968960881233215,
+      "method": "glotlid_high_confidence",
+      "text_length": 17,
+      "is_short_text": false,
+      "composition": {
+        "indic_percentage": 0.0,
+        "latin_percentage": 0.0,
+        "numeric_percentage": 0.0,
+        "punctuation_percentage": 11.76470588235294,
+        "other_percentage": 88.23529411764706,
+        "script_counts": {},
+        "is_code_mixed": false,
+        "dominant_script": "other"
+      },
+      "script_analysis": {
+        "detected_script": null,
+        "script_counts": {}
+      },
+      "glotlid_analysis": {
+        "detected_language": "rus",
+        "confidence": 0.9968960881233215,
+        "is_code_mixed": false
+      },
+      "language_info": {
+        "is_indian_language": false,
+        "is_international_language": true,
+        "is_code_mixed": false,
+        "is_romanized": false,
+        "language_name": "Russian"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10
+      }
+    },
+    "use_count": 2,
+    "confidences": [
+      0.9968960881233215,
+      0.9968960881233215
+    ],
+    "avg_confidence": 0.9968960881233215,
+    "first_seen": "2025-11-03T10:09:11.327098",
+    "last_used": "2025-11-03T10:21:57.481129",
+    "example_text": "Привет, как дела?"
+  },
+  "short_1_latin_6e6bc4e4": {
+    "signature": "short_1_latin_6e6bc4e4",
+    "detection_result": {
+      "language": "ita",
+      "confidence": 0.9997098445892334,
+      "method": "glotlid_short_text",
+      "text_length": 4,
+      "is_short_text": true,
+      "composition": {
+        "indic_percentage": 0.0,
+        "latin_percentage": 100.0,
+        "numeric_percentage": 0.0,
+        "punctuation_percentage": 0.0,
+        "other_percentage": 0.0,
+        "script_counts": {},
+        "is_code_mixed": false,
+        "dominant_script": "latin"
+      },
+      "script_analysis": {
+        "detected_script": null,
+        "script_counts": {}
+      },
+      "glotlid_analysis": {
+        "detected_language": "ita",
+        "confidence": 0.9997098445892334,
+        "is_code_mixed": false
+      },
+      "language_info": {
+        "is_indian_language": false,
+        "is_international_language": true,
+        "is_code_mixed": false,
+        "is_romanized": false,
+        "language_name": "Italian"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10
+      }
+    },
+    "use_count": 2,
+    "confidences": [
+      0.9997098445892334,
+      0.9997098445892334
+    ],
+    "avg_confidence": 0.9997098445892334,
+    "first_seen": "2025-11-03T10:09:12.870825",
+    "last_used": "2025-11-03T10:21:58.038191",
+    "example_text": "Ciao"
+  },
+  "medium_8_latin_dbfc59ce": {
+    "signature": "medium_8_latin_dbfc59ce",
+    "detection_result": {
+      "language": "ita",
+      "confidence": 0.9996495246887207,
+      "method": "glotlid_high_confidence",
+      "text_length": 40,
+      "is_short_text": false,
+      "composition": {
+        "indic_percentage": 0.0,
+        "latin_percentage": 75.0,
+        "numeric_percentage": 0.0,
+        "punctuation_percentage": 7.5,
+        "other_percentage": 17.5,
+        "script_counts": {},
+        "is_code_mixed": false,
+        "dominant_script": "latin"
+      },
+      "script_analysis": {
+        "detected_script": null,
+        "script_counts": {}
+      },
+      "glotlid_analysis": {
+        "detected_language": "ita",
+        "confidence": 0.9996495246887207,
+        "is_code_mixed": false
+      },
+      "language_info": {
+        "is_indian_language": false,
+        "is_international_language": true,
+        "is_code_mixed": false,
+        "is_romanized": false,
+        "language_name": "Italian"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10
+      }
+    },
+    "use_count": 2,
+    "confidences": [
+      0.9996495246887207,
+      0.9996495246887207
+    ],
+    "avg_confidence": 0.9996495246887207,
+    "first_seen": "2025-11-03T10:09:13.518655",
+    "last_used": "2025-11-03T10:21:59.646214",
+    "example_text": "Ciao, come stai? Spero che tu stia bene."
+  },
+  "short_1_other_12d4e0a5": {
+    "signature": "short_1_other_12d4e0a5",
+    "detection_result": {
+      "language": "cmn",
+      "confidence": 1.0000041723251343,
+      "method": "glotlid_short_text",
+      "text_length": 7,
+      "is_short_text": true,
+      "composition": {
+        "indic_percentage": 0.0,
+        "latin_percentage": 0.0,
+        "numeric_percentage": 0.0,
+        "punctuation_percentage": 0.0,
+        "other_percentage": 100.0,
+        "script_counts": {},
+        "is_code_mixed": false,
+        "dominant_script": "other"
+      },
+      "script_analysis": {
+        "detected_script": null,
+        "script_counts": {}
+      },
+      "glotlid_analysis": {
+        "detected_language": "cmn",
+        "confidence": 1.0000041723251343,
+        "is_code_mixed": false
+      },
+      "language_info": {
+        "is_indian_language": false,
+        "is_international_language": true,
+        "is_code_mixed": false,
+        "is_romanized": false,
+        "language_name": "Chinese"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10
+      }
+    },
+    "use_count": 2,
+    "confidences": [
+      1.0000041723251343,
+      1.0000041723251343
+    ],
+    "avg_confidence": 1.0000041723251343,
+    "first_seen": "2025-11-03T10:09:14.108269",
+    "last_used": "2025-11-03T10:22:00.315498",
+    "example_text": "你好，你好吗？"
+  },
+  "short_1_other_37e1f8d5": {
+    "signature": "short_1_other_37e1f8d5",
+    "detection_result": {
+      "language": "jpn",
+      "confidence": 1.0000100135803223,
+      "method": "glotlid_high_confidence",
+      "text_length": 12,
+      "is_short_text": false,
+      "composition": {
+        "indic_percentage": 0.0,
+        "latin_percentage": 0.0,
+        "numeric_percentage": 0.0,
+        "punctuation_percentage": 0.0,
+        "other_percentage": 100.0,
+        "script_counts": {},
+        "is_code_mixed": false,
+        "dominant_script": "other"
+      },
+      "script_analysis": {
+        "detected_script": null,
+        "script_counts": {}
+      },
+      "glotlid_analysis": {
+        "detected_language": "jpn",
+        "confidence": 1.0000100135803223,
+        "is_code_mixed": false
+      },
+      "language_info": {
+        "is_indian_language": false,
+        "is_international_language": true,
+        "is_code_mixed": false,
+        "is_romanized": false,
+        "language_name": "Japanese"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10
+      }
+    },
+    "use_count": 2,
+    "confidences": [
+      1.0000100135803223,
+      1.0000100135803223
+    ],
+    "avg_confidence": 1.0000100135803223,
+    "first_seen": "2025-11-03T10:09:15.955828",
+    "last_used": "2025-11-03T10:22:01.394736",
+    "example_text": "こんにちは、元気ですか？"
+  },
+  "short_3_other_e2ddc2a3": {
+    "signature": "short_3_other_e2ddc2a3",
+    "detection_result": {
+      "language": "kor",
+      "confidence": 1.0000100135803223,
+      "method": "glotlid_high_confidence",
+      "text_length": 16,
+      "is_short_text": false,
+      "composition": {
+        "indic_percentage": 0.0,
+        "latin_percentage": 0.0,
+        "numeric_percentage": 0.0,
+        "punctuation_percentage": 12.5,
+        "other_percentage": 87.5,
+        "script_counts": {},
+        "is_code_mixed": false,
+        "dominant_script": "other"
+      },
+      "script_analysis": {
+        "detected_script": null,
+        "script_counts": {}
+      },
+      "glotlid_analysis": {
+        "detected_language": "kor",
+        "confidence": 1.0000100135803223,
+        "is_code_mixed": false
+      },
+      "language_info": {
+        "is_indian_language": false,
+        "is_international_language": true,
+        "is_code_mixed": false,
+        "is_romanized": false,
+        "language_name": "Korean"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10
+      }
+    },
+    "use_count": 2,
+    "confidences": [
+      1.0000100135803223,
+      1.0000100135803223
+    ],
+    "avg_confidence": 1.0000100135803223,
+    "first_seen": "2025-11-03T10:09:17.768959",
+    "last_used": "2025-11-03T10:22:02.134198",
+    "example_text": "안녕하세요, 어떻게 지내세요?"
+  },
+  "short_3_other_0f6fa5ef": {
+    "signature": "short_3_other_0f6fa5ef",
+    "detection_result": {
+      "language": "ajp",
+      "confidence": 0.7519816160202026,
+      "method": "glotlid_medium",
+      "text_length": 16,
+      "is_short_text": false,
+      "composition": {
+        "indic_percentage": 0.0,
+        "latin_percentage": 0.0,
+        "numeric_percentage": 0.0,
+        "punctuation_percentage": 0.0,
+        "other_percentage": 100.0,
+        "script_counts": {},
+        "is_code_mixed": false,
+        "dominant_script": "other"
+      },
+      "script_analysis": {
+        "detected_script": null,
+        "script_counts": {}
+      },
+      "glotlid_analysis": {
+        "detected_language": "ajp",
+        "confidence": 0.7519816160202026,
+        "is_code_mixed": false
+      },
+      "language_info": {
+        "is_indian_language": false,
+        "is_international_language": false,
+        "is_code_mixed": false,
+        "is_romanized": false,
+        "language_name": "Unknown"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10
+      }
+    },
+    "use_count": 2,
+    "confidences": [
+      0.7519816160202026,
+      0.7519816160202026
+    ],
+    "avg_confidence": 0.7519816160202026,
+    "first_seen": "2025-11-03T10:09:20.011854",
+    "last_used": "2025-11-03T10:22:03.049531",
+    "example_text": "مرحبا، كيف حالك؟"
+  },
+  "medium_4_other_1472b6c3": {
+    "signature": "medium_4_other_1472b6c3",
+    "detection_result": {
+      "language": "ell",
+      "confidence": 0.9988691806793213,
+      "method": "glotlid_high_confidence",
+      "text_length": 20,
+      "is_short_text": false,
+      "composition": {
+        "indic_percentage": 0.0,
+        "latin_percentage": 0.0,
+        "numeric_percentage": 0.0,
+        "punctuation_percentage": 10.0,
+        "other_percentage": 90.0,
+        "script_counts": {},
+        "is_code_mixed": false,
+        "dominant_script": "other"
+      },
+      "script_analysis": {
+        "detected_script": null,
+        "script_counts": {}
+      },
+      "glotlid_analysis": {
+        "detected_language": "ell",
+        "confidence": 0.9988691806793213,
+        "is_code_mixed": false
+      },
+      "language_info": {
+        "is_indian_language": false,
+        "is_international_language": true,
+        "is_code_mixed": false,
+        "is_romanized": false,
+        "language_name": "Greek"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10
+      }
+    },
+    "use_count": 2,
+    "confidences": [
+      0.9988691806793213,
+      0.9988691806793213
+    ],
+    "avg_confidence": 0.9988691806793213,
+    "first_seen": "2025-11-03T10:09:21.476743",
+    "last_used": "2025-11-03T10:22:04.472656",
+    "example_text": "Γεια σου, πώς είσαι;"
+  },
+  "medium_5_latin_62557df7": {
+    "signature": "medium_5_latin_62557df7",
+    "detection_result": {
+      "language": "hin",
+      "confidence": 0.85,
+      "method": "romanized_indic_early_detection",
+      "text_length": 24,
+      "is_short_text": false,
+      "composition": {
+        "indic_percentage": 0.0,
+        "latin_percentage": 83.33333333333334,
+        "numeric_percentage": 0.0,
+        "punctuation_percentage": 0.0,
+        "other_percentage": 16.666666666666664,
+        "script_counts": {},
+        "is_code_mixed": false,
+        "dominant_script": "latin"
+      },
+      "script_analysis": {
+        "detected_script": null,
+        "script_counts": {}
+      },
+      "glotlid_analysis": {
+        "detected_language": null,
+        "confidence": 0.0,
+        "is_code_mixed": false,
+        "note": "Skipped GlotLID due to early romanized detection"
+      },
+      "language_info": {
+        "is_indian_language": true,
+        "is_international_language": false,
+        "is_code_mixed": false,
+        "is_romanized": true,
+        "language_name": "Hindi"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10
+      }
+    },
+    "use_count": 2,
+    "confidences": [
+      0.85,
+      0.85
+    ],
+    "avg_confidence": 0.85,
+    "first_seen": "2025-11-03T10:09:22.901902",
+    "last_used": "2025-11-03T10:22:05.195193",
+    "example_text": "Mai bahut khush hoon aaj"
+  },
+  "medium_5_latin_287512e4": {
+    "signature": "medium_5_latin_287512e4",
+    "detection_result": {
+      "language": "mar",
+      "confidence": 0.85,
+      "method": "romanized_indic_early_detection",
+      "text_length": 22,
+      "is_short_text": false,
+      "composition": {
+        "indic_percentage": 0.0,
+        "latin_percentage": 81.81818181818183,
+        "numeric_percentage": 0.0,
+        "punctuation_percentage": 0.0,
+        "other_percentage": 18.181818181818183,
+        "script_counts": {},
+        "is_code_mixed": false,
+        "dominant_script": "latin"
+      },
+      "script_analysis": {
+        "detected_script": null,
+        "script_counts": {}
+      },
+      "glotlid_analysis": {
+        "detected_language": null,
+        "confidence": 0.0,
+        "is_code_mixed": false,
+        "note": "Skipped GlotLID due to early romanized detection"
+      },
+      "language_info": {
+        "is_indian_language": true,
+        "is_international_language": false,
+        "is_code_mixed": false,
+        "is_romanized": true,
+        "language_name": "Marathi"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10
+      }
+    },
+    "use_count": 2,
+    "confidences": [
+      0.85,
+      0.85
+    ],
+    "avg_confidence": 0.85,
+    "first_seen": "2025-11-03T10:09:24.527296",
+    "last_used": "2025-11-03T10:22:06.217906",
+    "example_text": "Mi khup khush aahe aaj"
+  },
+  "medium_4_latin_83dccf36": {
+    "signature": "medium_4_latin_83dccf36",
+    "detection_result": {
+      "language": "mar",
+      "confidence": 0.85,
+      "method": "romanized_indic_early_detection",
+      "text_length": 20,
+      "is_short_text": false,
+      "composition": {
+        "indic_percentage": 0.0,
+        "latin_percentage": 80.0,
+        "numeric_percentage": 0.0,
+        "punctuation_percentage": 5.0,
+        "other_percentage": 15.0,
+        "script_counts": {},
+        "is_code_mixed": false,
+        "dominant_script": "latin"
+      },
+      "script_analysis": {
+        "detected_script": null,
+        "script_counts": {}
+      },
+      "glotlid_analysis": {
+        "detected_language": null,
+        "confidence": 0.0,
+        "is_code_mixed": false,
+        "note": "Skipped GlotLID due to early romanized detection"
+      },
+      "language_info": {
+        "is_indian_language": true,
+        "is_international_language": false,
+        "is_code_mixed": false,
+        "is_romanized": true,
+        "language_name": "Marathi"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10
+      }
+    },
+    "use_count": 2,
+    "confidences": [
+      0.85,
+      0.85
+    ],
+    "avg_confidence": 0.85,
+    "first_seen": "2025-11-03T10:09:25.964159",
+    "last_used": "2025-11-03T10:22:07.642814",
+    "example_text": "Tu kashala sangu me?"
+  },
+  "medium_9_latin_92a8ab0f": {
+    "signature": "medium_9_latin_92a8ab0f",
+    "detection_result": {
+      "language": "hin",
+      "confidence": 0.85,
+      "method": "romanized_indic_early_detection",
+      "text_length": 44,
+      "is_short_text": false,
+      "composition": {
+        "indic_percentage": 0.0,
+        "latin_percentage": 79.54545454545455,
+        "numeric_percentage": 0.0,
+        "punctuation_percentage": 2.272727272727273,
+        "other_percentage": 18.181818181818183,
+        "script_counts": {},
+        "is_code_mixed": false,
+        "dominant_script": "latin"
+      },
+      "script_analysis": {
+        "detected_script": null,
+        "script_counts": {}
+      },
+      "glotlid_analysis": {
+        "detected_language": null,
+        "confidence": 0.0,
+        "is_code_mixed": false,
+        "note": "Skipped GlotLID due to early romanized detection"
+      },
+      "language_info": {
+        "is_indian_language": true,
+        "is_international_language": false,
+        "is_code_mixed": false,
+        "is_romanized": true,
+        "language_name": "Hindi"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10
+      }
+    },
+    "use_count": 2,
+    "confidences": [
+      0.85,
+      0.75
+    ],
+    "avg_confidence": 0.8,
+    "first_seen": "2025-11-03T10:09:29.155791",
+    "last_used": "2025-11-03T10:22:09.036614",
+    "example_text": "Yaar ye movie bahut mast hai! Must watch bro"
+  },
+  "medium_8_latin_e4e52a92": {
+    "signature": "medium_8_latin_e4e52a92",
+    "detection_result": {
+      "language": "mar",
+      "confidence": 0.85,
+      "method": "romanized_indic_early_detection",
+      "text_length": 45,
+      "is_short_text": false,
+      "composition": {
+        "indic_percentage": 0.0,
+        "latin_percentage": 82.22222222222221,
+        "numeric_percentage": 0.0,
+        "punctuation_percentage": 2.2222222222222223,
+        "other_percentage": 15.555555555555555,
+        "script_counts": {},
+        "is_code_mixed": false,
+        "dominant_script": "latin"
+      },
+      "script_analysis": {
+        "detected_script": null,
+        "script_counts": {}
+      },
+      "glotlid_analysis": {
+        "detected_language": null,
+        "confidence": 0.0,
+        "is_code_mixed": false,
+        "note": "Skipped GlotLID due to early romanized detection"
+      },
+      "language_info": {
+        "is_indian_language": true,
+        "is_international_language": false,
+        "is_code_mixed": false,
+        "is_romanized": true,
+        "language_name": "Marathi"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10
+      }
+    },
+    "use_count": 2,
+    "confidences": [
+      0.85,
+      0.82
+    ],
+    "avg_confidence": 0.835,
+    "first_seen": "2025-11-03T10:09:30.579502",
+    "last_used": "2025-11-03T10:22:11.216415",
+    "example_text": "Tu chup bhet, guys lets continue with journey"
+  },
+  "medium_8_latin_2d2cfb07": {
+    "signature": "medium_8_latin_2d2cfb07",
+    "detection_result": {
+      "language": "hin",
+      "confidence": 0.85,
+      "method": "romanized_indic_early_detection",
+      "text_length": 44,
+      "is_short_text": false,
+      "composition": {
+        "indic_percentage": 0.0,
+        "latin_percentage": 81.81818181818183,
+        "numeric_percentage": 0.0,
+        "punctuation_percentage": 2.272727272727273,
+        "other_percentage": 15.909090909090908,
+        "script_counts": {},
+        "is_code_mixed": false,
+        "dominant_script": "latin"
+      },
+      "script_analysis": {
+        "detected_script": null,
+        "script_counts": {}
+      },
+      "glotlid_analysis": {
+        "detected_language": null,
+        "confidence": 0.0,
+        "is_code_mixed": false,
+        "note": "Skipped GlotLID due to early romanized detection"
+      },
+      "language_info": {
+        "is_indian_language": true,
+        "is_international_language": false,
+        "is_code_mixed": false,
+        "is_romanized": true,
+        "language_name": "Hindi"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10
+      }
+    },
+    "use_count": 2,
+    "confidences": [
+      0.85,
+      0.82
+    ],
+    "avg_confidence": 0.835,
+    "first_seen": "2025-11-03T10:09:31.298093",
+    "last_used": "2025-11-03T10:22:12.479832",
+    "example_text": "Mai kal market jaa raha hoon, shopping karne"
+  },
+  "medium_12_latin_1fbb101c": {
+    "signature": "medium_12_latin_1fbb101c",
+    "detection_result": {
+      "language": "hin_eng_mixed",
+      "confidence": 0.8,
+      "method": "code_mixed_romanized",
+      "text_length": 53,
+      "is_short_text": false,
+      "composition": {
+        "indic_percentage": 0.0,
+        "latin_percentage": 75.47169811320755,
+        "numeric_percentage": 0.0,
+        "punctuation_percentage": 1.8867924528301887,
+        "other_percentage": 22.641509433962266,
+        "script_counts": {},
+        "is_code_mixed": false,
+        "dominant_script": "latin"
+      },
+      "script_analysis": {
+        "detected_script": null,
+        "script_counts": {}
+      },
+      "glotlid_analysis": {
+        "detected_language": "hif",
+        "confidence": 0.6548142433166504,
+        "is_code_mixed": false
+      },
+      "language_info": {
+        "is_indian_language": true,
+        "is_international_language": false,
+        "is_code_mixed": true,
+        "is_romanized": true,
+        "language_name": "Hindi-English (Code-Mixed)"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10,
+        "use_indic_nlp_enhanced": true
+      }
+    },
+    "use_count": 2,
+    "confidences": [
+      0.8,
+      0.8
+    ],
+    "avg_confidence": 0.8,
+    "first_seen": "2025-11-03T12:32:48.222769",
+    "last_used": "2025-11-03T14:37:03.973638",
+    "example_text": "Mera dost bahut smart hai yaar! Tu bhi usse mil bro 😊"
+  },
+  "medium_6_latin_1fbb101c": {
+    "signature": "medium_6_latin_1fbb101c",
+    "detection_result": {
+      "language": "urd",
+      "confidence": 0.9689610004425049,
+      "method": "glotlid_high_confidence",
+      "text_length": 30,
+      "is_short_text": false,
+      "composition": {
+        "indic_percentage": 0.0,
+        "latin_percentage": 83.33333333333334,
+        "numeric_percentage": 0.0,
+        "punctuation_percentage": 0.0,
+        "other_percentage": 16.666666666666664,
+        "script_counts": {},
+        "is_code_mixed": false,
+        "dominant_script": "latin"
+      },
+      "script_analysis": {
+        "detected_script": null,
+        "script_counts": {}
+      },
+      "glotlid_analysis": {
+        "detected_language": "urd",
+        "confidence": 0.9689610004425049,
+        "is_code_mixed": false
+      },
+      "language_info": {
+        "is_indian_language": true,
+        "is_international_language": false,
+        "is_code_mixed": true,
+        "is_romanized": true,
+        "language_name": "Urdu"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10,
+        "use_indic_nlp_enhanced": true
+      }
+    },
+    "use_count": 2,
+    "confidences": [
+      0.9689610004425049,
+      0.9689610004425049
+    ],
+    "avg_confidence": 0.9689610004425049,
+    "first_seen": "2025-11-03T13:46:31.131730",
+    "last_used": "2025-11-03T13:48:29.217839",
+    "example_text": "Mera dost bahut smart hai yaar"
+  },
+  "medium_8_latin_4b34ea25": {
+    "signature": "medium_8_latin_4b34ea25",
+    "detection_result": {
+      "language": "hin",
+      "confidence": 0.85,
+      "method": "romanized_indic_early_detection",
+      "text_length": 41,
+      "is_short_text": false,
+      "composition": {
+        "indic_percentage": 0.0,
+        "latin_percentage": 80.48780487804879,
+        "numeric_percentage": 0.0,
+        "punctuation_percentage": 2.4390243902439024,
+        "other_percentage": 17.073170731707318,
+        "script_counts": {},
+        "is_code_mixed": false,
+        "dominant_script": "latin"
+      },
+      "script_analysis": {
+        "detected_script": null,
+        "script_counts": {}
+      },
+      "glotlid_analysis": {
+        "detected_language": null,
+        "confidence": 0.0,
+        "is_code_mixed": false,
+        "note": "Skipped GlotLID due to early romanized detection"
+      },
+      "language_info": {
+        "is_indian_language": true,
+        "is_international_language": false,
+        "is_code_mixed": false,
+        "is_romanized": true,
+        "language_name": "Hindi"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10,
+        "use_indic_nlp_enhanced": true
+      }
+    },
+    "use_count": 2,
+    "confidences": [
+      0.85,
+      0.85
+    ],
+    "avg_confidence": 0.85,
+    "first_seen": "2025-11-03T14:35:48.043913",
+    "last_used": "2025-11-03T14:36:52.374587",
+    "example_text": "Aaj mai bahut khush hoon! This is amazing"
+  },
+  "medium_5_latin_671e4d21": {
+    "signature": "medium_5_latin_671e4d21",
+    "detection_result": {
+      "language": "mar",
+      "confidence": 0.85,
+      "method": "romanized_indic_early_detection",
+      "text_length": 24,
+      "is_short_text": false,
+      "composition": {
+        "indic_percentage": 0.0,
+        "latin_percentage": 79.16666666666666,
+        "numeric_percentage": 0.0,
+        "punctuation_percentage": 4.166666666666666,
+        "other_percentage": 16.666666666666664,
+        "script_counts": {},
+        "is_code_mixed": false,
+        "dominant_script": "latin"
+      },
+      "script_analysis": {
+        "detected_script": null,
+        "script_counts": {}
+      },
+      "glotlid_analysis": {
+        "detected_language": null,
+        "confidence": 0.0,
+        "is_code_mixed": false,
+        "note": "Skipped GlotLID due to early romanized detection"
+      },
+      "language_info": {
+        "is_indian_language": true,
+        "is_international_language": false,
+        "is_code_mixed": false,
+        "is_romanized": true,
+        "language_name": "Marathi"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10,
+        "use_indic_nlp_enhanced": true
+      }
+    },
+    "use_count": 1,
+    "confidences": [
+      0.85
+    ],
+    "avg_confidence": 0.85,
+    "first_seen": "2025-11-03T14:37:35.448793",
+    "last_used": "2025-11-03T14:37:35.448793",
+    "example_text": "Mi aaj khupch khush ahe!"
+  },
+  "medium_5_latin_059defe6": {
+    "signature": "medium_5_latin_059defe6",
+    "detection_result": {
+      "language": "mar",
+      "confidence": 0.85,
+      "method": "romanized_indic_early_detection",
+      "text_length": 22,
+      "is_short_text": false,
+      "composition": {
+        "indic_percentage": 0.0,
+        "latin_percentage": 77.27272727272727,
+        "numeric_percentage": 0.0,
+        "punctuation_percentage": 4.545454545454546,
+        "other_percentage": 18.181818181818183,
+        "script_counts": {},
+        "is_code_mixed": false,
+        "dominant_script": "latin"
+      },
+      "script_analysis": {
+        "detected_script": null,
+        "script_counts": {}
+      },
+      "glotlid_analysis": {
+        "detected_language": null,
+        "confidence": 0.0,
+        "is_code_mixed": false,
+        "note": "Skipped GlotLID due to early romanized detection"
+      },
+      "language_info": {
+        "is_indian_language": true,
+        "is_international_language": false,
+        "is_code_mixed": false,
+        "is_romanized": true,
+        "language_name": "Marathi"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10,
+        "use_indic_nlp_enhanced": true
+      }
+    },
+    "use_count": 4,
+    "confidences": [
+      0.85,
+      0.85,
+      0.85
+    ],
+    "avg_confidence": 0.85,
+    "first_seen": "2025-11-03T14:37:52.452541",
+    "last_used": "2025-11-03T14:55:54.623541",
+    "example_text": "Mi aaj khup khush ahe!"
+  },
+  "medium_11_latin_cacb4885": {
+    "signature": "medium_11_latin_cacb4885",
+    "detection_result": {
+      "language": "hin",
+      "confidence": 0.85,
+      "method": "romanized_indic_early_detection",
+      "text_length": 67,
+      "is_short_text": false,
+      "composition": {
+        "indic_percentage": 0.0,
+        "latin_percentage": 71.64179104477611,
+        "numeric_percentage": 7.462686567164178,
+        "punctuation_percentage": 4.477611940298507,
+        "other_percentage": 16.417910447761194,
+        "script_counts": {},
+        "is_code_mixed": false,
+        "dominant_script": "latin"
+      },
+      "script_analysis": {
+        "detected_script": null,
+        "script_counts": {}
+      },
+      "glotlid_analysis": {
+        "detected_language": null,
+        "confidence": 0.0,
+        "is_code_mixed": false,
+        "note": "Skipped GlotLID due to early romanized detection"
+      },
+      "language_info": {
+        "is_indian_language": true,
+        "is_international_language": false,
+        "is_code_mixed": false,
+        "is_romanized": true,
+        "language_name": "Hindi"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10,
+        "use_indic_nlp_enhanced": true
+      }
+    },
+    "use_count": 1,
+    "confidences": [
+      0.85
+    ],
+    "avg_confidence": 0.85,
+    "first_seen": "2025-11-03T14:50:32.605147",
+    "last_used": "2025-11-03T14:50:32.605147",
+    "example_text": "Bitcoin nay aaj ₹50,000 cross kela. Maza investment double ho gaya!"
+  },
+  "long_22_latin_55ed0730": {
+    "signature": "long_22_latin_55ed0730",
+    "detection_result": {
+      "language": "mar",
+      "confidence": 0.85,
+      "method": "romanized_indic_early_detection",
+      "text_length": 128,
+      "is_short_text": false,
+      "composition": {
+        "indic_percentage": 0.0,
+        "latin_percentage": 75.0,
+        "numeric_percentage": 3.90625,
+        "punctuation_percentage": 1.5625,
+        "other_percentage": 19.53125,
+        "script_counts": {},
+        "is_code_mixed": false,
+        "dominant_script": "latin"
+      },
+      "script_analysis": {
+        "detected_script": null,
+        "script_counts": {}
+      },
+      "glotlid_analysis": {
+        "detected_language": null,
+        "confidence": 0.0,
+        "is_code_mixed": false,
+        "note": "Skipped GlotLID due to early romanized detection"
+      },
+      "language_info": {
+        "is_indian_language": true,
+        "is_international_language": false,
+        "is_code_mixed": false,
+        "is_romanized": true,
+        "language_name": "Marathi"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10,
+        "use_indic_nlp_enhanced": true
+      }
+    },
+    "use_count": 1,
+    "confidences": [
+      0.85
+    ],
+    "avg_confidence": 0.85,
+    "first_seen": "2025-11-03T14:51:19.686535",
+    "last_used": "2025-11-03T14:51:19.686535",
+    "example_text": "NPTEL course ka final submission aaj tha 😅 coding assignment khup maza gaya, final marks 87/100 🎉 @N"
+  },
+  "medium_11_latin_3afcc19f": {
+    "signature": "medium_11_latin_3afcc19f",
+    "detection_result": {
+      "language": "mar",
+      "confidence": 0.85,
+      "method": "romanized_indic_early_detection",
+      "text_length": 65,
+      "is_short_text": false,
+      "composition": {
+        "indic_percentage": 0.0,
+        "latin_percentage": 81.53846153846153,
+        "numeric_percentage": 0.0,
+        "punctuation_percentage": 3.076923076923077,
+        "other_percentage": 15.384615384615385,
+        "script_counts": {},
+        "is_code_mixed": false,
+        "dominant_script": "latin"
+      },
+      "script_analysis": {
+        "detected_script": null,
+        "script_counts": {}
+      },
+      "glotlid_analysis": {
+        "detected_language": null,
+        "confidence": 0.0,
+        "is_code_mixed": false,
+        "note": "Skipped GlotLID due to early romanized detection"
+      },
+      "language_info": {
+        "is_indian_language": true,
+        "is_international_language": false,
+        "is_code_mixed": false,
+        "is_romanized": true,
+        "language_name": "Marathi"
+      },
+      "detection_config": {
+        "min_text_length": 3,
+        "glotlid_threshold": 0.5,
+        "high_confidence_threshold": 0.8,
+        "medium_confidence_threshold": 0.6,
+        "low_confidence_threshold": 0.4,
+        "strong_script_threshold": 50,
+        "code_mixed_min_threshold": 20,
+        "code_mixed_max_threshold": 50,
+        "minor_script_min_threshold": 5,
+        "minor_script_max_threshold": 20,
+        "latin_dominance_threshold": 70,
+        "short_text_threshold": 10,
+        "use_indic_nlp_enhanced": true
+      }
+    },
+    "use_count": 1,
+    "confidences": [
+      0.85
+    ],
+    "avg_confidence": 0.85,
+    "first_seen": "2025-11-03T14:52:35.986814",
+    "last_used": "2025-11-03T14:52:35.986814",
+    "example_text": "Maza nava project kadhe saral ahe! Code likhnyat khup maza yetoy."
+  }
+}

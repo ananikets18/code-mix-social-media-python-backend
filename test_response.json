@@ -1,0 +1,338 @@
+﻿{
+    "original_text":  "You know the MCA college Navinchandra Mehta college?  à¤µà¤¹ à¤ à¤®à¤¨à¤à¤®à¤ à¤¥à¤°à¤¡ à¤à¤²à¤¸ à¤¹",
+    "cleaned_text":  "you know the mca college navinchandra mehta college? à¤µà¤¹ à¤ à¤®à¤¨à¤à¤®à¤ à¤¥à¤°à¤¡ à¤à¤²à¤¸ à¤¹",
+    "preprocessing":  {
+                          "normalization_level":  null,
+                          "preserve_emojis":  true,
+                          "punctuation_mode":  "preserve"
+                      },
+    "profanity":  {
+                      "has_profanity":  false,
+                      "severity_score":  0,
+                      "max_severity":  null,
+                      "detected_words":  [
+
+                                         ],
+                      "word_count":  0,
+                      "severity_breakdown":  {
+                                                 "extreme":  [
+
+                                                             ],
+                                                 "moderate":  [
+
+                                                              ],
+                                                 "mild":  [
+
+                                                          ]
+                                             }
+                  },
+    "domains":  {
+                    "financial":  false,
+                    "temporal":  false,
+                    "technical":  false
+                },
+    "language":  {
+                     "language":  "hi",
+                     "confidence":  0.95,
+                     "method":  "script_analysis",
+                     "text_length":  85,
+                     "is_short_text":  false,
+                     "is_very_short_text":  false,
+                     "composition":  {
+                                         "indic_percentage":  183.52941176470588,
+                                         "latin_percentage":  51.76470588235295,
+                                         "numeric_percentage":  0.0,
+                                         "punctuation_percentage":  1.1764705882352942,
+                                         "other_percentage":  -136.47058823529412,
+                                         "script_counts":  {
+                                                               "hi":  26,
+                                                               "mr":  26,
+                                                               "kK":  26,
+                                                               "sa":  26,
+                                                               "ne":  26,
+                                                               "sd":  26
+                                                           },
+                                         "is_code_mixed":  true,
+                                         "dominant_script":  "indic"
+                                     },
+                     "script_analysis":  {
+                                             "detected_script":  "hi",
+                                             "script_counts":  {
+                                                                   "hi":  26,
+                                                                   "mr":  26,
+                                                                   "kK":  26,
+                                                                   "sa":  26,
+                                                                   "ne":  26,
+                                                                   "sd":  26
+                                                               }
+                                         },
+                     "glotlid_analysis":  {
+                                              "detected_language":  "eng",
+                                              "confidence":  0.37874487042427063,
+                                              "is_code_mixed":  true
+                                          },
+                     "romanized_analysis":  {
+                                                "detected_language":  null,
+                                                "confidence":  0.0
+                                            },
+                     "language_info":  {
+                                           "is_indian_language":  true,
+                                           "is_international_language":  false,
+                                           "is_code_mixed":  false,
+                                           "is_romanized":  false,
+                                           "language_name":  "Hindi"
+                                       },
+                     "detection_config":  {
+                                              "min_text_length":  3,
+                                              "glotlid_threshold":  0.5,
+                                              "high_confidence_threshold":  0.8,
+                                              "medium_confidence_threshold":  0.6,
+                                              "low_confidence_threshold":  0.4,
+                                              "glotlid_override_threshold":  0.9,
+                                              "romanized_early_detection_threshold":  0.75,
+                                              "strong_script_threshold":  50,
+                                              "code_mixed_min_threshold":  20,
+                                              "code_mixed_max_threshold":  50,
+                                              "minor_script_min_threshold":  5,
+                                              "minor_script_max_threshold":  20,
+                                              "latin_dominance_threshold":  70,
+                                              "short_text_threshold":  10,
+                                              "use_indic_nlp_enhanced":  true,
+                                              "code_mixed_min_devanagari_chars":  3,
+                                              "code_mixed_min_latin_chars":  5,
+                                              "code_mixed_token_threshold":  0.15,
+                                              "code_mixed_min_markers":  2,
+                                              "soft_code_mixing_threshold":  0.05,
+                                              "aggressive_code_mixing_threshold":  0.15,
+                                              "adaptive_threshold_short_text":  0.12,
+                                              "adaptive_threshold_medium_text":  0.1,
+                                              "adaptive_threshold_long_text":  0.08,
+                                              "very_short_text_threshold":  5,
+                                              "short_text_romanized_threshold":  0.85,
+                                              "short_text_glotlid_threshold":  0.4,
+                                              "short_text_script_threshold":  25,
+                                              "disable_early_detection_threshold":  8,
+                                              "ensemble_enabled":  true,
+                                              "glotlid_high_confidence_threshold":  0.9,
+                                              "ensemble_weight_glotlid_default":  0.6,
+                                              "ensemble_weight_romanized_default":  0.4,
+                                              "ensemble_min_combined_confidence":  0.65,
+                                              "ensemble_conf_gap_threshold":  0.3,
+                                              "ensemble_latin_threshold_high":  80,
+                                              "ensemble_latin_threshold_medium":  70,
+                                              "hybrid_conversion_enabled":  true,
+                                              "preserve_english_tokens":  true,
+                                              "preserve_capitalized_words":  true,
+                                              "preserve_all_caps":  true,
+                                              "english_word_min_length":  2,
+                                              "min_conversion_confidence":  0.3,
+                                              "prefer_dictionary_over_itrans":  true
+                                          },
+                     "original_language":  "hi",
+                     "ensemble_analysis":  {
+                                               "final_language":  "eng",
+                                               "final_confidence":  0.37874487042427063,
+                                               "detection_method":  "glotlid_only",
+                                               "ensemble_scores":  {
+                                                                       "glotlid_score":  0.37874487042427063,
+                                                                       "romanized_score":  0.0,
+                                                                       "latin_percentage":  74.57627118644068,
+                                                                       "combined_score":  0.37874487042427063
+                                                                   },
+                                               "glotlid_prediction":  {
+                                                                          "language":  "eng",
+                                                                          "confidence":  0.37874487042427063,
+                                                                          "all_predictions":  [
+                                                                                                  [
+                                                                                                      "eng",
+                                                                                                      "Latn",
+                                                                                                      0.37874487042427063
+                                                                                                  ],
+                                                                                                  [
+                                                                                                      "hin",
+                                                                                                      "Deva",
+                                                                                                      0.2790878415107727
+                                                                                                  ],
+                                                                                                  [
+                                                                                                      "tel",
+                                                                                                      "Latn",
+                                                                                                      0.04364164546132088
+                                                                                                  ]
+                                                                                              ]
+                                                                      },
+                                               "romanized_prediction":  {
+                                                                            "language":  null,
+                                                                            "confidence":  0.0
+                                                                        },
+                                               "decision_explanation":  "No romanized detection available. Using GLotLID eng (0.379)",
+                                               "is_code_mixed":  true
+                                           }
+                 },
+    "sentiment":  {
+                      "label":  "negative",
+                      "confidence":  0.6299190521240234,
+                      "model_used":  "IndicBERT-v2",
+                      "all_probabilities":  [
+                                                [
+                                                    0.6299190521240234,
+                                                    0.37008094787597656
+                                                ]
+                                            ]
+                  },
+    "toxicity":  {
+                     "toxic":  0.001299954834394157,
+                     "severe_toxic":  6.820450653322041E-05,
+                     "obscene":  0.0004253496299497783,
+                     "threat":  6.4743908296804875E-05,
+                     "insult":  0.00029855474713258445,
+                     "identity_hate":  0.00010585982818156481
+                 },
+    "translations":  {
+                         "english":  "You know the MCA college Navinchandra Mehta college?He is a member of the third class."
+                     },
+    "statistics":  {
+                       "language_detection":  {
+                                                  "language":  "hi",
+                                                  "confidence":  0.95,
+                                                  "method":  "script_analysis",
+                                                  "text_length":  85,
+                                                  "is_short_text":  false,
+                                                  "is_very_short_text":  false,
+                                                  "composition":  {
+                                                                      "indic_percentage":  183.52941176470588,
+                                                                      "latin_percentage":  51.76470588235295,
+                                                                      "numeric_percentage":  0.0,
+                                                                      "punctuation_percentage":  1.1764705882352942,
+                                                                      "other_percentage":  -136.47058823529412,
+                                                                      "script_counts":  {
+                                                                                            "hi":  26,
+                                                                                            "mr":  26,
+                                                                                            "kK":  26,
+                                                                                            "sa":  26,
+                                                                                            "ne":  26,
+                                                                                            "sd":  26
+                                                                                        },
+                                                                      "is_code_mixed":  true,
+                                                                      "dominant_script":  "indic"
+                                                                  },
+                                                  "script_analysis":  {
+                                                                          "detected_script":  "hi",
+                                                                          "script_counts":  {
+                                                                                                "hi":  26,
+                                                                                                "mr":  26,
+                                                                                                "kK":  26,
+                                                                                                "sa":  26,
+                                                                                                "ne":  26,
+                                                                                                "sd":  26
+                                                                                            }
+                                                                      },
+                                                  "glotlid_analysis":  {
+                                                                           "detected_language":  "eng",
+                                                                           "confidence":  0.37874487042427063,
+                                                                           "is_code_mixed":  true
+                                                                       },
+                                                  "romanized_analysis":  {
+                                                                             "detected_language":  null,
+                                                                             "confidence":  0.0
+                                                                         },
+                                                  "language_info":  {
+                                                                        "is_indian_language":  true,
+                                                                        "is_international_language":  false,
+                                                                        "is_code_mixed":  false,
+                                                                        "is_romanized":  false,
+                                                                        "language_name":  "Hindi"
+                                                                    },
+                                                  "detection_config":  {
+                                                                           "min_text_length":  3,
+                                                                           "glotlid_threshold":  0.5,
+                                                                           "high_confidence_threshold":  0.8,
+                                                                           "medium_confidence_threshold":  0.6,
+                                                                           "low_confidence_threshold":  0.4,
+                                                                           "glotlid_override_threshold":  0.9,
+                                                                           "romanized_early_detection_threshold":  0.75,
+                                                                           "strong_script_threshold":  50,
+                                                                           "code_mixed_min_threshold":  20,
+                                                                           "code_mixed_max_threshold":  50,
+                                                                           "minor_script_min_threshold":  5,
+                                                                           "minor_script_max_threshold":  20,
+                                                                           "latin_dominance_threshold":  70,
+                                                                           "short_text_threshold":  10,
+                                                                           "use_indic_nlp_enhanced":  true,
+                                                                           "code_mixed_min_devanagari_chars":  3,
+                                                                           "code_mixed_min_latin_chars":  5,
+                                                                           "code_mixed_token_threshold":  0.15,
+                                                                           "code_mixed_min_markers":  2,
+                                                                           "soft_code_mixing_threshold":  0.05,
+                                                                           "aggressive_code_mixing_threshold":  0.15,
+                                                                           "adaptive_threshold_short_text":  0.12,
+                                                                           "adaptive_threshold_medium_text":  0.1,
+                                                                           "adaptive_threshold_long_text":  0.08,
+                                                                           "very_short_text_threshold":  5,
+                                                                           "short_text_romanized_threshold":  0.85,
+                                                                           "short_text_glotlid_threshold":  0.4,
+                                                                           "short_text_script_threshold":  25,
+                                                                           "disable_early_detection_threshold":  8,
+                                                                           "ensemble_enabled":  true,
+                                                                           "glotlid_high_confidence_threshold":  0.9,
+                                                                           "ensemble_weight_glotlid_default":  0.6,
+                                                                           "ensemble_weight_romanized_default":  0.4,
+                                                                           "ensemble_min_combined_confidence":  0.65,
+                                                                           "ensemble_conf_gap_threshold":  0.3,
+                                                                           "ensemble_latin_threshold_high":  80,
+                                                                           "ensemble_latin_threshold_medium":  70,
+                                                                           "hybrid_conversion_enabled":  true,
+                                                                           "preserve_english_tokens":  true,
+                                                                           "preserve_capitalized_words":  true,
+                                                                           "preserve_all_caps":  true,
+                                                                           "english_word_min_length":  2,
+                                                                           "min_conversion_confidence":  0.3,
+                                                                           "prefer_dictionary_over_itrans":  true
+                                                                       },
+                                                  "original_language":  "hi",
+                                                  "ensemble_analysis":  {
+                                                                            "final_language":  "eng",
+                                                                            "final_confidence":  0.37874487042427063,
+                                                                            "detection_method":  "glotlid_only",
+                                                                            "ensemble_scores":  {
+                                                                                                    "glotlid_score":  0.37874487042427063,
+                                                                                                    "romanized_score":  0.0,
+                                                                                                    "latin_percentage":  74.57627118644068,
+                                                                                                    "combined_score":  0.37874487042427063
+                                                                                                },
+                                                                            "glotlid_prediction":  {
+                                                                                                       "language":  "eng",
+                                                                                                       "confidence":  0.37874487042427063,
+                                                                                                       "all_predictions":  [
+                                                                                                                               [
+                                                                                                                                   "eng",
+                                                                                                                                   "Latn",
+                                                                                                                                   0.37874487042427063
+                                                                                                                               ],
+                                                                                                                               [
+                                                                                                                                   "hin",
+                                                                                                                                   "Deva",
+                                                                                                                                   0.2790878415107727
+                                                                                                                               ],
+                                                                                                                               [
+                                                                                                                                   "tel",
+                                                                                                                                   "Latn",
+                                                                                                                                   0.04364164546132088
+                                                                                                                               ]
+                                                                                                                           ]
+                                                                                                   },
+                                                                            "romanized_prediction":  {
+                                                                                                         "language":  null,
+                                                                                                         "confidence":  0.0
+                                                                                                     },
+                                                                            "decision_explanation":  "No romanized detection available. Using GLotLID eng (0.379)",
+                                                                            "is_code_mixed":  true
+                                                                        }
+                                              }
+                   },
+    "cache_info":  {
+                       "cached":  true,
+                       "is_duplicate":  true,
+                       "text_hash":  "0a496697154e220dd1913265c1513993",
+                       "cache_file":  "data/analyze_cache.json"
+                   }
+}

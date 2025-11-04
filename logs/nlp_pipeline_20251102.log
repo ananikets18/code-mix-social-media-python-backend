@@ -1,0 +1,934 @@
+2025-11-02 14:19:16 | demo_logger | DEBUG | <module>:23 | This is a DEBUG message (shows in file only by default)
+2025-11-02 14:19:16 | demo_logger | INFO | <module>:24 | This is an INFO message ✅
+2025-11-02 14:19:16 | demo_logger | WARNING | <module>:25 | This is a WARNING message ⚠️
+2025-11-02 14:19:16 | demo_logger | ERROR | <module>:26 | This is an ERROR message ❌
+2025-11-02 14:19:31 | preprocessing | INFO | detect_language:460 | Language detected: eng (confidence=1.00, method=glotlid)
+2025-11-02 14:19:34 | inference | INFO | predict_sentiment:346 | Sentiment prediction: positive (94.38%) using XLM-RoBERTa
+2025-11-02 14:19:37 | inference | INFO | predict_toxicity:392 | Toxicity prediction: max=toxic (0.07%)
+2025-11-02 14:19:37 | inference | ERROR | wrapper:149 | Failed predict_sentiment after 0.00ms: In predict_sentiment: 'text' cannot be empty
+2025-11-02 14:22:38 | preprocessing | INFO | detect_language:460 | Language detected: eng (confidence=1.00, method=glotlid)
+2025-11-02 14:22:38 | preprocessing | INFO | detect_language:460 | Language detected: hi (confidence=0.95, method=script_analysis)
+2025-11-02 14:22:38 | preprocessing | INFO | detect_language:460 | Language detected: ta (confidence=0.95, method=script_analysis)
+2025-11-02 14:22:38 | preprocessing | INFO | detect_language:460 | Language detected: bn (confidence=0.95, method=script_analysis)
+2025-11-02 14:22:38 | preprocessing | INFO | detect_language:460 | Language detected: eng (confidence=0.40, method=latin_fallback_short_text)
+2025-11-02 14:22:38 | preprocessing | INFO | detect_language:460 | Language detected: eng (confidence=1.00, method=glotlid)
+2025-11-02 14:22:38 | preprocessing | ERROR | wrapper:149 | Failed preprocess_text after 0.00ms: got an unexpected keyword argument 'emoji_mode'
+2025-11-02 14:22:38 | preprocessing | ERROR | wrapper:149 | Failed preprocess_text after 0.00ms: In preprocess_text: 'text' cannot be empty
+2025-11-02 14:22:42 | inference | INFO | predict_sentiment:346 | Sentiment prediction: positive (93.67%) using XLM-RoBERTa
+2025-11-02 14:22:42 | inference | INFO | predict_sentiment:346 | Sentiment prediction: negative (96.33%) using XLM-RoBERTa
+2025-11-02 14:22:42 | inference | INFO | predict_sentiment:287 | Using IndicBERT model for language: en
+2025-11-02 14:22:45 | inference | INFO | predict_sentiment:315 | Sentiment prediction: neutral (99.55%) using IndicBERT
+2025-11-02 14:22:48 | inference | INFO | predict_toxicity:392 | Toxicity prediction: max=toxic (0.05%)
+2025-11-02 14:22:48 | inference | INFO | predict_toxicity:392 | Toxicity prediction: max=toxic (0.07%)
+2025-11-02 14:22:49 | inference | INFO | predict_toxicity:392 | Toxicity prediction: max=toxic (98.27%)
+2025-11-02 14:22:49 | preprocessing | INFO | detect_language:460 | Language detected: eng (confidence=1.00, method=glotlid)
+2025-11-02 14:22:49 | inference | INFO | predict_sentiment:346 | Sentiment prediction: positive (90.50%) using XLM-RoBERTa
+2025-11-02 14:22:49 | inference | INFO | predict_toxicity:392 | Toxicity prediction: max=toxic (0.05%)
+2025-11-02 14:22:49 | preprocessing | INFO | detect_language:460 | Language detected: hi (confidence=0.95, method=script_analysis)
+2025-11-02 14:22:49 | inference | INFO | predict_sentiment:287 | Using IndicBERT model for language: hi
+2025-11-02 14:22:49 | inference | INFO | predict_sentiment:315 | Sentiment prediction: neutral (99.62%) using IndicBERT
+2025-11-02 14:22:49 | inference | INFO | predict_toxicity:392 | Toxicity prediction: max=toxic (0.05%)
+2025-11-02 14:22:49 | preprocessing | INFO | detect_language:460 | Language detected: eng (confidence=1.00, method=glotlid)
+2025-11-02 14:22:49 | inference | INFO | predict_sentiment:346 | Sentiment prediction: neutral (45.65%) using XLM-RoBERTa
+2025-11-02 14:22:50 | inference | INFO | predict_toxicity:392 | Toxicity prediction: max=toxic (0.04%)
+2025-11-02 14:22:50 | preprocessing | INFO | detect_language:460 | Language detected: eng (confidence=0.40, method=latin_fallback_short_text)
+2025-11-02 14:22:50 | preprocessing | ERROR | wrapper:149 | Failed preprocess_text after 0.00ms: In preprocess_text: 'text' cannot be empty
+2025-11-02 14:22:50 | preprocessing | INFO | detect_language:460 | Language detected: eng (confidence=1.00, method=glotlid)
+2025-11-02 14:32:37 | domain_processors | INFO | process_domain_text:570 | Processing domain-specific text
+2025-11-02 14:32:37 | domain_processors | INFO | process_domain_text:587 | Domain processing complete (financial=expand, temporal=preserve, technical=preserve)
+2025-11-02 14:32:37 | domain_processors | INFO | process_domain_text:570 | Processing domain-specific text
+2025-11-02 14:32:37 | domain_processors | INFO | process_domain_text:587 | Domain processing complete (financial=preserve, temporal=preserve, technical=preserve)
+2025-11-02 14:33:05 | domain_processors | INFO | process_domain_text:570 | Processing domain-specific text
+2025-11-02 14:33:05 | domain_processors | INFO | process_domain_text:587 | Domain processing complete (financial=expand, temporal=preserve, technical=preserve)
+2025-11-02 14:33:05 | domain_processors | INFO | process_domain_text:570 | Processing domain-specific text
+2025-11-02 14:33:05 | domain_processors | INFO | process_domain_text:587 | Domain processing complete (financial=preserve, temporal=preserve, technical=preserve)
+2025-11-02 14:35:09 | domain_processors | INFO | process_domain_text:570 | Processing domain-specific text
+2025-11-02 14:35:09 | domain_processors | INFO | process_domain_text:587 | Domain processing complete (financial=expand, temporal=preserve, technical=preserve)
+2025-11-02 14:35:09 | domain_processors | INFO | process_domain_text:570 | Processing domain-specific text
+2025-11-02 14:35:09 | domain_processors | INFO | process_domain_text:587 | Domain processing complete (financial=preserve, temporal=preserve, technical=preserve)
+2025-11-02 14:50:31 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 14:50:31 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 14:50:47 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 14:50:47 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 14:51:19 | preprocessing | INFO | detect_language:460 | Language detected: eng (confidence=1.00, method=glotlid)
+2025-11-02 14:51:54 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 14:51:54 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 14:52:37 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 14:52:37 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 14:52:43 | preprocessing | INFO | detect_language:460 | Language detected: eng (confidence=1.00, method=glotlid_short_text)
+2025-11-02 14:52:43 | inference | INFO | get_sentiment_model:115 | Loading XLM-R Sentiment model (first use)...
+2025-11-02 14:52:47 | inference | INFO | get_sentiment_model:121 | XLM-R Sentiment model loaded successfully
+2025-11-02 14:52:47 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (68.67%) using XLM-RoBERTa
+2025-11-02 14:52:47 | inference | INFO | get_toxicity_model:169 | Loading Toxicity model (first use)...
+2025-11-02 14:52:50 | inference | INFO | get_toxicity_model:175 | Toxicity model loaded successfully
+2025-11-02 14:52:50 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.04%)
+2025-11-02 14:52:51 | preprocessing | INFO | detect_language:460 | Language detected: hi (confidence=0.85, method=script_analysis_short_text)
+2025-11-02 14:52:51 | inference | INFO | predict_sentiment:286 | Using IndicBERT model for language: hi
+2025-11-02 14:52:51 | inference | INFO | get_indic_sentiment_model:138 | Loading IndicBERT v2 Sentiment model (first use)...
+2025-11-02 14:52:54 | inference | INFO | get_indic_sentiment_model:151 | IndicBERT v2 Sentiment model loaded successfully
+2025-11-02 14:52:54 | inference | INFO | predict_sentiment:314 | Sentiment prediction: negative (97.20%) using IndicBERT
+2025-11-02 14:52:54 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.05%)
+2025-11-02 14:52:55 | preprocessing | INFO | detect_language:460 | Language detected: eng (confidence=1.00, method=glotlid)
+2025-11-02 14:52:55 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (94.09%) using XLM-RoBERTa
+2025-11-02 14:52:56 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.04%)
+2025-11-02 14:52:56 | preprocessing | INFO | detect_language:460 | Language detected: unknown (confidence=0.00, method=unknown)
+2025-11-02 14:52:56 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (76.50%) using XLM-RoBERTa
+2025-11-02 14:52:57 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (2.14%)
+2025-11-02 14:52:57 | preprocessing | INFO | detect_language:460 | Language detected: urd (confidence=0.60, method=glotlid_latin)
+2025-11-02 14:52:57 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (59.20%) using XLM-RoBERTa
+2025-11-02 14:52:57 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (6.31%)
+2025-11-02 14:52:58 | preprocessing | INFO | detect_language:460 | Language detected: hi (confidence=0.95, method=script_analysis)
+2025-11-02 14:52:58 | inference | INFO | predict_sentiment:286 | Using IndicBERT model for language: hi
+2025-11-02 14:52:58 | inference | INFO | predict_sentiment:314 | Sentiment prediction: neutral (99.83%) using IndicBERT
+2025-11-02 14:52:58 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.04%)
+2025-11-02 14:52:59 | preprocessing | INFO | detect_language:460 | Language detected: eng (confidence=1.00, method=glotlid)
+2025-11-02 14:52:59 | inference | INFO | predict_sentiment:345 | Sentiment prediction: negative (96.30%) using XLM-RoBERTa
+2025-11-02 14:52:59 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (98.92%)
+2025-11-02 14:58:21 | __main__ | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 14:58:21 | __main__ | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 14:58:21 | __main__ | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 14:58:21 | __main__ | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:00:13 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:00:13 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:00:13 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:00:13 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:16:53 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 15:16:53 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 15:17:58 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 15:17:58 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 15:17:59 | main | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'This is a wonderful test message!...'
+2025-11-02 15:17:59 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:17:59 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:18:03 | preprocessing | INFO | detect_language:460 | Language detected: eng (confidence=1.00, method=glotlid)
+2025-11-02 15:18:03 | inference | INFO | get_sentiment_model:115 | Loading XLM-R Sentiment model (first use)...
+2025-11-02 15:18:06 | inference | INFO | get_sentiment_model:121 | XLM-R Sentiment model loaded successfully
+2025-11-02 15:18:07 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (92.52%) using XLM-RoBERTa
+2025-11-02 15:18:07 | inference | INFO | get_toxicity_model:169 | Loading Toxicity model (first use)...
+2025-11-02 15:18:08 | inference | INFO | get_toxicity_model:175 | Toxicity model loaded successfully
+2025-11-02 15:18:09 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.04%)
+2025-11-02 15:18:51 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 15:18:51 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 15:18:51 | __main__ | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'This is a wonderful product. I highly recommend it...'
+2025-11-02 15:18:51 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:18:51 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:18:55 | preprocessing | INFO | detect_language:460 | Language detected: eng (confidence=1.00, method=glotlid)
+2025-11-02 15:18:55 | inference | INFO | get_sentiment_model:115 | Loading XLM-R Sentiment model (first use)...
+2025-11-02 15:18:57 | inference | INFO | get_sentiment_model:121 | XLM-R Sentiment model loaded successfully
+2025-11-02 15:18:57 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (93.81%) using XLM-RoBERTa
+2025-11-02 15:18:57 | inference | INFO | get_toxicity_model:169 | Loading Toxicity model (first use)...
+2025-11-02 15:18:59 | inference | INFO | get_toxicity_model:175 | Toxicity model loaded successfully
+2025-11-02 15:18:59 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.04%)
+2025-11-02 15:19:01 | __main__ | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'The stock price increased by $50 today. Market cap...'
+2025-11-02 15:19:01 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:19:01 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:19:01 | preprocessing | INFO | detect_language:460 | Language detected: eng (confidence=1.00, method=glotlid)
+2025-11-02 15:19:01 | inference | INFO | predict_sentiment:345 | Sentiment prediction: neutral (62.26%) using XLM-RoBERTa
+2025-11-02 15:19:01 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.04%)
+2025-11-02 15:19:03 | __main__ | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'The meeting is scheduled for tomorrow at 3:00 PM. ...'
+2025-11-02 15:19:03 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:19:03 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:19:03 | preprocessing | INFO | detect_language:460 | Language detected: eng (confidence=1.00, method=glotlid)
+2025-11-02 15:19:03 | inference | INFO | predict_sentiment:345 | Sentiment prediction: neutral (83.88%) using XLM-RoBERTa
+2025-11-02 15:19:03 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.04%)
+2025-11-02 15:19:04 | __main__ | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'The function returns None if the array is empty. U...'
+2025-11-02 15:19:04 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:19:04 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:19:04 | preprocessing | INFO | detect_language:460 | Language detected: eng (confidence=1.00, method=glotlid)
+2025-11-02 15:19:05 | inference | INFO | predict_sentiment:345 | Sentiment prediction: negative (48.79%) using XLM-RoBERTa
+2025-11-02 15:19:05 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.04%)
+2025-11-02 15:19:06 | __main__ | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'This fucking product is shit! I hate this damn thi...'
+2025-11-02 15:19:06 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:19:06 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:19:06 | preprocessing | INFO | detect_language:460 | Language detected: eng (confidence=1.00, method=glotlid)
+2025-11-02 15:19:06 | inference | INFO | predict_sentiment:345 | Sentiment prediction: negative (96.18%) using XLM-RoBERTa
+2025-11-02 15:19:06 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (99.58%)
+2025-11-02 15:19:08 | __main__ | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'यह बहुत बेवकूफ है और मुझे गुस्सा आ रहा है।...'
+2025-11-02 15:19:08 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:19:08 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:19:08 | preprocessing | INFO | detect_language:460 | Language detected: hi (confidence=0.95, method=script_analysis)
+2025-11-02 15:19:08 | inference | INFO | predict_sentiment:286 | Using IndicBERT model for language: hi
+2025-11-02 15:19:08 | inference | INFO | get_indic_sentiment_model:138 | Loading IndicBERT v2 Sentiment model (first use)...
+2025-11-02 15:19:11 | inference | INFO | get_indic_sentiment_model:151 | IndicBERT v2 Sentiment model loaded successfully
+2025-11-02 15:19:11 | inference | INFO | predict_sentiment:314 | Sentiment prediction: negative (98.39%) using IndicBERT
+2025-11-02 15:19:11 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (3.04%)
+2025-11-02 15:19:12 | __main__ | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'You are such an idiot! I hate people like you, los...'
+2025-11-02 15:19:12 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:19:12 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:19:12 | preprocessing | INFO | detect_language:460 | Language detected: eng (confidence=1.00, method=glotlid)
+2025-11-02 15:19:13 | inference | INFO | predict_sentiment:345 | Sentiment prediction: negative (96.19%) using XLM-RoBERTa
+2025-11-02 15:19:13 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (98.87%)
+2025-11-02 15:19:14 | __main__ | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'OMG sooooo cooool!!!...'
+2025-11-02 15:19:14 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:19:14 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:19:14 | preprocessing | INFO | detect_language:460 | Language detected: eng (confidence=0.81, method=glotlid)
+2025-11-02 15:19:15 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (89.71%) using XLM-RoBERTa
+2025-11-02 15:19:15 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.07%)
+2025-11-02 15:19:17 | __main__ | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'This is lit fr fr! No cap, best thing ever lol tbh...'
+2025-11-02 15:19:17 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:19:17 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:19:17 | preprocessing | INFO | detect_language:460 | Language detected: jam (confidence=0.94, method=glotlid)
+2025-11-02 15:19:17 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (92.83%) using XLM-RoBERTa
+2025-11-02 15:19:17 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.08%)
+2025-11-02 15:19:18 | __main__ | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'Yaar ye movie bahut mast hai! Must watch bro, ekdu...'
+2025-11-02 15:19:18 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:19:18 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:19:18 | preprocessing | INFO | detect_language:460 | Language detected: urd (confidence=0.79, method=glotlid_medium)
+2025-11-02 15:19:18 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (65.30%) using XLM-RoBERTa
+2025-11-02 15:19:19 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (71.53%)
+2025-11-02 15:22:31 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 15:22:31 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 15:24:44 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 15:24:44 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 15:24:56 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 15:24:56 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 15:24:57 | api | INFO | startup_event:459 | ================================================================================
+2025-11-02 15:24:57 | api | INFO | startup_event:460 | Multilingual NLP Analysis API Starting...
+2025-11-02 15:24:57 | api | INFO | startup_event:461 | Version: 1.0.0
+2025-11-02 15:24:57 | api | INFO | startup_event:462 | Features: Profanity Filter, Domain Detection, Language Analysis,
+2025-11-02 15:24:57 | api | INFO | startup_event:463 |           Sentiment Analysis, Toxicity Detection, Translation
+2025-11-02 15:24:57 | api | INFO | startup_event:464 | ================================================================================
+2025-11-02 15:25:45 | api | INFO | shutdown_event:470 | Multilingual NLP Analysis API Shutting Down...
+2025-11-02 15:26:07 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 15:26:07 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 15:26:20 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 15:26:20 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 15:26:21 | api | INFO | startup_event:459 | ================================================================================
+2025-11-02 15:26:21 | api | INFO | startup_event:460 | Multilingual NLP Analysis API Starting...
+2025-11-02 15:26:21 | api | INFO | startup_event:461 | Version: 1.0.0
+2025-11-02 15:26:21 | api | INFO | startup_event:462 | Features: Profanity Filter, Domain Detection, Language Analysis,
+2025-11-02 15:26:21 | api | INFO | startup_event:463 |           Sentiment Analysis, Toxicity Detection, Translation
+2025-11-02 15:26:21 | api | INFO | startup_event:464 | ================================================================================
+2025-11-02 15:26:36 | api | INFO | analyze_text:192 | Comprehensive analysis request: text_length=28
+2025-11-02 15:26:36 | main | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'This is a wonderful product!...'
+2025-11-02 15:26:36 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:26:36 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:26:42 | preprocessing | INFO | detect_language:460 | Language detected: eng (confidence=1.00, method=glotlid)
+2025-11-02 15:26:42 | inference | INFO | get_sentiment_model:115 | Loading XLM-R Sentiment model (first use)...
+2025-11-02 15:26:46 | inference | INFO | get_sentiment_model:121 | XLM-R Sentiment model loaded successfully
+2025-11-02 15:26:46 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (94.36%) using XLM-RoBERTa
+2025-11-02 15:26:46 | inference | INFO | get_toxicity_model:169 | Loading Toxicity model (first use)...
+2025-11-02 15:26:49 | inference | INFO | get_toxicity_model:175 | Toxicity model loaded successfully
+2025-11-02 15:26:49 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.05%)
+2025-11-02 15:26:51 | api | INFO | analyze_text:204 | Analysis complete: language=eng, sentiment=positive
+2025-11-02 15:27:28 | api | INFO | analyze_text:192 | Comprehensive analysis request: text_length=55
+2025-11-02 15:27:28 | main | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'I’m not procrastinating, I’m letting my ideas mari...'
+2025-11-02 15:27:28 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:27:28 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:27:28 | preprocessing | INFO | detect_language:460 | Language detected: eng (confidence=0.99, method=glotlid)
+2025-11-02 15:27:29 | inference | INFO | predict_sentiment:345 | Sentiment prediction: neutral (47.04%) using XLM-RoBERTa
+2025-11-02 15:27:29 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.06%)
+2025-11-02 15:27:30 | api | INFO | analyze_text:204 | Analysis complete: language=eng, sentiment=neutral
+2025-11-02 15:28:08 | api | INFO | analyze_text:192 | Comprehensive analysis request: text_length=94
+2025-11-02 15:28:08 | main | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'Neque porro quisquam est qui dolorem ipsum quia do...'
+2025-11-02 15:28:08 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:28:08 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:28:08 | preprocessing | INFO | detect_language:460 | Language detected: lat (confidence=0.72, method=glotlid_medium)
+2025-11-02 15:28:08 | inference | INFO | predict_sentiment:345 | Sentiment prediction: neutral (58.85%) using XLM-RoBERTa
+2025-11-02 15:28:08 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.21%)
+2025-11-02 15:28:10 | api | INFO | analyze_text:204 | Analysis complete: language=lat, sentiment=neutral
+2025-11-02 15:28:37 | api | INFO | analyze_text:192 | Comprehensive analysis request: text_length=240
+2025-11-02 15:28:37 | main | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'Neque porro quisquam est qui dolorem ipsum quia do...'
+2025-11-02 15:28:37 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:28:37 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:28:37 | preprocessing | INFO | detect_language:460 | Language detected: eng (confidence=0.81, method=glotlid)
+2025-11-02 15:28:38 | inference | INFO | predict_sentiment:345 | Sentiment prediction: neutral (57.81%) using XLM-RoBERTa
+2025-11-02 15:28:38 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.25%)
+2025-11-02 15:28:40 | api | INFO | analyze_text:204 | Analysis complete: language=eng, sentiment=neutral
+2025-11-02 15:29:40 | api | INFO | analyze_text:192 | Comprehensive analysis request: text_length=35
+2025-11-02 15:29:40 | main | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'Sachhi Bhau, movie ekdam mast thi 🤣...'
+2025-11-02 15:29:40 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:29:40 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:29:40 | preprocessing | INFO | detect_language:460 | Language detected: hin (confidence=0.62, method=glotlid_medium)
+2025-11-02 15:29:41 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (37.59%) using XLM-RoBERTa
+2025-11-02 15:29:41 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (9.50%)
+2025-11-02 15:29:43 | api | INFO | analyze_text:204 | Analysis complete: language=hin, sentiment=positive
+2025-11-02 15:30:26 | api | INFO | analyze_text:192 | Comprehensive analysis request: text_length=18
+2025-11-02 15:30:26 | main | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'Chupe re madarchod...'
+2025-11-02 15:30:26 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:30:26 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:30:26 | preprocessing | INFO | detect_language:460 | Language detected: slk (confidence=0.60, method=glotlid_latin)
+2025-11-02 15:30:27 | inference | INFO | predict_sentiment:345 | Sentiment prediction: negative (48.14%) using XLM-RoBERTa
+2025-11-02 15:30:27 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (4.29%)
+2025-11-02 15:30:28 | api | INFO | analyze_text:204 | Analysis complete: language=slk, sentiment=negative
+2025-11-02 15:32:00 | api | INFO | analyze_text:192 | Comprehensive analysis request: text_length=13
+2025-11-02 15:32:00 | main | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'पाऊस पडत आहे....'
+2025-11-02 15:32:00 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:32:00 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:32:00 | preprocessing | INFO | detect_language:460 | Language detected: hi (confidence=0.95, method=script_analysis)
+2025-11-02 15:32:00 | inference | INFO | predict_sentiment:286 | Using IndicBERT model for language: hi
+2025-11-02 15:32:00 | inference | INFO | get_indic_sentiment_model:138 | Loading IndicBERT v2 Sentiment model (first use)...
+2025-11-02 15:32:03 | inference | INFO | get_indic_sentiment_model:151 | IndicBERT v2 Sentiment model loaded successfully
+2025-11-02 15:32:03 | inference | INFO | predict_sentiment:314 | Sentiment prediction: neutral (59.81%) using IndicBERT
+2025-11-02 15:32:04 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.05%)
+2025-11-02 15:32:05 | api | INFO | analyze_text:204 | Analysis complete: language=hi, sentiment=neutral
+2025-11-02 15:32:21 | api | INFO | analyze_text:192 | Comprehensive analysis request: text_length=32
+2025-11-02 15:32:21 | main | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'सूर्य उगवला म्हणून प्रकाश पसरला....'
+2025-11-02 15:32:21 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:32:21 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:32:21 | preprocessing | INFO | detect_language:460 | Language detected: hi (confidence=0.95, method=script_analysis)
+2025-11-02 15:32:21 | inference | INFO | predict_sentiment:286 | Using IndicBERT model for language: hi
+2025-11-02 15:32:21 | inference | INFO | predict_sentiment:314 | Sentiment prediction: negative (89.90%) using IndicBERT
+2025-11-02 15:32:21 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.07%)
+2025-11-02 15:32:23 | api | INFO | analyze_text:204 | Analysis complete: language=hi, sentiment=negative
+2025-11-02 15:32:38 | api | INFO | analyze_text:192 | Comprehensive analysis request: text_length=79
+2025-11-02 15:32:38 | main | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'सूर्य उगवला म्हणून प्रकाश पसरला. मला माहीत आहे की ...'
+2025-11-02 15:32:38 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:32:38 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:32:38 | preprocessing | INFO | detect_language:460 | Language detected: hi (confidence=0.95, method=script_analysis)
+2025-11-02 15:32:38 | inference | INFO | predict_sentiment:286 | Using IndicBERT model for language: hi
+2025-11-02 15:32:38 | inference | INFO | predict_sentiment:314 | Sentiment prediction: neutral (71.53%) using IndicBERT
+2025-11-02 15:32:38 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.09%)
+2025-11-02 15:32:40 | api | INFO | analyze_text:204 | Analysis complete: language=hi, sentiment=neutral
+2025-11-02 15:32:50 | api | INFO | analyze_text:192 | Comprehensive analysis request: text_length=85
+2025-11-02 15:32:50 | main | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: '@sun, सूर्य उगवला म्हणून प्रकाश पसरला. मला माहीत आ...'
+2025-11-02 15:32:50 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:32:50 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:32:50 | preprocessing | INFO | detect_language:460 | Language detected: hi (confidence=0.95, method=script_analysis)
+2025-11-02 15:32:50 | inference | INFO | predict_sentiment:286 | Using IndicBERT model for language: hi
+2025-11-02 15:32:50 | inference | INFO | predict_sentiment:314 | Sentiment prediction: neutral (73.57%) using IndicBERT
+2025-11-02 15:32:50 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.07%)
+2025-11-02 15:32:53 | api | INFO | analyze_text:204 | Analysis complete: language=hi, sentiment=neutral
+2025-11-02 15:33:26 | api | INFO | analyze_text:192 | Comprehensive analysis request: text_length=32
+2025-11-02 15:33:26 | main | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'सूर्य उगवला म्हणून प्रकाश पसरला....'
+2025-11-02 15:33:26 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:33:26 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:33:26 | preprocessing | INFO | detect_language:460 | Language detected: hi (confidence=0.95, method=script_analysis)
+2025-11-02 15:33:26 | inference | INFO | predict_sentiment:286 | Using IndicBERT model for language: hi
+2025-11-02 15:33:27 | inference | INFO | predict_sentiment:314 | Sentiment prediction: negative (89.90%) using IndicBERT
+2025-11-02 15:33:27 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.07%)
+2025-11-02 15:33:28 | api | INFO | analyze_text:204 | Analysis complete: language=hi, sentiment=negative
+2025-11-02 15:35:26 | api | INFO | shutdown_event:470 | Multilingual NLP Analysis API Shutting Down...
+2025-11-02 15:36:12 | preprocessing | INFO | detect_language:467 | Language detected: mar (confidence=1.00, method=glotlid_high_confidence)
+2025-11-02 15:36:47 | preprocessing | INFO | detect_language:476 | Language detected: mar (confidence=1.00, method=glotlid_high_confidence)
+2025-11-02 15:37:22 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 15:37:22 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 15:37:34 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 15:37:34 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 15:37:35 | api | INFO | startup_event:459 | ================================================================================
+2025-11-02 15:37:35 | api | INFO | startup_event:460 | Multilingual NLP Analysis API Starting...
+2025-11-02 15:37:35 | api | INFO | startup_event:461 | Version: 1.0.0
+2025-11-02 15:37:35 | api | INFO | startup_event:462 | Features: Profanity Filter, Domain Detection, Language Analysis,
+2025-11-02 15:37:35 | api | INFO | startup_event:463 |           Sentiment Analysis, Toxicity Detection, Translation
+2025-11-02 15:37:35 | api | INFO | startup_event:464 | ================================================================================
+2025-11-02 15:37:35 | api | INFO | analyze_text:192 | Comprehensive analysis request: text_length=32
+2025-11-02 15:37:35 | main | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'सूर्य उगवला म्हणून प्रकाश पसरला....'
+2025-11-02 15:37:35 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:37:35 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:37:40 | preprocessing | INFO | detect_language:476 | Language detected: mar (confidence=1.00, method=glotlid_high_confidence)
+2025-11-02 15:37:40 | inference | INFO | get_sentiment_model:115 | Loading XLM-R Sentiment model (first use)...
+2025-11-02 15:37:44 | inference | INFO | get_sentiment_model:121 | XLM-R Sentiment model loaded successfully
+2025-11-02 15:37:45 | inference | INFO | predict_sentiment:345 | Sentiment prediction: neutral (37.25%) using XLM-RoBERTa
+2025-11-02 15:37:45 | inference | INFO | get_toxicity_model:169 | Loading Toxicity model (first use)...
+2025-11-02 15:37:48 | inference | INFO | get_toxicity_model:175 | Toxicity model loaded successfully
+2025-11-02 15:37:49 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.07%)
+2025-11-02 15:37:50 | api | INFO | analyze_text:204 | Analysis complete: language=mar, sentiment=neutral
+2025-11-02 15:38:39 | api | INFO | analyze_text:192 | Comprehensive analysis request: text_length=35
+2025-11-02 15:38:39 | main | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'Tu Khup chukicha bolat ahes rajesh....'
+2025-11-02 15:38:39 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:38:39 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:38:39 | preprocessing | INFO | detect_language:476 | Language detected: cdf (confidence=0.75, method=glotlid_medium)
+2025-11-02 15:38:39 | inference | INFO | predict_sentiment:345 | Sentiment prediction: negative (37.88%) using XLM-RoBERTa
+2025-11-02 15:38:39 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (7.70%)
+2025-11-02 15:38:43 | api | INFO | analyze_text:204 | Analysis complete: language=cdf, sentiment=negative
+2025-11-02 15:39:34 | api | INFO | analyze_text:192 | Comprehensive analysis request: text_length=31
+2025-11-02 15:39:34 | main | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'Tu chup bhet, aur movie ko dekh...'
+2025-11-02 15:39:34 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:39:34 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:39:34 | preprocessing | INFO | detect_language:476 | Language detected: hin (confidence=0.98, method=glotlid_high_confidence)
+2025-11-02 15:39:34 | inference | INFO | predict_sentiment:345 | Sentiment prediction: negative (33.80%) using XLM-RoBERTa
+2025-11-02 15:39:34 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (92.23%)
+2025-11-02 15:39:35 | api | INFO | analyze_text:204 | Analysis complete: language=hin, sentiment=negative
+2025-11-02 15:39:57 | api | INFO | analyze_text:192 | Comprehensive analysis request: text_length=48
+2025-11-02 15:39:57 | main | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'Tu chup bhet, guys lets continue with journery !...'
+2025-11-02 15:39:57 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:39:57 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:39:57 | preprocessing | INFO | detect_language:476 | Language detected: eng (confidence=0.84, method=glotlid)
+2025-11-02 15:39:57 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (41.16%) using XLM-RoBERTa
+2025-11-02 15:39:57 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (1.18%)
+2025-11-02 15:40:02 | api | INFO | analyze_text:204 | Analysis complete: language=eng, sentiment=positive
+2025-11-02 15:40:30 | api | INFO | shutdown_event:470 | Multilingual NLP Analysis API Shutting Down...
+2025-11-02 15:40:51 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 15:40:51 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 15:40:52 | api | INFO | startup_event:459 | ================================================================================
+2025-11-02 15:40:52 | api | INFO | startup_event:460 | Multilingual NLP Analysis API Starting...
+2025-11-02 15:40:52 | api | INFO | startup_event:461 | Version: 1.0.0
+2025-11-02 15:40:52 | api | INFO | startup_event:462 | Features: Profanity Filter, Domain Detection, Language Analysis,
+2025-11-02 15:40:52 | api | INFO | startup_event:463 |           Sentiment Analysis, Toxicity Detection, Translation
+2025-11-02 15:40:52 | api | INFO | startup_event:464 | ================================================================================
+2025-11-02 15:41:06 | api | INFO | shutdown_event:470 | Multilingual NLP Analysis API Shutting Down...
+2025-11-02 15:41:18 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 15:41:18 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 15:41:19 | api | INFO | startup_event:459 | ================================================================================
+2025-11-02 15:41:19 | api | INFO | startup_event:460 | Multilingual NLP Analysis API Starting...
+2025-11-02 15:41:19 | api | INFO | startup_event:461 | Version: 1.0.0
+2025-11-02 15:41:19 | api | INFO | startup_event:462 | Features: Profanity Filter, Domain Detection, Language Analysis,
+2025-11-02 15:41:19 | api | INFO | startup_event:463 |           Sentiment Analysis, Toxicity Detection, Translation
+2025-11-02 15:41:19 | api | INFO | startup_event:464 | ================================================================================
+2025-11-02 15:41:48 | api | INFO | shutdown_event:470 | Multilingual NLP Analysis API Shutting Down...
+2025-11-02 15:42:00 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 15:42:00 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 15:42:01 | api | INFO | startup_event:459 | ================================================================================
+2025-11-02 15:42:01 | api | INFO | startup_event:460 | Multilingual NLP Analysis API Starting...
+2025-11-02 15:42:01 | api | INFO | startup_event:461 | Version: 1.0.0
+2025-11-02 15:42:01 | api | INFO | startup_event:462 | Features: Profanity Filter, Domain Detection, Language Analysis,
+2025-11-02 15:42:01 | api | INFO | startup_event:463 |           Sentiment Analysis, Toxicity Detection, Translation
+2025-11-02 15:42:01 | api | INFO | startup_event:464 | ================================================================================
+2025-11-02 15:43:07 | api | INFO | shutdown_event:470 | Multilingual NLP Analysis API Shutting Down...
+2025-11-02 15:43:17 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 15:43:17 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 15:43:18 | api | INFO | startup_event:459 | ================================================================================
+2025-11-02 15:43:18 | api | INFO | startup_event:460 | Multilingual NLP Analysis API Starting...
+2025-11-02 15:43:18 | api | INFO | startup_event:461 | Version: 1.0.0
+2025-11-02 15:43:18 | api | INFO | startup_event:462 | Features: Profanity Filter, Domain Detection, Language Analysis,
+2025-11-02 15:43:18 | api | INFO | startup_event:463 |           Sentiment Analysis, Toxicity Detection, Translation
+2025-11-02 15:43:18 | api | INFO | startup_event:464 | ================================================================================
+2025-11-02 15:43:57 | api | INFO | shutdown_event:470 | Multilingual NLP Analysis API Shutting Down...
+2025-11-02 15:44:20 | preprocessing | INFO | detect_language:561 | Language detected: mr_roman (confidence=0.75, method=romanized_indic)
+2025-11-02 15:48:17 | preprocessing | INFO | detect_language:676 | Language detected: eng (confidence=0.84, method=glotlid)
+2025-11-02 15:48:17 | preprocessing | INFO | detect_language:676 | Language detected: mr_roman (confidence=0.75, method=romanized_indic)
+2025-11-02 15:48:17 | preprocessing | INFO | detect_language:676 | Language detected: eng (confidence=0.99, method=glotlid_high_confidence)
+2025-11-02 15:48:17 | preprocessing | INFO | detect_language:676 | Language detected: eng_indic_mixed (confidence=0.75, method=code_mixed_latin_dominant)
+2025-11-02 15:49:23 | preprocessing | INFO | detect_language:683 | Language detected: eng (confidence=0.84, method=glotlid)
+2025-11-02 15:49:23 | preprocessing | INFO | detect_language:683 | Language detected: mr_roman (confidence=0.75, method=romanized_indic)
+2025-11-02 15:49:23 | preprocessing | INFO | detect_language:683 | Language detected: eng (confidence=0.99, method=glotlid_high_confidence)
+2025-11-02 15:49:23 | preprocessing | INFO | detect_language:683 | Language detected: hi_eng_mixed (confidence=0.75, method=code_mixed_latin_dominant)
+2025-11-02 15:50:15 | preprocessing | INFO | detect_language:698 | Language detected: eng_indic_mixed (confidence=0.82, method=code_mixed_high_confidence)
+2025-11-02 15:50:15 | preprocessing | INFO | detect_language:698 | Language detected: mr_roman (confidence=0.75, method=romanized_indic)
+2025-11-02 15:50:15 | preprocessing | INFO | detect_language:698 | Language detected: eng (confidence=0.99, method=glotlid_high_confidence)
+2025-11-02 15:50:15 | preprocessing | INFO | detect_language:698 | Language detected: hi_eng_mixed (confidence=0.75, method=code_mixed_latin_dominant)
+2025-11-02 15:51:22 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 15:51:22 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 15:51:31 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 15:51:31 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 15:51:32 | api | INFO | startup_event:459 | ================================================================================
+2025-11-02 15:51:32 | api | INFO | startup_event:460 | Multilingual NLP Analysis API Starting...
+2025-11-02 15:51:32 | api | INFO | startup_event:461 | Version: 1.0.0
+2025-11-02 15:51:32 | api | INFO | startup_event:462 | Features: Profanity Filter, Domain Detection, Language Analysis,
+2025-11-02 15:51:32 | api | INFO | startup_event:463 |           Sentiment Analysis, Toxicity Detection, Translation
+2025-11-02 15:51:32 | api | INFO | startup_event:464 | ================================================================================
+2025-11-02 15:52:03 | api | INFO | analyze_text:192 | Comprehensive analysis request: text_length=33
+2025-11-02 15:52:03 | main | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'Tu Shant raha, and move enjoy kar...'
+2025-11-02 15:52:03 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:52:03 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:52:08 | preprocessing | INFO | detect_language:698 | Language detected: eng (confidence=0.64, method=glotlid_medium)
+2025-11-02 15:52:08 | inference | INFO | get_sentiment_model:115 | Loading XLM-R Sentiment model (first use)...
+2025-11-02 15:52:13 | inference | INFO | get_sentiment_model:121 | XLM-R Sentiment model loaded successfully
+2025-11-02 15:52:14 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (42.03%) using XLM-RoBERTa
+2025-11-02 15:52:14 | inference | INFO | get_toxicity_model:169 | Loading Toxicity model (first use)...
+2025-11-02 15:52:16 | inference | INFO | get_toxicity_model:175 | Toxicity model loaded successfully
+2025-11-02 15:52:16 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (1.31%)
+2025-11-02 15:52:19 | api | INFO | analyze_text:204 | Analysis complete: language=eng, sentiment=positive
+2025-11-02 15:52:27 | api | INFO | analyze_text:192 | Comprehensive analysis request: text_length=33
+2025-11-02 15:52:27 | main | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'Tu Shant raha, and move enjoy kar...'
+2025-11-02 15:52:27 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:52:27 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:52:27 | preprocessing | INFO | detect_language:698 | Language detected: eng (confidence=0.64, method=glotlid_medium)
+2025-11-02 15:52:27 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (42.03%) using XLM-RoBERTa
+2025-11-02 15:52:27 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (1.31%)
+2025-11-02 15:52:29 | api | INFO | analyze_text:204 | Analysis complete: language=eng, sentiment=positive
+2025-11-02 15:52:52 | api | INFO | analyze_text:192 | Comprehensive analysis request: text_length=35
+2025-11-02 15:52:52 | main | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'Tu Khup chukicha bolat ahes rajesh....'
+2025-11-02 15:52:52 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:52:52 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:52:52 | preprocessing | INFO | detect_language:698 | Language detected: mr_roman (confidence=0.75, method=romanized_indic)
+2025-11-02 15:52:52 | inference | INFO | predict_sentiment:286 | Using IndicBERT model for language: mr
+2025-11-02 15:52:52 | inference | INFO | get_indic_sentiment_model:138 | Loading IndicBERT v2 Sentiment model (first use)...
+2025-11-02 15:52:55 | inference | INFO | get_indic_sentiment_model:151 | IndicBERT v2 Sentiment model loaded successfully
+2025-11-02 15:52:55 | inference | INFO | predict_sentiment:314 | Sentiment prediction: negative (76.96%) using IndicBERT
+2025-11-02 15:52:56 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (7.70%)
+2025-11-02 15:52:56 | api | INFO | analyze_text:204 | Analysis complete: language=mr_roman, sentiment=negative
+2025-11-02 15:53:12 | api | INFO | analyze_text:192 | Comprehensive analysis request: text_length=35
+2025-11-02 15:53:12 | main | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'Tu Shant raha, ani move enjoy kar !...'
+2025-11-02 15:53:12 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:53:12 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:53:12 | preprocessing | INFO | detect_language:698 | Language detected: gom (confidence=0.60, method=glotlid_latin)
+2025-11-02 15:53:12 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (42.67%) using XLM-RoBERTa
+2025-11-02 15:53:12 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (4.78%)
+2025-11-02 15:53:12 | api | INFO | analyze_text:204 | Analysis complete: language=gom, sentiment=positive
+2025-11-02 15:53:50 | api | INFO | analyze_text:192 | Comprehensive analysis request: text_length=45
+2025-11-02 15:53:50 | main | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'Tu Shant raha, aur baki logo ko bhi shant kar...'
+2025-11-02 15:53:50 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:53:50 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:53:50 | preprocessing | INFO | detect_language:698 | Language detected: hin (confidence=0.60, method=glotlid_latin)
+2025-11-02 15:53:50 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (37.27%) using XLM-RoBERTa
+2025-11-02 15:53:50 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (97.85%)
+2025-11-02 15:53:53 | api | INFO | analyze_text:204 | Analysis complete: language=hin, sentiment=positive
+2025-11-02 15:54:17 | api | INFO | analyze_text:192 | Comprehensive analysis request: text_length=36
+2025-11-02 15:54:17 | main | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'Tu Shant raha, ani movie enjoy kar !...'
+2025-11-02 15:54:17 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:54:17 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:54:17 | preprocessing | INFO | detect_language:698 | Language detected: hin (confidence=0.60, method=glotlid_latin)
+2025-11-02 15:54:17 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (38.77%) using XLM-RoBERTa
+2025-11-02 15:54:17 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.99%)
+2025-11-02 15:54:19 | api | INFO | analyze_text:204 | Analysis complete: language=hin, sentiment=positive
+2025-11-02 15:54:24 | api | INFO | analyze_text:192 | Comprehensive analysis request: text_length=36
+2025-11-02 15:54:24 | main | INFO | analyze_text_comprehensive:32 | Starting comprehensive analysis for text: 'Tu Shant raha, ani movie enjoy kar !...'
+2025-11-02 15:54:24 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 15:54:24 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 15:54:24 | preprocessing | INFO | detect_language:698 | Language detected: hin (confidence=0.60, method=glotlid_latin)
+2025-11-02 15:54:25 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (38.77%) using XLM-RoBERTa
+2025-11-02 15:54:25 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.99%)
+2025-11-02 15:54:26 | api | INFO | analyze_text:204 | Analysis complete: language=hin, sentiment=positive
+2025-11-02 15:56:16 | api | INFO | shutdown_event:470 | Multilingual NLP Analysis API Shutting Down...
+2025-11-02 15:56:27 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 15:56:27 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 15:56:28 | api | INFO | startup_event:459 | ================================================================================
+2025-11-02 15:56:28 | api | INFO | startup_event:460 | Multilingual NLP Analysis API Starting...
+2025-11-02 15:56:28 | api | INFO | startup_event:461 | Version: 1.0.0
+2025-11-02 15:56:28 | api | INFO | startup_event:462 | Features: Profanity Filter, Domain Detection, Language Analysis,
+2025-11-02 15:56:28 | api | INFO | startup_event:463 |           Sentiment Analysis, Toxicity Detection, Translation
+2025-11-02 15:56:28 | api | INFO | startup_event:464 | ================================================================================
+2025-11-02 15:57:30 | api | INFO | shutdown_event:470 | Multilingual NLP Analysis API Shutting Down...
+2025-11-02 15:58:51 | preprocessing | INFO | detect_language:698 | Language detected: eng (confidence=1.00, method=glotlid_high_confidence)
+2025-11-02 15:58:51 | preprocessing | INFO | detect_language:698 | Language detected: mar (confidence=1.00, method=glotlid_high_confidence)
+2025-11-02 15:58:51 | preprocessing | INFO | detect_language:698 | Language detected: eng_indic_mixed (confidence=0.82, method=code_mixed_high_confidence)
+2025-11-02 15:58:51 | preprocessing | INFO | detect_language:698 | Language detected: hin (confidence=0.60, method=glotlid_latin)
+2025-11-02 16:17:39 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 16:17:39 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 16:17:40 | adaptive_learning | INFO | __init__:76 | Adaptive Learning System initialized
+2025-11-02 16:17:48 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 16:17:48 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 16:17:49 | adaptive_learning | INFO | __init__:76 | Adaptive Learning System initialized
+2025-11-02 16:17:49 | api | INFO | startup_event:643 | ================================================================================
+2025-11-02 16:17:49 | api | INFO | startup_event:644 | Multilingual NLP Analysis API Starting...
+2025-11-02 16:17:49 | api | INFO | startup_event:645 | Version: 1.0.0
+2025-11-02 16:17:49 | api | INFO | startup_event:646 | Features: Profanity Filter, Domain Detection, Language Analysis,
+2025-11-02 16:17:49 | api | INFO | startup_event:647 |           Sentiment Analysis, Toxicity Detection, Translation
+2025-11-02 16:17:49 | api | INFO | startup_event:648 | ================================================================================
+2025-11-02 16:17:55 | api | INFO | analyze_text:232 | Comprehensive analysis request: text_length=24
+2025-11-02 16:17:55 | main | INFO | analyze_text_comprehensive:38 | Starting comprehensive analysis for text: 'Yaar, mala movie avadli!...'
+2025-11-02 16:17:55 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 16:17:55 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 16:18:00 | preprocessing | INFO | detect_language:698 | Language detected: tel (confidence=0.60, method=glotlid_latin)
+2025-11-02 16:18:00 | adaptive_learning | INFO | store_pattern:169 | New pattern stored: medium_4_latin_f7e32015 (conf: 0.60)
+2025-11-02 16:18:00 | inference | INFO | get_sentiment_model:115 | Loading XLM-R Sentiment model (first use)...
+2025-11-02 16:18:04 | inference | INFO | get_sentiment_model:121 | XLM-R Sentiment model loaded successfully
+2025-11-02 16:18:04 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (45.18%) using XLM-RoBERTa
+2025-11-02 16:18:04 | inference | INFO | get_toxicity_model:169 | Loading Toxicity model (first use)...
+2025-11-02 16:18:06 | inference | INFO | get_toxicity_model:175 | Toxicity model loaded successfully
+2025-11-02 16:18:07 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.12%)
+2025-11-02 16:18:08 | api | INFO | analyze_text:244 | Analysis complete: language=tel, sentiment=positive
+2025-11-02 16:18:12 | api | INFO | analyze_text:232 | Comprehensive analysis request: text_length=16
+2025-11-02 16:18:12 | main | INFO | analyze_text_comprehensive:38 | Starting comprehensive analysis for text: 'Tu Khup chukicha...'
+2025-11-02 16:18:12 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 16:18:12 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 16:18:12 | preprocessing | INFO | detect_language:698 | Language detected: swh (confidence=0.91, method=glotlid)
+2025-11-02 16:18:12 | adaptive_learning | INFO | store_pattern:169 | New pattern stored: short_3_latin_a5f46ff0 (conf: 0.91)
+2025-11-02 16:18:12 | inference | INFO | predict_sentiment:345 | Sentiment prediction: negative (35.50%) using XLM-RoBERTa
+2025-11-02 16:18:12 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (3.91%)
+2025-11-02 16:18:13 | api | INFO | analyze_text:244 | Analysis complete: language=swh, sentiment=negative
+2025-11-02 16:18:15 | api | INFO | submit_user_feedback:510 | User feedback received from test_user
+2025-11-02 16:18:15 | api | ERROR | submit_user_feedback:539 | Error recording user feedback: record_user_feedback() got an unexpected keyword argument 'detected_language'
+2025-11-02 16:18:17 | api | INFO | analyze_text:232 | Comprehensive analysis request: text_length=24
+2025-11-02 16:18:17 | main | INFO | analyze_text_comprehensive:38 | Starting comprehensive analysis for text: 'Mala tumchi aathavan ahe...'
+2025-11-02 16:18:17 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 16:18:17 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 16:18:17 | preprocessing | INFO | detect_language:698 | Language detected: mar (confidence=1.00, method=glotlid_high_confidence)
+2025-11-02 16:18:17 | adaptive_learning | INFO | store_pattern:169 | New pattern stored: medium_4_latin_5049da3e (conf: 1.00)
+2025-11-02 16:18:17 | inference | INFO | predict_sentiment:345 | Sentiment prediction: negative (35.79%) using XLM-RoBERTa
+2025-11-02 16:18:17 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (5.42%)
+2025-11-02 16:18:19 | api | INFO | analyze_text:244 | Analysis complete: language=mar, sentiment=negative
+2025-11-02 16:18:21 | api | INFO | submit_user_feedback:510 | User feedback received from test_user
+2025-11-02 16:18:21 | api | ERROR | submit_user_feedback:539 | Error recording user feedback: record_user_feedback() got an unexpected keyword argument 'detected_language'
+2025-11-02 16:18:23 | api | INFO | analyze_text:232 | Comprehensive analysis request: text_length=19
+2025-11-02 16:18:23 | main | INFO | analyze_text_comprehensive:38 | Starting comprehensive analysis for text: 'Aaj khup garmi aahe...'
+2025-11-02 16:18:23 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 16:18:23 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 16:18:23 | preprocessing | INFO | detect_language:698 | Language detected: mar (confidence=0.97, method=glotlid_high_confidence)
+2025-11-02 16:18:23 | adaptive_learning | INFO | store_pattern:169 | New pattern stored: short_4_latin_62f96c0f (conf: 0.97)
+2025-11-02 16:18:23 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (47.23%) using XLM-RoBERTa
+2025-11-02 16:18:23 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (10.19%)
+2025-11-02 16:18:24 | api | INFO | analyze_text:244 | Analysis complete: language=mar, sentiment=positive
+2025-11-02 16:18:26 | api | INFO | submit_user_feedback:510 | User feedback received from test_user
+2025-11-02 16:18:26 | api | ERROR | submit_user_feedback:539 | Error recording user feedback: record_user_feedback() got an unexpected keyword argument 'detected_language'
+2025-11-02 16:18:28 | api | INFO | analyze_text:232 | Comprehensive analysis request: text_length=32
+2025-11-02 16:18:28 | main | INFO | analyze_text_comprehensive:38 | Starting comprehensive analysis for text: 'Tu chup bhet, guys lets continue...'
+2025-11-02 16:18:28 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 16:18:28 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 16:18:28 | preprocessing | INFO | detect_language:698 | Language detected: eng_indic_mixed (confidence=0.75, method=code_mixed_latin_dominant)
+2025-11-02 16:18:28 | adaptive_learning | INFO | store_pattern:169 | New pattern stored: medium_6_latin_e4e52a92 (conf: 0.75)
+2025-11-02 16:18:29 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (41.01%) using XLM-RoBERTa
+2025-11-02 16:18:29 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.69%)
+2025-11-02 16:18:30 | api | INFO | analyze_text:244 | Analysis complete: language=eng_indic_mixed, sentiment=positive
+2025-11-02 16:18:32 | api | INFO | submit_user_feedback:510 | User feedback received from test_user
+2025-11-02 16:18:32 | api | ERROR | submit_user_feedback:539 | Error recording user feedback: record_user_feedback() got an unexpected keyword argument 'detected_language'
+2025-11-02 16:18:34 | api | INFO | analyze_text:232 | Comprehensive analysis request: text_length=39
+2025-11-02 16:18:34 | main | INFO | analyze_text_comprehensive:38 | Starting comprehensive analysis for text: 'Yaar aaj bohot boring hai, let's go out...'
+2025-11-02 16:18:34 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 16:18:34 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 16:18:34 | preprocessing | INFO | detect_language:698 | Language detected: hi_eng_mixed (confidence=0.75, method=code_mixed_latin_dominant)
+2025-11-02 16:18:34 | adaptive_learning | INFO | store_pattern:169 | New pattern stored: medium_8_latin_d1e2d8df (conf: 0.75)
+2025-11-02 16:18:34 | inference | INFO | predict_sentiment:286 | Using IndicBERT model for language: hi
+2025-11-02 16:18:34 | inference | INFO | get_indic_sentiment_model:138 | Loading IndicBERT v2 Sentiment model (first use)...
+2025-11-02 16:18:37 | inference | INFO | get_indic_sentiment_model:151 | IndicBERT v2 Sentiment model loaded successfully
+2025-11-02 16:18:38 | inference | INFO | predict_sentiment:314 | Sentiment prediction: negative (97.32%) using IndicBERT
+2025-11-02 16:18:38 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (2.20%)
+2025-11-02 16:18:39 | api | INFO | analyze_text:244 | Analysis complete: language=hi_eng_mixed, sentiment=negative
+2025-11-02 16:18:41 | api | INFO | submit_user_feedback:510 | User feedback received from test_user
+2025-11-02 16:18:41 | api | ERROR | submit_user_feedback:539 | Error recording user feedback: record_user_feedback() got an unexpected keyword argument 'detected_language'
+2025-11-02 16:18:42 | api | INFO | analyze_text:232 | Comprehensive analysis request: text_length=24
+2025-11-02 16:18:42 | main | INFO | analyze_text_comprehensive:38 | Starting comprehensive analysis for text: 'Yaar, mala movie avadli!...'
+2025-11-02 16:18:42 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 16:18:42 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 16:18:42 | preprocessing | INFO | detect_language:698 | Language detected: tel (confidence=0.60, method=glotlid_latin)
+2025-11-02 16:18:42 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (45.18%) using XLM-RoBERTa
+2025-11-02 16:18:42 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.12%)
+2025-11-02 16:18:43 | api | INFO | analyze_text:244 | Analysis complete: language=tel, sentiment=positive
+2025-11-02 16:18:43 | api | INFO | analyze_text:232 | Comprehensive analysis request: text_length=36
+2025-11-02 16:18:43 | main | INFO | analyze_text_comprehensive:38 | Starting comprehensive analysis for text: 'Meeting cancel ho gayi, I'm free now...'
+2025-11-02 16:18:43 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 16:18:43 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 16:18:43 | preprocessing | INFO | detect_language:698 | Language detected: eng (confidence=0.99, method=glotlid_high_confidence)
+2025-11-02 16:18:43 | adaptive_learning | INFO | store_pattern:169 | New pattern stored: medium_7_latin_43f94966 (conf: 0.99)
+2025-11-02 16:18:44 | inference | INFO | predict_sentiment:345 | Sentiment prediction: negative (34.24%) using XLM-RoBERTa
+2025-11-02 16:18:44 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (15.92%)
+2025-11-02 16:18:45 | api | INFO | analyze_text:244 | Analysis complete: language=eng, sentiment=negative
+2025-11-02 16:18:45 | api | INFO | analyze_text:232 | Comprehensive analysis request: text_length=24
+2025-11-02 16:18:45 | main | INFO | analyze_text_comprehensive:38 | Starting comprehensive analysis for text: 'Yaar, mala movie avadli!...'
+2025-11-02 16:18:45 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 16:18:45 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 16:18:45 | preprocessing | INFO | detect_language:698 | Language detected: tel (confidence=0.60, method=glotlid_latin)
+2025-11-02 16:18:45 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (45.18%) using XLM-RoBERTa
+2025-11-02 16:18:45 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.12%)
+2025-11-02 16:18:46 | api | INFO | analyze_text:244 | Analysis complete: language=tel, sentiment=positive
+2025-11-02 16:18:47 | api | INFO | submit_user_feedback:510 | User feedback received from test_user
+2025-11-02 16:18:47 | api | ERROR | submit_user_feedback:539 | Error recording user feedback: record_user_feedback() got an unexpected keyword argument 'detected_language'
+2025-11-02 16:18:49 | api | INFO | analyze_text:232 | Comprehensive analysis request: text_length=32
+2025-11-02 16:18:49 | main | INFO | analyze_text_comprehensive:38 | Starting comprehensive analysis for text: 'यह बहुत अच्छा है और मुझे पसंद है...'
+2025-11-02 16:18:49 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 16:18:49 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 16:18:49 | preprocessing | INFO | detect_language:698 | Language detected: hin (confidence=1.00, method=glotlid_high_confidence)
+2025-11-02 16:18:49 | adaptive_learning | INFO | store_pattern:169 | New pattern stored: medium_8_indic_17bd1b35 (conf: 1.00)
+2025-11-02 16:18:49 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (87.80%) using XLM-RoBERTa
+2025-11-02 16:18:49 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.04%)
+2025-11-02 16:18:50 | api | INFO | analyze_text:244 | Analysis complete: language=hin, sentiment=positive
+2025-11-02 16:18:53 | api | INFO | analyze_text:232 | Comprehensive analysis request: text_length=32
+2025-11-02 16:18:53 | main | INFO | analyze_text_comprehensive:38 | Starting comprehensive analysis for text: 'यह बहुत अच्छा है और मुझे पसंद है...'
+2025-11-02 16:18:53 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 16:18:53 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 16:18:53 | preprocessing | INFO | detect_language:698 | Language detected: hin (confidence=1.00, method=glotlid_high_confidence)
+2025-11-02 16:18:53 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (87.80%) using XLM-RoBERTa
+2025-11-02 16:18:53 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.04%)
+2025-11-02 16:18:54 | api | INFO | analyze_text:244 | Analysis complete: language=hin, sentiment=positive
+2025-11-02 16:18:56 | api | INFO | analyze_text:232 | Comprehensive analysis request: text_length=32
+2025-11-02 16:18:56 | main | INFO | analyze_text_comprehensive:38 | Starting comprehensive analysis for text: 'यह बहुत अच्छा है और मुझे पसंद है...'
+2025-11-02 16:18:56 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 16:18:56 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 16:18:56 | preprocessing | INFO | detect_language:698 | Language detected: hin (confidence=1.00, method=glotlid_high_confidence)
+2025-11-02 16:18:56 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (87.80%) using XLM-RoBERTa
+2025-11-02 16:18:56 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.04%)
+2025-11-02 16:18:58 | api | INFO | analyze_text:244 | Analysis complete: language=hin, sentiment=positive
+2025-11-02 16:19:00 | api | INFO | analyze_text:232 | Comprehensive analysis request: text_length=32
+2025-11-02 16:19:00 | main | INFO | analyze_text_comprehensive:38 | Starting comprehensive analysis for text: 'यह बहुत अच्छा है और मुझे पसंद है...'
+2025-11-02 16:19:00 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 16:19:00 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 16:19:00 | adaptive_learning | INFO | check_pattern_cache:132 | Cache HIT: Using cached pattern for signature medium_8_indic_17bd1b35
+2025-11-02 16:19:00 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (87.80%) using XLM-RoBERTa
+2025-11-02 16:19:01 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.04%)
+2025-11-02 16:19:01 | api | INFO | analyze_text:244 | Analysis complete: language=hin, sentiment=positive
+2025-11-02 16:19:04 | api | INFO | analyze_text:232 | Comprehensive analysis request: text_length=33
+2025-11-02 16:19:04 | main | INFO | analyze_text_comprehensive:38 | Starting comprehensive analysis for text: 'यह बहुत खराब है और मुझे नापसंद है...'
+2025-11-02 16:19:04 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 16:19:04 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 16:19:04 | preprocessing | INFO | detect_language:698 | Language detected: hin (confidence=1.00, method=glotlid_high_confidence)
+2025-11-02 16:19:04 | adaptive_learning | INFO | store_pattern:169 | New pattern stored: medium_8_indic_2e575d4e (conf: 1.00)
+2025-11-02 16:19:04 | inference | INFO | predict_sentiment:345 | Sentiment prediction: negative (93.18%) using XLM-RoBERTa
+2025-11-02 16:19:04 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (1.60%)
+2025-11-02 16:19:05 | api | INFO | analyze_text:244 | Analysis complete: language=hin, sentiment=negative
+2025-11-02 16:19:06 | api | INFO | analyze_text:232 | Comprehensive analysis request: text_length=17
+2025-11-02 16:19:06 | main | INFO | analyze_text_comprehensive:38 | Starting comprehensive analysis for text: 'Tu kasa me sangu!...'
+2025-11-02 16:19:06 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 16:19:06 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 16:19:06 | preprocessing | INFO | detect_language:698 | Language detected: twi (confidence=0.99, method=glotlid_high_confidence)
+2025-11-02 16:19:06 | adaptive_learning | INFO | store_pattern:169 | New pattern stored: short_4_latin_cb40af17 (conf: 0.99)
+2025-11-02 16:19:06 | inference | INFO | predict_sentiment:345 | Sentiment prediction: negative (58.03%) using XLM-RoBERTa
+2025-11-02 16:19:06 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (92.28%)
+2025-11-02 16:19:08 | api | INFO | analyze_text:244 | Analysis complete: language=twi, sentiment=negative
+2025-11-02 16:19:08 | api | INFO | analyze_text:232 | Comprehensive analysis request: text_length=32
+2025-11-02 16:19:08 | main | INFO | analyze_text_comprehensive:38 | Starting comprehensive analysis for text: 'वह बहुत सुंदर है और सबको पसंद है...'
+2025-11-02 16:19:08 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 16:19:08 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 16:19:08 | preprocessing | INFO | detect_language:698 | Language detected: hin (confidence=1.00, method=glotlid_high_confidence)
+2025-11-02 16:19:08 | adaptive_learning | INFO | store_pattern:169 | New pattern stored: medium_8_indic_d643d29f (conf: 1.00)
+2025-11-02 16:19:09 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (80.58%) using XLM-RoBERTa
+2025-11-02 16:19:09 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.07%)
+2025-11-02 16:19:10 | api | INFO | analyze_text:244 | Analysis complete: language=hin, sentiment=positive
+2025-11-02 16:19:12 | api | INFO | get_learning_stats:587 | Learning statistics requested
+2025-11-02 16:19:56 | api | INFO | analyze_text:232 | Comprehensive analysis request: text_length=31
+2025-11-02 16:19:56 | main | INFO | analyze_text_comprehensive:38 | Starting comprehensive analysis for text: 'सूर्य उगवला म्हणून प्रकाश पसरला...'
+2025-11-02 16:19:56 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 16:19:56 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 16:19:56 | preprocessing | INFO | detect_language:698 | Language detected: mar (confidence=1.00, method=glotlid_high_confidence)
+2025-11-02 16:19:56 | adaptive_learning | INFO | store_pattern:169 | New pattern stored: medium_5_indic_22dc7e14 (conf: 1.00)
+2025-11-02 16:19:56 | inference | INFO | predict_sentiment:345 | Sentiment prediction: neutral (36.84%) using XLM-RoBERTa
+2025-11-02 16:19:56 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.10%)
+2025-11-02 16:19:57 | api | INFO | analyze_text:244 | Analysis complete: language=mar, sentiment=neutral
+2025-11-02 16:20:53 | api | INFO | get_learning_stats:587 | Learning statistics requested
+2025-11-02 16:21:16 | api | INFO | analyze_text:232 | Comprehensive analysis request: text_length=20
+2025-11-02 16:21:16 | main | INFO | analyze_text_comprehensive:38 | Starting comprehensive analysis for text: 'Tu kashala me sangu!...'
+2025-11-02 16:21:16 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 16:21:16 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 16:21:16 | preprocessing | INFO | detect_language:698 | Language detected: ido (confidence=0.60, method=glotlid_latin)
+2025-11-02 16:21:16 | adaptive_learning | INFO | store_pattern:169 | New pattern stored: medium_4_latin_d794b952 (conf: 0.60)
+2025-11-02 16:21:16 | inference | INFO | predict_sentiment:345 | Sentiment prediction: negative (34.84%) using XLM-RoBERTa
+2025-11-02 16:21:16 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (75.64%)
+2025-11-02 16:21:18 | api | INFO | analyze_text:244 | Analysis complete: language=ido, sentiment=negative
+2025-11-02 16:22:46 | api | INFO | analyze_text:232 | Comprehensive analysis request: text_length=16
+2025-11-02 16:22:46 | main | INFO | analyze_text_comprehensive:38 | Starting comprehensive analysis for text: 'Tu Khup chukicha...'
+2025-11-02 16:22:46 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 16:22:46 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 16:22:46 | preprocessing | INFO | detect_language:698 | Language detected: swh (confidence=0.91, method=glotlid)
+2025-11-02 16:22:46 | inference | INFO | predict_sentiment:345 | Sentiment prediction: negative (35.50%) using XLM-RoBERTa
+2025-11-02 16:22:46 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (3.91%)
+2025-11-02 16:22:46 | api | INFO | analyze_text:244 | Analysis complete: language=swh, sentiment=negative
+2025-11-02 16:22:48 | api | INFO | submit_user_feedback:510 | User feedback received from test_user
+2025-11-02 16:22:48 | api | ERROR | submit_user_feedback:539 | Error recording user feedback: record_user_feedback() got an unexpected keyword argument 'detected_language'
+2025-11-02 16:22:50 | api | INFO | analyze_text:232 | Comprehensive analysis request: text_length=24
+2025-11-02 16:22:50 | main | INFO | analyze_text_comprehensive:38 | Starting comprehensive analysis for text: 'Mala tumchi aathavan ahe...'
+2025-11-02 16:22:50 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 16:22:50 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 16:22:50 | preprocessing | INFO | detect_language:698 | Language detected: mar (confidence=1.00, method=glotlid_high_confidence)
+2025-11-02 16:22:51 | inference | INFO | predict_sentiment:345 | Sentiment prediction: negative (35.79%) using XLM-RoBERTa
+2025-11-02 16:22:51 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (5.42%)
+2025-11-02 16:22:52 | api | INFO | analyze_text:244 | Analysis complete: language=mar, sentiment=negative
+2025-11-02 16:22:54 | api | INFO | submit_user_feedback:510 | User feedback received from test_user
+2025-11-02 16:22:54 | api | ERROR | submit_user_feedback:539 | Error recording user feedback: record_user_feedback() got an unexpected keyword argument 'detected_language'
+2025-11-02 16:22:56 | api | INFO | analyze_text:232 | Comprehensive analysis request: text_length=19
+2025-11-02 16:22:56 | main | INFO | analyze_text_comprehensive:38 | Starting comprehensive analysis for text: 'Aaj khup garmi aahe...'
+2025-11-02 16:22:56 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 16:22:56 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 16:22:56 | preprocessing | INFO | detect_language:698 | Language detected: mar (confidence=0.97, method=glotlid_high_confidence)
+2025-11-02 16:22:57 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (47.23%) using XLM-RoBERTa
+2025-11-02 16:22:57 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (10.19%)
+2025-11-02 16:22:57 | api | INFO | analyze_text:244 | Analysis complete: language=mar, sentiment=positive
+2025-11-02 16:23:01 | api | INFO | shutdown_event:654 | Multilingual NLP Analysis API Shutting Down...
+2025-11-02 16:23:01 | adaptive_learning | INFO | save_data:419 | Adaptive learning data saved successfully
+2025-11-02 16:23:15 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 16:23:15 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 16:23:16 | adaptive_learning | INFO | _load_data:364 | Loaded 13 cached patterns
+2025-11-02 16:23:16 | adaptive_learning | INFO | _load_data:370 | Loaded 0 failure logs
+2025-11-02 16:23:16 | adaptive_learning | INFO | _load_data:376 | Loaded 0 user corrections
+2025-11-02 16:23:16 | adaptive_learning | INFO | _load_data:390 | Loaded statistics
+2025-11-02 16:23:16 | adaptive_learning | INFO | __init__:76 | Adaptive Learning System initialized
+2025-11-02 16:23:16 | api | INFO | startup_event:643 | ================================================================================
+2025-11-02 16:23:16 | api | INFO | startup_event:644 | Multilingual NLP Analysis API Starting...
+2025-11-02 16:23:16 | api | INFO | startup_event:645 | Version: 1.0.0
+2025-11-02 16:23:16 | api | INFO | startup_event:646 | Features: Profanity Filter, Domain Detection, Language Analysis,
+2025-11-02 16:23:16 | api | INFO | startup_event:647 |           Sentiment Analysis, Toxicity Detection, Translation
+2025-11-02 16:23:16 | api | INFO | startup_event:648 | ================================================================================
+2025-11-02 16:23:22 | api | INFO | shutdown_event:654 | Multilingual NLP Analysis API Shutting Down...
+2025-11-02 16:23:22 | adaptive_learning | INFO | save_data:419 | Adaptive learning data saved successfully
+2025-11-02 16:23:31 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 16:23:31 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 16:23:32 | adaptive_learning | INFO | _load_data:364 | Loaded 13 cached patterns
+2025-11-02 16:23:32 | adaptive_learning | INFO | _load_data:370 | Loaded 0 failure logs
+2025-11-02 16:23:32 | adaptive_learning | INFO | _load_data:376 | Loaded 0 user corrections
+2025-11-02 16:23:32 | adaptive_learning | INFO | _load_data:390 | Loaded statistics
+2025-11-02 16:23:32 | adaptive_learning | INFO | __init__:76 | Adaptive Learning System initialized
+2025-11-02 16:23:32 | api | INFO | startup_event:643 | ================================================================================
+2025-11-02 16:23:32 | api | INFO | startup_event:644 | Multilingual NLP Analysis API Starting...
+2025-11-02 16:23:32 | api | INFO | startup_event:645 | Version: 1.0.0
+2025-11-02 16:23:32 | api | INFO | startup_event:646 | Features: Profanity Filter, Domain Detection, Language Analysis,
+2025-11-02 16:23:32 | api | INFO | startup_event:647 |           Sentiment Analysis, Toxicity Detection, Translation
+2025-11-02 16:23:32 | api | INFO | startup_event:648 | ================================================================================
+2025-11-02 16:23:33 | api | INFO | shutdown_event:654 | Multilingual NLP Analysis API Shutting Down...
+2025-11-02 16:23:33 | adaptive_learning | INFO | save_data:419 | Adaptive learning data saved successfully
+2025-11-02 16:23:56 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 16:23:56 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 16:23:57 | adaptive_learning | INFO | _load_data:364 | Loaded 13 cached patterns
+2025-11-02 16:23:57 | adaptive_learning | INFO | _load_data:370 | Loaded 0 failure logs
+2025-11-02 16:23:57 | adaptive_learning | INFO | _load_data:376 | Loaded 0 user corrections
+2025-11-02 16:23:57 | adaptive_learning | INFO | _load_data:390 | Loaded statistics
+2025-11-02 16:23:57 | adaptive_learning | INFO | __init__:76 | Adaptive Learning System initialized
+2025-11-02 16:23:57 | api | INFO | startup_event:645 | ================================================================================
+2025-11-02 16:23:57 | api | INFO | startup_event:646 | Multilingual NLP Analysis API Starting...
+2025-11-02 16:23:57 | api | INFO | startup_event:647 | Version: 1.0.0
+2025-11-02 16:23:57 | api | INFO | startup_event:648 | Features: Profanity Filter, Domain Detection, Language Analysis,
+2025-11-02 16:23:57 | api | INFO | startup_event:649 |           Sentiment Analysis, Toxicity Detection, Translation
+2025-11-02 16:23:57 | api | INFO | startup_event:650 | ================================================================================
+2025-11-02 16:24:03 | api | INFO | shutdown_event:656 | Multilingual NLP Analysis API Shutting Down...
+2025-11-02 16:24:03 | adaptive_learning | INFO | save_data:419 | Adaptive learning data saved successfully
+2025-11-02 16:24:28 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 16:24:28 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 16:24:29 | adaptive_learning | INFO | _load_data:364 | Loaded 13 cached patterns
+2025-11-02 16:24:29 | adaptive_learning | INFO | _load_data:370 | Loaded 0 failure logs
+2025-11-02 16:24:29 | adaptive_learning | INFO | _load_data:376 | Loaded 0 user corrections
+2025-11-02 16:24:29 | adaptive_learning | INFO | _load_data:390 | Loaded statistics
+2025-11-02 16:24:29 | adaptive_learning | INFO | __init__:76 | Adaptive Learning System initialized
+2025-11-02 16:24:29 | api | INFO | startup_event:742 | ================================================================================
+2025-11-02 16:24:29 | api | INFO | startup_event:743 | Multilingual NLP Analysis API Starting...
+2025-11-02 16:24:29 | api | INFO | startup_event:744 | Version: 1.0.0
+2025-11-02 16:24:29 | api | INFO | startup_event:745 | Features: Profanity Filter, Domain Detection, Language Analysis,
+2025-11-02 16:24:29 | api | INFO | startup_event:746 |           Sentiment Analysis, Toxicity Detection, Translation
+2025-11-02 16:24:29 | api | INFO | startup_event:747 | ================================================================================
+2025-11-02 16:25:24 | api | INFO | shutdown_event:753 | Multilingual NLP Analysis API Shutting Down...
+2025-11-02 16:25:24 | adaptive_learning | INFO | save_data:419 | Adaptive learning data saved successfully
+2025-11-02 16:25:37 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 16:25:37 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 16:25:38 | adaptive_learning | INFO | _load_data:364 | Loaded 13 cached patterns
+2025-11-02 16:25:38 | adaptive_learning | INFO | _load_data:370 | Loaded 0 failure logs
+2025-11-02 16:25:38 | adaptive_learning | INFO | _load_data:376 | Loaded 0 user corrections
+2025-11-02 16:25:38 | adaptive_learning | INFO | _load_data:390 | Loaded statistics
+2025-11-02 16:25:38 | adaptive_learning | INFO | __init__:76 | Adaptive Learning System initialized
+2025-11-02 16:25:38 | api | INFO | startup_event:742 | ================================================================================
+2025-11-02 16:25:38 | api | INFO | startup_event:743 | Multilingual NLP Analysis API Starting...
+2025-11-02 16:25:38 | api | INFO | startup_event:744 | Version: 1.0.0
+2025-11-02 16:25:38 | api | INFO | startup_event:745 | Features: Profanity Filter, Domain Detection, Language Analysis,
+2025-11-02 16:25:38 | api | INFO | startup_event:746 |           Sentiment Analysis, Toxicity Detection, Translation
+2025-11-02 16:25:38 | api | INFO | startup_event:747 | ================================================================================
+2025-11-02 16:27:01 | api | INFO | analyze_text:237 | Comprehensive analysis request: text_length=20
+2025-11-02 16:27:01 | main | INFO | analyze_text_comprehensive:39 | Starting comprehensive analysis for text: 'Tu kashala me sangu!...'
+2025-11-02 16:27:01 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 16:27:01 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 16:27:07 | preprocessing | INFO | detect_language:698 | Language detected: ido (confidence=0.60, method=glotlid_latin)
+2025-11-02 16:27:07 | inference | INFO | get_sentiment_model:115 | Loading XLM-R Sentiment model (first use)...
+2025-11-02 16:27:10 | inference | INFO | get_sentiment_model:121 | XLM-R Sentiment model loaded successfully
+2025-11-02 16:27:10 | inference | INFO | predict_sentiment:345 | Sentiment prediction: negative (34.84%) using XLM-RoBERTa
+2025-11-02 16:27:10 | inference | INFO | get_toxicity_model:169 | Loading Toxicity model (first use)...
+2025-11-02 16:27:13 | inference | INFO | get_toxicity_model:175 | Toxicity model loaded successfully
+2025-11-02 16:27:13 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (75.64%)
+2025-11-02 16:27:13 | adaptive_learning | WARNING | store_detection_failure_with_context:595 | Detection failure stored: fail_20251102_162713_b928568b - obscure_language_ido
+2025-11-02 16:27:13 | adaptive_learning | WARNING | store_detection_failure_with_context:596 |   Text: 'Tu kashala me sangu!...'
+2025-11-02 16:27:13 | adaptive_learning | WARNING | store_detection_failure_with_context:597 |   Detected: ido (confidence: 0.60)
+2025-11-02 16:27:13 | api | INFO | analyze_text:249 | Analysis complete: language=ido, sentiment=negative
+2025-11-02 16:27:33 | api | INFO | analyze_text:237 | Comprehensive analysis request: text_length=22
+2025-11-02 16:27:33 | main | INFO | analyze_text_comprehensive:39 | Starting comprehensive analysis for text: 'Tula kashala me sangu!...'
+2025-11-02 16:27:33 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 16:27:33 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 16:27:33 | preprocessing | INFO | detect_language:698 | Language detected: lua (confidence=0.66, method=glotlid_medium)
+2025-11-02 16:27:33 | adaptive_learning | INFO | store_pattern:169 | New pattern stored: medium_4_latin_d7b4d89d (conf: 0.66)
+2025-11-02 16:27:33 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (37.03%) using XLM-RoBERTa
+2025-11-02 16:27:34 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (16.31%)
+2025-11-02 16:27:35 | api | INFO | analyze_text:249 | Analysis complete: language=lua, sentiment=positive
+2025-11-02 16:27:54 | api | INFO | shutdown_event:753 | Multilingual NLP Analysis API Shutting Down...
+2025-11-02 16:27:54 | adaptive_learning | INFO | save_data:419 | Adaptive learning data saved successfully
+2025-11-02 16:28:05 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 16:28:05 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 16:28:05 | adaptive_learning | INFO | _load_data:364 | Loaded 14 cached patterns
+2025-11-02 16:28:05 | adaptive_learning | INFO | _load_data:370 | Loaded 0 failure logs
+2025-11-02 16:28:05 | adaptive_learning | INFO | _load_data:376 | Loaded 0 user corrections
+2025-11-02 16:28:05 | adaptive_learning | INFO | _load_data:390 | Loaded statistics
+2025-11-02 16:28:05 | adaptive_learning | INFO | __init__:76 | Adaptive Learning System initialized
+2025-11-02 16:28:05 | api | INFO | startup_event:742 | ================================================================================
+2025-11-02 16:28:05 | api | INFO | startup_event:743 | Multilingual NLP Analysis API Starting...
+2025-11-02 16:28:05 | api | INFO | startup_event:744 | Version: 1.0.0
+2025-11-02 16:28:05 | api | INFO | startup_event:745 | Features: Profanity Filter, Domain Detection, Language Analysis,
+2025-11-02 16:28:05 | api | INFO | startup_event:746 |           Sentiment Analysis, Toxicity Detection, Translation
+2025-11-02 16:28:05 | api | INFO | startup_event:747 | ================================================================================
+2025-11-02 16:28:23 | api | INFO | shutdown_event:753 | Multilingual NLP Analysis API Shutting Down...
+2025-11-02 16:28:23 | adaptive_learning | INFO | save_data:419 | Adaptive learning data saved successfully
+2025-11-02 16:28:24 | adaptive_learning | INFO | save_data:419 | Adaptive learning data saved successfully
+2025-11-02 16:29:30 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 16:29:30 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 16:29:31 | adaptive_learning | INFO | _load_data:364 | Loaded 0 cached patterns
+2025-11-02 16:29:31 | adaptive_learning | INFO | _load_data:370 | Loaded 0 failure logs
+2025-11-02 16:29:31 | adaptive_learning | INFO | _load_data:376 | Loaded 0 user corrections
+2025-11-02 16:29:31 | adaptive_learning | INFO | _load_data:390 | Loaded statistics
+2025-11-02 16:29:31 | adaptive_learning | INFO | __init__:76 | Adaptive Learning System initialized
+2025-11-02 16:29:40 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 16:29:40 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 16:29:41 | adaptive_learning | INFO | _load_data:364 | Loaded 0 cached patterns
+2025-11-02 16:29:41 | adaptive_learning | INFO | _load_data:370 | Loaded 0 failure logs
+2025-11-02 16:29:41 | adaptive_learning | INFO | _load_data:376 | Loaded 0 user corrections
+2025-11-02 16:29:41 | adaptive_learning | INFO | _load_data:390 | Loaded statistics
+2025-11-02 16:29:41 | adaptive_learning | INFO | __init__:76 | Adaptive Learning System initialized
+2025-11-02 16:29:41 | api | INFO | startup_event:742 | ================================================================================
+2025-11-02 16:29:41 | api | INFO | startup_event:743 | Multilingual NLP Analysis API Starting...
+2025-11-02 16:29:41 | api | INFO | startup_event:744 | Version: 1.0.0
+2025-11-02 16:29:41 | api | INFO | startup_event:745 | Features: Profanity Filter, Domain Detection, Language Analysis,
+2025-11-02 16:29:41 | api | INFO | startup_event:746 |           Sentiment Analysis, Toxicity Detection, Translation
+2025-11-02 16:29:41 | api | INFO | startup_event:747 | ================================================================================
+2025-11-02 16:29:49 | api | INFO | analyze_text:237 | Comprehensive analysis request: text_length=22
+2025-11-02 16:29:49 | main | INFO | analyze_text_comprehensive:39 | Starting comprehensive analysis for text: 'Tula kashala me sangu!...'
+2025-11-02 16:29:49 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 16:29:49 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 16:29:54 | preprocessing | INFO | detect_language:698 | Language detected: lua (confidence=0.66, method=glotlid_medium)
+2025-11-02 16:29:54 | adaptive_learning | INFO | store_pattern:169 | New pattern stored: medium_4_latin_d7b4d89d (conf: 0.66)
+2025-11-02 16:29:54 | inference | INFO | get_sentiment_model:115 | Loading XLM-R Sentiment model (first use)...
+2025-11-02 16:29:56 | inference | INFO | get_sentiment_model:121 | XLM-R Sentiment model loaded successfully
+2025-11-02 16:29:57 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (37.03%) using XLM-RoBERTa
+2025-11-02 16:29:57 | inference | INFO | get_toxicity_model:169 | Loading Toxicity model (first use)...
+2025-11-02 16:29:59 | inference | INFO | get_toxicity_model:175 | Toxicity model loaded successfully
+2025-11-02 16:29:59 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (16.31%)
+2025-11-02 16:29:59 | api | INFO | analyze_text:249 | Analysis complete: language=lua, sentiment=positive
+2025-11-02 16:30:46 | api | INFO | shutdown_event:753 | Multilingual NLP Analysis API Shutting Down...
+2025-11-02 16:30:46 | adaptive_learning | INFO | save_data:419 | Adaptive learning data saved successfully
+2025-11-02 16:30:47 | adaptive_learning | INFO | save_data:419 | Adaptive learning data saved successfully
+2025-11-02 16:42:14 | preprocessing | INFO | detect_romanized_indian_language:207 | Romanized Marathi detected: ['tu', 'me', 'kashala', 'sangu']
+2025-11-02 16:42:14 | preprocessing | INFO | detect_language:652 | 🎯 Romanized Indic detected EARLY: mar for text: 'Tu kashala me sangu!...'
+2025-11-02 16:42:14 | preprocessing | INFO | detect_romanized_indian_language:207 | Romanized Marathi detected: ['aahes', 'tu', 'kasa']
+2025-11-02 16:42:14 | preprocessing | INFO | detect_language:652 | 🎯 Romanized Indic detected EARLY: mar for text: 'Tu kasa aahes?...'
+2025-11-02 16:42:14 | preprocessing | INFO | detect_romanized_indian_language:207 | Romanized Marathi detected: ['me', 'yenar', 'kal']
+2025-11-02 16:42:14 | preprocessing | INFO | detect_language:652 | 🎯 Romanized Indic detected EARLY: mar for text: 'Kal me yenar...'
+2025-11-02 16:42:14 | preprocessing | INFO | detect_romanized_indian_language:207 | Romanized Marathi detected: ['tula', 'me', 'kashala', 'sangu']
+2025-11-02 16:42:14 | preprocessing | INFO | detect_language:652 | 🎯 Romanized Indic detected EARLY: mar for text: 'Tula kashala me sangu!...'
+2025-11-02 16:42:14 | preprocessing | INFO | detect_romanized_indian_language:220 | Romanized Hindi detected: ['hoon', 'mai', 'thik']
+2025-11-02 16:42:14 | preprocessing | INFO | detect_language:652 | 🎯 Romanized Indic detected EARLY: hin for text: 'Mai thik hoon...'
+2025-11-02 16:42:14 | preprocessing | INFO | detect_romanized_indian_language:220 | Romanized Hindi detected: ['hai', 'kya', 'yaar', 'bol']
+2025-11-02 16:42:14 | preprocessing | INFO | detect_language:652 | 🎯 Romanized Indic detected EARLY: hin for text: 'Yaar kya bol raha hai...'
+2025-11-02 16:42:18 | preprocessing | INFO | detect_language:896 | Language detected: hin (confidence=1.00, method=glotlid_high_confidence)
+2025-11-02 16:44:43 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 16:44:43 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 16:44:43 | adaptive_learning | INFO | _load_data:364 | Loaded 0 cached patterns
+2025-11-02 16:44:43 | adaptive_learning | INFO | _load_data:370 | Loaded 0 failure logs
+2025-11-02 16:44:43 | adaptive_learning | INFO | _load_data:376 | Loaded 0 user corrections
+2025-11-02 16:44:43 | adaptive_learning | INFO | _load_data:390 | Loaded statistics
+2025-11-02 16:44:43 | adaptive_learning | INFO | __init__:76 | Adaptive Learning System initialized
+2025-11-02 16:44:52 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 16:44:52 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 16:44:53 | adaptive_learning | INFO | _load_data:364 | Loaded 0 cached patterns
+2025-11-02 16:44:53 | adaptive_learning | INFO | _load_data:370 | Loaded 0 failure logs
+2025-11-02 16:44:53 | adaptive_learning | INFO | _load_data:376 | Loaded 0 user corrections
+2025-11-02 16:44:53 | adaptive_learning | INFO | _load_data:390 | Loaded statistics
+2025-11-02 16:44:53 | adaptive_learning | INFO | __init__:76 | Adaptive Learning System initialized
+2025-11-02 16:44:54 | api | INFO | startup_event:742 | ================================================================================
+2025-11-02 16:44:54 | api | INFO | startup_event:743 | Multilingual NLP Analysis API Starting...
+2025-11-02 16:44:54 | api | INFO | startup_event:744 | Version: 1.0.0
+2025-11-02 16:44:54 | api | INFO | startup_event:745 | Features: Profanity Filter, Domain Detection, Language Analysis,
+2025-11-02 16:44:54 | api | INFO | startup_event:746 |           Sentiment Analysis, Toxicity Detection, Translation
+2025-11-02 16:44:54 | api | INFO | startup_event:747 | ================================================================================
+2025-11-02 16:44:57 | api | INFO | analyze_text:237 | Comprehensive analysis request: text_length=22
+2025-11-02 16:44:57 | main | INFO | analyze_text_comprehensive:39 | Starting comprehensive analysis for text: 'Tula kashala me sangu!...'
+2025-11-02 16:44:57 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 16:44:57 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 16:44:57 | preprocessing | INFO | detect_romanized_indian_language:207 | Romanized Marathi detected: ['tula', 'me', 'kashala', 'sangu']
+2025-11-02 16:44:57 | preprocessing | INFO | detect_language:652 | 🎯 Romanized Indic detected EARLY: mar for text: 'Tula kashala me sangu!...'
+2025-11-02 16:44:57 | adaptive_learning | INFO | store_pattern:169 | New pattern stored: medium_4_latin_d7b4d89d (conf: 0.85)
+2025-11-02 16:44:57 | inference | INFO | get_sentiment_model:115 | Loading XLM-R Sentiment model (first use)...
+2025-11-02 16:45:00 | inference | INFO | get_sentiment_model:121 | XLM-R Sentiment model loaded successfully
+2025-11-02 16:45:00 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (37.03%) using XLM-RoBERTa
+2025-11-02 16:45:00 | inference | INFO | get_toxicity_model:169 | Loading Toxicity model (first use)...
+2025-11-02 16:45:03 | inference | INFO | get_toxicity_model:175 | Toxicity model loaded successfully
+2025-11-02 16:45:03 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (16.31%)
+2025-11-02 16:45:09 | api | INFO | analyze_text:249 | Analysis complete: language=mar, sentiment=positive
+2025-11-02 16:49:16 | api | INFO | shutdown_event:753 | Multilingual NLP Analysis API Shutting Down...
+2025-11-02 16:49:16 | adaptive_learning | INFO | save_data:419 | Adaptive learning data saved successfully
+2025-11-02 16:49:26 | inference | INFO | <module>:24 | Device: CPU
+2025-11-02 16:49:26 | inference | INFO | <module>:30 | Running on CPU (GPU not available)
+2025-11-02 16:49:27 | adaptive_learning | INFO | _load_data:364 | Loaded 1 cached patterns
+2025-11-02 16:49:27 | adaptive_learning | INFO | _load_data:370 | Loaded 0 failure logs
+2025-11-02 16:49:27 | adaptive_learning | INFO | _load_data:376 | Loaded 0 user corrections
+2025-11-02 16:49:27 | adaptive_learning | INFO | _load_data:390 | Loaded statistics
+2025-11-02 16:49:27 | adaptive_learning | INFO | __init__:76 | Adaptive Learning System initialized
+2025-11-02 16:49:27 | api | INFO | startup_event:742 | ================================================================================
+2025-11-02 16:49:27 | api | INFO | startup_event:743 | Multilingual NLP Analysis API Starting...
+2025-11-02 16:49:27 | api | INFO | startup_event:744 | Version: 1.0.0
+2025-11-02 16:49:27 | api | INFO | startup_event:745 | Features: Profanity Filter, Domain Detection, Language Analysis,
+2025-11-02 16:49:27 | api | INFO | startup_event:746 |           Sentiment Analysis, Toxicity Detection, Translation
+2025-11-02 16:49:27 | api | INFO | startup_event:747 | ================================================================================
+2025-11-02 16:49:42 | api | INFO | analyze_text:237 | Comprehensive analysis request: text_length=5
+2025-11-02 16:49:42 | main | INFO | analyze_text_comprehensive:39 | Starting comprehensive analysis for text: 'zatu!...'
+2025-11-02 16:49:42 | profanity_filter | INFO | __init__:203 | Profanity filter initialized for languages: english, hindi, marathi, tamil, telugu, kannada, punjabi, gujarati, bengali, malayalam
+2025-11-02 16:49:42 | profanity_filter | INFO | __init__:204 | Total bad words loaded: 3
+2025-11-02 16:49:47 | preprocessing | INFO | detect_language:896 | Language detected: eus (confidence=0.75, method=glotlid_short_text)
+2025-11-02 16:49:47 | adaptive_learning | INFO | store_pattern:169 | New pattern stored: short_1_latin_bcf8251d (conf: 0.75)
+2025-11-02 16:49:47 | inference | INFO | get_sentiment_model:115 | Loading XLM-R Sentiment model (first use)...
+2025-11-02 16:49:50 | inference | INFO | get_sentiment_model:121 | XLM-R Sentiment model loaded successfully
+2025-11-02 16:49:51 | inference | INFO | predict_sentiment:345 | Sentiment prediction: positive (35.29%) using XLM-RoBERTa
+2025-11-02 16:49:51 | inference | INFO | get_toxicity_model:169 | Loading Toxicity model (first use)...
+2025-11-02 16:49:53 | inference | INFO | get_toxicity_model:175 | Toxicity model loaded successfully
+2025-11-02 16:49:53 | inference | INFO | predict_toxicity:391 | Toxicity prediction: max=toxic (0.73%)
+2025-11-02 16:49:55 | api | INFO | analyze_text:249 | Analysis complete: language=eus, sentiment=positive
+2025-11-02 16:50:44 | api | INFO | shutdown_event:753 | Multilingual NLP Analysis API Shutting Down...
+2025-11-02 16:50:44 | adaptive_learning | INFO | save_data:419 | Adaptive learning data saved successfully
+2025-11-02 16:50:45 | adaptive_learning | INFO | save_data:419 | Adaptive learning data saved successfully

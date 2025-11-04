@@ -1,0 +1,130 @@
+{
+  "language": "Telugu",
+  "script": "Telugu",
+  "iso_code": "tel",
+  "version": "1.0",
+  "word_count": 85,
+  "categories": {
+    "time": {
+      "indu": "ఇండు",
+      "repu": "రేపు",
+      "ninne": "నిన్నె",
+      "ippudu": "ఇప్పుడు",
+      "taruvata": "తరువాత",
+      "mundu": "ముందు",
+      "inka": "ఇంకా",
+      "udayam": "ఉదయం",
+      "madhyanam": "మధ్యాహ్నం",
+      "sayantram": "సాయంత్రం",
+      "ratri": "రాత్రి"
+    },
+    "pronouns": {
+      "nenu": "నేను",
+      "nuvvu": "నువ్వు",
+      "meeru": "మీరు",
+      "atanu": "అతను",
+      "ame": "ఆమె",
+      "varu": "వారు",
+      "vallanu": "వాళ్ళను",
+      "na": "నా",
+      "naa": "నా",
+      "mi": "మీ",
+      "mee": "మీ"
+    },
+    "verbs": {
+      "undi": "ఉంది",
+      "unndi": "ఉన్నది",
+      "ayyindi": "అయ్యింది",
+      "avtundi": "అవుతుంది",
+      "cheyi": "చెయ్యి",
+      "cheyyi": "చెయ్యి",
+      "cheyandi": "చేయండి",
+      "po": "పో",
+      "povu": "పోవు",
+      "ra": "రా",
+      "randi": "రండి",
+      "ivvu": "ఇవ్వు",
+      "teesko": "తీసుకో",
+      "cheppu": "చెప్పు",
+      "cheppandi": "చెప్పండి",
+      "choodandi": "చూడండి",
+      "vinu": "విను",
+      "vinandi": "వినండి",
+      "tinu": "తిను",
+      "tinandi": "తినండి"
+    },
+    "adjectives": {
+      "manchi": "మంచి",
+      "chala": "చాలా",
+      "chaala": "చాలా",
+      "santosham": "సంతోషం",
+      "badha": "బాధ",
+      "andanga": "అందంగా",
+      "pedda": "పెద్ద",
+      "chinna": "చిన్న",
+      "kotha": "కొత్త",
+      "paatha": "పాత",
+      "konchem": "కొంచెం",
+      "ekkuva": "ఎక్కువ"
+    },
+    "question_words": {
+      "enti": "ఏంటి",
+      "emiti": "ఏమిటి",
+      "ela": "ఎలా",
+      "ekkada": "ఎక్కడ",
+      "eppudu": "ఎప్పుడు",
+      "enduku": "ఎందుకు",
+      "entha": "ఎంత",
+      "evaru": "ఎవరు"
+    },
+    "negation": {
+      "kadu": "కాదు",
+      "kaadu": "కాదు",
+      "ledu": "లేదు",
+      "leedu": "లేదు",
+      "oddu": "ఒద్దు",
+      "vaddu": "వద్దు"
+    },
+    "affirmation": {
+      "avunu": "అవును",
+      "avnu": "అవును",
+      "sare": "సరే",
+      "sari": "సరి",
+      "tappakunda": "తప్పకుండా"
+    },
+    "family": {
+      "amma": "అమ్మ",
+      "nanna": "నాన్న",
+      "anna": "అన్న",
+      "akka": "అక్క",
+      "tammudu": "తమ్ముడు",
+      "chellelu": "చెల్లెలు",
+      "abbayi": "అబ్బాయి",
+      "ammayi": "అమ్మాయి"
+    },
+    "common_nouns": {
+      "illu": "ఇల్లు",
+      "pani": "పని",
+      "pranallu": "ప్రజలు",
+      "snehitudu": "స్నేహితుడు",
+      "vishayam": "విషయం",
+      "samayam": "సమయం",
+      "dabbu": "డబ్బు",
+      "nagaram": "నగరం",
+      "gramam": "గ్రామం",
+      "desham": "దేశం"
+    },
+    "borrowed_words": {
+      "movie": "మూవీ",
+      "cinema": "సినిమా",
+      "phone": "ఫోన్",
+      "mobile": "మొబైల్",
+      "office": "ఆఫీస్",
+      "school": "స్కూల్",
+      "college": "కాలేజ్",
+      "hospital": "హాస్పిటల్",
+      "traffic": "ట్రాఫిక్",
+      "bus": "బస్"
+    }
+  }
+}

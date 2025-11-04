@@ -1,0 +1,132 @@
+{
+  "language": "Bengali",
+  "script": "Bengali",
+  "iso_code": "ben",
+  "version": "1.0",
+  "word_count": 100,
+  "categories": {
+    "time": {
+      "aaj": "আজ",
+      "kal": "কাল",
+      "ekhon": "এখন",
+      "akhon": "এখন",
+      "takhon": "তখন",
+      "pore": "পরে",
+      "age": "আগে",
+      "sokal": "সকাল",
+      "bikal": "বিকাল",
+      "sondha": "সন্ধ্যা",
+      "raat": "রাত"
+    },
+    "pronouns": {
+      "ami": "আমি",
+      "tumi": "তুমি",
+      "tui": "তুই",
+      "apni": "আপনি",
+      "se": "সে",
+      "tara": "তারা",
+      "tader": "তাদের",
+      "amar": "আমার",
+      "tomar": "তোমার",
+      "tar": "তার"
+    },
+    "verbs": {
+      "ache": "আছে",
+      "achhe": "আছে",
+      "chhilo": "ছিল",
+      "hobe": "হবে",
+      "koro": "করো",
+      "kora": "করা",
+      "korchi": "করছি",
+      "jao": "যাও",
+      "jaoa": "যাওয়া",
+      "aso": "আসো",
+      "asa": "আসা",
+      "dao": "দাও",
+      "neo": "নেও",
+      "bolo": "বলো",
+      "bola": "বলা",
+      "dekho": "দেখো",
+      "dekha": "দেখা",
+      "shono": "শোনো",
+      "shona": "শোনা",
+      "khao": "খাও",
+      "khaoa": "খাওয়া"
+    },
+    "adjectives": {
+      "bhalo": "ভালো",
+      "valo": "ভালো",
+      "khub": "খুব",
+      "khushi": "খুশি",
+      "dukhi": "দুঃখী",
+      "sundor": "সুন্দর",
+      "boro": "বড়",
+      "choto": "ছোট",
+      "notun": "নতুন",
+      "purano": "পুরানো",
+      "sotti": "সত্যি",
+      "mithya": "মিথ্যা"
+    },
+    "question_words": {
+      "ki": "কি",
+      "keno": "কেন",
+      "kothay": "কোথায়",
+      "kokhon": "কখন",
+      "kemon": "কেমন",
+      "koto": "কত",
+      "ke": "কে",
+      "kara": "কারা"
+    },
+    "negation": {
+      "na": "না",
+      "naa": "না",
+      "nai": "নাই",
+      "nei": "নেই",
+      "kono": "কোনো"
+    },
+    "affirmation": {
+      "haan": "হ্যাঁ",
+      "han": "হ্যাঁ",
+      "thik": "ঠিক",
+      "achha": "আচ্ছা"
+    },
+    "family": {
+      "ma": "মা",
+      "baba": "বাবা",
+      "bhai": "ভাই",
+      "bon": "বোন",
+      "chele": "ছেলে",
+      "meye": "মেয়ে",
+      "dida": "দিদা",
+      "dadu": "দাদু",
+      "nani": "নানি",
+      "nanu": "নানু"
+    },
+    "common_nouns": {
+      "bari": "বাড়ি",
+      "ghar": "ঘর",
+      "kaj": "কাজ",
+      "manush": "মানুষ",
+      "bondhu": "বন্ধু",
+      "kotha": "কথা",
+      "somoy": "সময়",
+      "taka": "টাকা",
+      "shohor": "শহর",
+      "gram": "গ্রাম",
+      "desh": "দেশ"
+    },
+    "borrowed_words": {
+      "movie": "মুভি",
+      "film": "ফিল্ম",
+      "phone": "ফোন",
+      "mobile": "মোবাইল",
+      "office": "অফিস",
+      "school": "স্কুল",
+      "college": "কলেজ",
+      "hospital": "হাসপাতাল",
+      "traffic": "ট্রাফিক",
+      "bus": "বাস",
+      "train": "ট্রেন"
+    }
+  }
+}
