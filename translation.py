@@ -83,7 +83,7 @@ def load_romanized_dictionaries():
                     word_map.update(words)
                 
                 dictionaries[lang_key] = word_map
-                logger.info(f"✅ Loaded {len(word_map)} words for {lang_key} from {filename}")
+                logger.debug(f"✅ Loaded {len(word_map)} words for {lang_key}")
                 
             except Exception as e:
                 logger.error(f"❌ Failed to load {filename}: {str(e)}")
@@ -128,9 +128,8 @@ def romanized_to_devanagari(text, lang_code):
         
         # Log statistics
         stats = result['statistics']
-        logger.info(f"[FIX #10] Romanized conversion: {stats['converted_tokens']}/{stats['total_tokens']} tokens, "
-                   f"{stats['preserved_tokens']} English words preserved, "
-                   f"method={result['conversion_method']}, rate={stats['conversion_rate']:.1f}%")
+        logger.debug(f"[Romanized] {stats['converted_tokens']}/{stats['total_tokens']} converted, "
+                    f"method={result['conversion_method']}")
         
         # Return converted text if any tokens were converted
         if stats['converted_tokens'] > 0:
@@ -373,6 +372,27 @@ def test_translation():
     
     print("\n✅ Translation tests complete!")
     print("=" * 60)
+
+
+# ==================== MODEL STATUS FUNCTION ====================
+
+def get_translation_model_status():
+    """Get the status of translation system"""
+    global ROMANIZED_DICTIONARY
+    
+    dictionaries_loaded = len(ROMANIZED_DICTIONARY) if ROMANIZED_DICTIONARY else 0
+    
+    # Translation uses Google Translate API - always available
+    # We check if dictionaries are loaded for romanized conversion
+    status = "loaded" if dictionaries_loaded > 0 else "not_loaded"
+    
+    return {
+        "status": status,
+        "dictionaries_loaded": dictionaries_loaded,
+        "translator": "Google Translate API",
+        "romanized_support": list(ROMANIZED_DICTIONARY.keys()) if ROMANIZED_DICTIONARY else []
+    }
+
 
 if __name__ == "__main__":
     test_translation()

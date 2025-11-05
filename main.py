@@ -1,5 +1,3 @@
-# Enhanced NLP Project with Comprehensive Language Support
-
 from preprocessing import detect_language, preprocess_text, get_language_statistics
 from inference import predict_sentiment, predict_toxicity
 from translation import translate_text, detect_and_translate_to_english
@@ -13,50 +11,14 @@ from adaptive_learning import (
     store_detection_failure_with_context
 )
 
-logger = get_logger(__name__, level="INFO")
-
-
-def print_startup_info():
-    """Display startup information about the NLP system"""
-    print("\n" + "="*80)
-    print("🚀 Multilingual NLP Analysis System - Enhanced Edition")
-    print("="*80)
-    print("\n📋 Recent Fixes & Enhancements:")
-    print("  ✅ FIX #10: Hybrid Romanized-to-Native Conversion")
-    print("     • Intelligently preserves English words in mixed text")
-    print("     • Converts only romanized Indic tokens to native script")
-    print("     • Supports 6 languages: Hindi, Marathi, Bengali, Tamil, Telugu, Punjabi")
-    print("  ✅ FIX #9: Enhanced Logging for Code-Mixing Events")
-    print("     • Comprehensive diagnostic logging for threshold tuning")
-    print("  ✅ FIX #8: Ensemble Fusion (GLotLID + Romanized Detection)")
-    print("     • Weighted confidence scoring for better language detection")
-    print("  ✅ FIX #7: Adaptive Code-Mixing Thresholds")
-    print("     • Dynamic thresholds based on text length")
-    print("  ✅ FIX #6: Robust Language Code Normalization")
-    print("     • Handles 60+ language code variants")
-    print("\n🌐 Supported Features:")
-    print("  • Language Detection (International + Indian + Code-Mixed)")
-    print("  • Sentiment Analysis (Multilingual)")
-    print("  • Toxicity Detection (6 categories)")
-    print("  • Translation (Auto-detect + Romanized conversion)")
-    print("  • Profanity Filtering (10 languages)")
-    print("  • Domain Detection (Technical, Medical, Legal, etc.)")
-    print("  • Hybrid Romanized-to-Native Conversion [NEW!]")
-    print("\n📡 API Endpoints:")
-    print("  POST /analyze   - Comprehensive analysis")
-    print("  POST /convert   - Romanized-to-native conversion [FIX #10]")
-    print("  POST /translate - Translation with auto-conversion")
-    print("  POST /sentiment - Sentiment analysis only")
-    print("  POST /toxicity  - Toxicity detection only")
-    print("  GET  /health    - System health check")
-    print("="*80 + "\n")
+logger = get_logger(__name__, level="WARNING")
 
 
 def analyze_text_comprehensive(text, normalization_level=None, preserve_emojis=True, 
                                punctuation_mode='preserve', check_profanity=True,
                                detect_domains=True, compact=False):
     """
-    Comprehensive text analysis including all NLP features
+    Comprehensive text analysis including language detection, sentiment, toxicity, and translation.
     
     Args:
         text (str): Input text to analyze
@@ -65,12 +27,12 @@ def analyze_text_comprehensive(text, normalization_level=None, preserve_emojis=T
         punctuation_mode (str): How to handle punctuation
         check_profanity (bool): Enable profanity detection
         detect_domains (bool): Enable domain detection
-        compact (bool): Return simplified/compact response (default: False)
+        compact (bool): Return simplified response
     
     Returns:
         dict: Analysis results (compact or verbose based on `compact` param)
     """
-    logger.info(f"Analyzing text: '{text[:50]}...'")
+    logger.info(f"[/analyze] text_length={len(text)}")
     
     profanity_result = None
     if check_profanity:
@@ -82,6 +44,7 @@ def analyze_text_comprehensive(text, normalization_level=None, preserve_emojis=T
         domain_processor = DomainProcessor()
         domain_result = domain_processor.detect_domains(text)
     
+    # Use cache to avoid repeated language detection overhead
     cached_detection = check_cache_before_detection(text)
     if cached_detection:
         lang_detection = cached_detection
@@ -99,7 +62,6 @@ def analyze_text_comprehensive(text, normalization_level=None, preserve_emojis=T
     sentiment_result = predict_sentiment(cleaned_text, language=lang_code)
     toxicity_result = predict_toxicity(cleaned_text)
     
-    # Extract translation parameters
     base_lang = lang_code.split('_')[0]
     is_code_mixed = '_mixed' in lang_code or '_eng_mixed' in lang_code
     is_romanized = lang_detection.get('language_info', {}).get('is_romanized', False)
@@ -107,21 +69,10 @@ def analyze_text_comprehensive(text, normalization_level=None, preserve_emojis=T
     
     if base_lang not in ['eng', 'en']:
         # Determine source language for translation
-        if is_code_mixed:
-            source_lang = base_lang if base_lang in ['hin', 'mar', 'ben', 'tam', 'tel'] else 'auto'
-        else:
-            source_lang = base_lang
-        
-        # ENHANCED: Pass is_romanized flag for better translation
-        english_translation = translate_text(
-            text, 
-            target_lang='en', 
-            source_lang=source_lang,
-            is_romanized=is_romanized  # NEW: Enable romanized conversion
-        )
+        source_lang = base_lang if base_lang in ['hin', 'mar', 'ben', 'tam', 'tel'] else 'auto'
+        english_translation = translate_text(text, target_lang='en', source_lang=source_lang, is_romanized=is_romanized)
         if english_translation['success']:
             translations['english'] = english_translation['translated_text']
-            # Add conversion info if available
             if english_translation.get('used_romanized_conversion'):
                 translations['conversion_applied'] = True
                 translations['converted_to_devanagari'] = english_translation.get('converted_text')
@@ -147,7 +98,7 @@ def analyze_text_comprehensive(text, normalization_level=None, preserve_emojis=T
         'statistics': lang_stats
     }
     
-    # Return compact version if requested
+    # Return compact version if requested (reduces API response size for clients)
     if compact:
         return _create_compact_response(result)
     
@@ -160,7 +111,7 @@ def analyze_text_comprehensive(text, normalization_level=None, preserve_emojis=T
 
 def _create_compact_response(full_result):
     """
-    Create a simplified/compact API response with only essential fields
+    Create a simplified/compact API response with only essential fields.
     
     Args:
         full_result (dict): Full verbose analysis result
@@ -202,35 +153,24 @@ def _create_compact_response(full_result):
     
     return compact
 
+
 def main():
-    """Main function with test cases"""
+    """Run test cases for NLP analysis."""
     
     test_cases = [
-        {'text': "This is a wonderful product. I highly recommend it to everyone!",
-         'description': "Clean Text", 'normalization': None, 'preserve_emojis': True, 'punctuation_mode': 'preserve'},
-        {'text': "The stock price increased by $50 today. Market cap reached $1.5B USD.",
-         'description': "Financial Domain", 'normalization': None, 'preserve_emojis': True, 'punctuation_mode': 'preserve'},
-        {'text': "This fucking product is shit! I hate this damn thing.",
-         'description': "English Profanity", 'normalization': None, 'preserve_emojis': True, 'punctuation_mode': 'preserve'},
-        {'text': "Yaar ye movie bahut mast hai! Must watch bro, ekdum zabardast!",
-         'description': "Hinglish Code-Mixed", 'normalization': None, 'preserve_emojis': True, 'punctuation_mode': 'preserve'}
+        "This is a wonderful product. I highly recommend it to everyone!",
+        "The stock price increased by $50 today. Market cap reached $1.5B USD.",
+        "This fucking product is shit! I hate this damn thing.",
+        "Yaar ye movie bahut mast hai! Must watch bro, ekdum zabardast!"
     ]
     
-    logger.info(f"Running {len(test_cases)} test cases...")
+    logger.info(f"Starting {len(test_cases)} test cases")
     
-    for i, test_case in enumerate(test_cases, 1):
-        logger.info(f"\n{'='*60}\nTest {i}: {test_case['description']}\n{'='*60}")
-        
-        result = analyze_text_comprehensive(
-            test_case['text'], 
-            normalization_level=test_case.get('normalization'),
-            preserve_emojis=test_case.get('preserve_emojis', True),
-            punctuation_mode=test_case.get('punctuation_mode', 'preserve')
-        )
-        
-        logger.info(f"Test {i} complete")
+    for i, text in enumerate(test_cases, 1):
+        analyze_text_comprehensive(text)
     
-    logger.info("\nAll tests complete")
+    logger.info("Test cases complete")
+
 
 if __name__ == "__main__":
     main()

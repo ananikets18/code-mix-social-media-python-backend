@@ -1,9 +1,9 @@
 """
-Redis Cache Manager for NLP API
+Redis Cache Manager for NLP API (Upstash REST API)
 Provides caching functionality for API responses and intermediate results
+Supports Upstash cloud Redis via REST API
 """
 
-import redis
 import json
 import hashlib
 from typing import Optional, Dict, Any, Union
@@ -13,31 +13,102 @@ from config import settings
 
 logger = get_logger(__name__)
 
+# Import appropriate Redis client
+redis_client_type = None
+try:
+    # Check if Upstash REST credentials are provided
+    if settings.upstash_redis_rest_url and settings.upstash_redis_rest_token:
+        from upstash_redis import UpstashRedis
+        redis_client_type = "upstash"
+        logger.debug("Using Upstash REST API client")
+    else:
+        # Fallback to traditional Redis client (for local development)
+        import redis
+        redis_client_type = "traditional"
+        logger.debug("Using traditional Redis client")
+except ImportError as e:
+    logger.warning(f"Redis import error: {e}")
+    redis_client_type = None
+
 
 class RedisCache:
-    """Redis cache manager with automatic serialization and TTL"""
+    """Redis cache manager with automatic serialization and TTL (Upstash REST API)"""
     
     def __init__(self):
-        """Initialize Redis connection"""
+        """Initialize Redis connection with Upstash REST API support"""
         self.redis_client = None
         self.enabled = settings.redis_enabled
+        self.connection_status = "disabled"
+        self.last_error = None
+        self.connection_timestamp = None
+        self.client_type = redis_client_type
         
         if self.enabled:
-            try:
-                self.redis_client = redis.from_url(
-                    settings.redis_url,
-                    decode_responses=True,
-                    socket_timeout=5,
-                    socket_connect_timeout=5,
-                    retry_on_timeout=True
+            self._initialize_connection()
+    
+    def _initialize_connection(self):
+        """Initialize Redis connection with Upstash REST API"""
+        try:
+            if self.client_type == "upstash":
+                # Use Upstash REST API
+                if not settings.upstash_redis_rest_url or not settings.upstash_redis_rest_token:
+                    raise ValueError("UPSTASH_REDIS_REST_URL and UPSTASH_REDIS_REST_TOKEN must be set")
+                
+                logger.debug("Connecting to Upstash Redis...")
+                
+                from upstash_redis import UpstashRedis
+                self.redis_client = UpstashRedis(
+                    rest_url=settings.upstash_redis_rest_url,
+                    rest_token=settings.upstash_redis_rest_token,
+                    timeout=settings.redis_timeout
                 )
-                # Test connection
-                self.redis_client.ping()
-                logger.info(f"✓ Redis connected: {settings.redis_url}")
-            except Exception as e:
-                logger.warning(f"Redis connection failed: {e}. Caching disabled.")
-                self.enabled = False
-                self.redis_client = None
+                
+            elif self.client_type == "traditional":
+                # Use traditional Redis client (fallback for local development)
+                logger.debug("Connecting to local Redis...")
+                import redis
+                
+                # Fallback to local Redis URL if set in environment
+                redis_url = getattr(settings, 'redis_url', 'redis://localhost:6379')
+                
+                self.redis_client = redis.from_url(
+                    redis_url,
+                    decode_responses=True,
+                    socket_timeout=settings.redis_timeout,
+                    socket_connect_timeout=settings.redis_timeout,
+                    retry_on_timeout=True,
+                    max_connections=50
+                )
+            else:
+                raise ValueError("No Redis client available")
+            
+            # Test connection with retries
+            max_retries = settings.redis_max_retries
+            for attempt in range(max_retries):
+                try:
+                    self.redis_client.ping()
+                    self.connection_status = "connected"
+                    self.connection_timestamp = datetime.utcnow().isoformat()
+                    self.last_error = None
+                    
+                    logger.info(f"✅ Redis connected ({self.client_type})")
+                    return
+                    
+                except Exception as e:
+                    if attempt < max_retries - 1:
+                        logger.warning(f"Redis connection attempt {attempt + 1}/{max_retries} failed: {e}")
+                        import time
+                        time.sleep(1)
+                    else:
+                        raise e
+            
+        except Exception as e:
+            self.connection_status = "error"
+            self.last_error = str(e)
+            logger.error(f"❌ Redis connection failed: {e}")
+            logger.warning("⚠️  Caching disabled - API will work with degraded performance")
+            self.enabled = False
+            self.redis_client = None
     
     def _generate_key(self, prefix: str, data: Union[str, Dict]) -> str:
         """Generate a unique cache key from data"""
@@ -240,7 +311,7 @@ class RedisCache:
     
     def get_stats(self) -> Dict:
         """
-        Get Redis cache statistics
+        Get Redis cache statistics (Upstash REST API compatible)
         
         Returns:
             Dictionary with cache stats
@@ -248,36 +319,87 @@ class RedisCache:
         if not self.enabled or not self.redis_client:
             return {
                 "enabled": False,
-                "status": "disabled"
+                "active": False,
+                "status": "disabled",
+                "provider": None,
+                "message": "Redis is disabled"
             }
         
         try:
-            info = self.redis_client.info()
+            # Check provider
+            is_upstash = self.client_type == "upstash"
+            provider = "Upstash (Cloud - REST API)" if is_upstash else "Local Redis"
             
-            # Count keys by prefix
-            key_counts = {}
-            for prefix in ["analysis", "lang_detect", "sentiment", "translation"]:
-                pattern = f"{prefix}:*"
-                keys = self.redis_client.keys(pattern)
-                key_counts[prefix] = len(keys)
-            
-            return {
+            # Basic stats that work on both Upstash and local Redis
+            stats = {
                 "enabled": True,
+                "active": True,
                 "status": "connected",
-                "redis_version": info.get("redis_version", "unknown"),
-                "used_memory_human": info.get("used_memory_human", "unknown"),
-                "connected_clients": info.get("connected_clients", 0),
-                "total_keys": sum(key_counts.values()),
-                "keys_by_type": key_counts,
+                "provider": provider,
+                "is_upstash": is_upstash,
+                "client_type": self.client_type,
                 "ttl": settings.redis_ttl,
-                "url": settings.redis_url.replace(settings.redis_url.split("@")[-1] if "@" in settings.redis_url else "", "***")
+                "rest_url": self._mask_url(settings.upstash_redis_rest_url) if is_upstash else None,
+                "connection_time": self.connection_timestamp
             }
+            
+            # Try to get INFO (may not work on Upstash free tier)
+            try:
+                if hasattr(self.redis_client, 'info'):
+                    info = self.redis_client.info()
+                    if info:
+                        stats.update({
+                            "redis_version": info.get("redis_version", "unknown"),
+                            "used_memory_human": info.get("used_memory_human", "N/A"),
+                            "connected_clients": info.get("connected_clients", 0),
+                        })
+                    else:
+                        raise Exception("INFO not available")
+                else:
+                    raise Exception("INFO not available")
+            except Exception:
+                # Upstash free tier doesn't support INFO command
+                logger.debug("INFO command not available (Upstash REST API)")
+                stats.update({
+                    "redis_version": "Upstash (REST API)",
+                    "used_memory_human": "N/A",
+                    "connected_clients": "N/A",
+                })
+            
+            # Count keys by prefix (works on Upstash)
+            key_counts = {}
+            try:
+                for prefix in ["analysis", "lang_detect", "sentiment", "translation"]:
+                    pattern = f"{prefix}:*"
+                    # Use SCAN instead of KEYS for better performance
+                    cursor = 0
+                    count = 0
+                    while True:
+                        cursor, keys = self.redis_client.scan(cursor, match=pattern, count=100)
+                        count += len(keys)
+                        if cursor == 0:
+                            break
+                    key_counts[prefix] = count
+                
+                stats["total_keys"] = sum(key_counts.values())
+                stats["keys_by_type"] = key_counts
+                
+            except Exception as e:
+                logger.warning(f"Could not count keys: {e}")
+                stats["total_keys"] = "N/A"
+                stats["keys_by_type"] = {}
+            
+            return stats
+            
         except Exception as e:
             logger.error(f"Error getting Redis stats: {e}")
             return {
                 "enabled": True,
+                "active": False,
                 "status": "error",
-                "error": str(e)
+                "provider": "Upstash (Cloud - REST API)" if self.client_type == "upstash" else "Local Redis",
+                "error": str(e),
+                "message": "Failed to retrieve Redis statistics"
             }
     
     def clear_all(self) -> bool:
@@ -324,35 +446,103 @@ class RedisCache:
     
     def health_check(self) -> Dict:
         """
-        Check Redis health
+        Check Redis health with detailed status for frontend
         
         Returns:
-            Health status dictionary
+            Health status dictionary with connection details
         """
         if not self.enabled:
             return {
                 "status": "disabled",
-                "message": "Redis caching is disabled"
+                "active": False,
+                "message": "Redis caching is disabled",
+                "provider": None,
+                "connection_time": None,
+                "last_error": self.last_error
             }
         
         if not self.redis_client:
             return {
                 "status": "error",
-                "message": "Redis client not initialized"
+                "active": False,
+                "message": "Redis client not initialized",
+                "provider": None,
+                "connection_time": None,
+                "last_error": self.last_error or "Client not initialized"
             }
         
         try:
-            self.redis_client.ping()
+            # Ping with timeout
+            response = self.redis_client.ping()
+            
+            # Determine provider
+            is_upstash = self.client_type == "upstash"
+            provider = "Upstash (Cloud - REST API)" if is_upstash else "Local Redis"
+            
+            # Try to get server info (may not work on Upstash free tier)
+            redis_version = "unknown"
+            try:
+                if hasattr(self.redis_client, 'info'):
+                    info = self.redis_client.info()
+                    redis_version = info.get("redis_version", "unknown") if info else "Upstash (free tier)"
+                else:
+                    redis_version = "Upstash (REST API)"
+            except:
+                redis_version = "Upstash (REST API)"
+            
             return {
                 "status": "healthy",
-                "message": "Redis is connected and responsive",
-                "url": settings.redis_url
+                "active": True,
+                "message": f"Redis is connected and responsive",
+                "provider": provider,
+                "is_upstash": is_upstash,
+                "client_type": self.client_type,
+                "redis_version": redis_version,
+                "connection_time": self.connection_timestamp,
+                "connection_status": self.connection_status,
+                "rest_url": self._mask_url(settings.upstash_redis_rest_url) if is_upstash else None,
+                "last_error": None
             }
-        except Exception as e:
+            
+        except (ConnectionError, TimeoutError) as e:
+            error_type = "ConnectionError" if isinstance(e, ConnectionError) else "TimeoutError"
+            self.connection_status = "connection_error" if isinstance(e, ConnectionError) else "timeout"
+            self.last_error = str(e)
+            
             return {
                 "status": "unhealthy",
-                "message": f"Redis connection error: {str(e)}"
+                "active": False,
+                "message": f"Redis {error_type.lower()}: {str(e)}",
+                "provider": "Upstash (Cloud - REST API)" if self.client_type == "upstash" else "Local Redis",
+                "connection_time": self.connection_timestamp,
+                "last_error": str(e),
+                "error_type": error_type
             }
+            
+        except Exception as e:
+            self.connection_status = "error"
+            self.last_error = str(e)
+            return {
+                "status": "unhealthy",
+                "active": False,
+                "message": f"Redis error: {str(e)}",
+                "provider": "Upstash (Cloud - REST API)" if self.client_type == "upstash" else "Local Redis",
+                "connection_time": self.connection_timestamp,
+                "last_error": str(e),
+                "error_type": type(e).__name__
+            }
+    
+    def _mask_url(self, url: str) -> str:
+        """Mask sensitive parts of URL"""
+        if not url:
+            return "N/A"
+        # For Upstash REST URLs, just mask the middle part
+        if "upstash.io" in url:
+            parts = url.split(".")
+            if len(parts) >= 3:
+                parts[0] = parts[0][:8] + "***" if len(parts[0]) > 8 else "***"
+            return ".".join(parts)
+        return url
 
 
 # Global cache instance

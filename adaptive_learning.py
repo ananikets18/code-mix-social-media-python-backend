@@ -73,7 +73,7 @@ class AdaptiveLearningManager:
         # Load existing data
         self._load_data()
         
-        logger.info("Adaptive Learning System initialized")
+        logger.debug("Adaptive Learning System initialized")
     
     # ==================== PATTERN MANAGEMENT ====================
     
@@ -361,19 +361,19 @@ class AdaptiveLearningManager:
             if os.path.exists(self.config['pattern_cache_file']):
                 with open(self.config['pattern_cache_file'], 'r', encoding='utf-8') as f:
                     self.pattern_cache = json.load(f)
-                logger.info(f"Loaded {len(self.pattern_cache)} cached patterns")
+                logger.debug(f"Loaded {len(self.pattern_cache)} cached patterns")
             
             # Load failure log
             if os.path.exists(self.config['failure_log_file']):
                 with open(self.config['failure_log_file'], 'r', encoding='utf-8') as f:
                     self.failure_log = json.load(f)
-                logger.info(f"Loaded {len(self.failure_log)} failure logs")
+                logger.debug(f"Loaded {len(self.failure_log)} failure logs")
             
             # Load user corrections
             if os.path.exists(self.config['user_corrections_file']):
                 with open(self.config['user_corrections_file'], 'r', encoding='utf-8') as f:
                     self.user_corrections = json.load(f)
-                logger.info(f"Loaded {len(self.user_corrections)} user corrections")
+                logger.debug(f"Loaded {len(self.user_corrections)} user corrections")
             
             # Load statistics
             if os.path.exists(self.config['statistics_file']):
@@ -387,7 +387,7 @@ class AdaptiveLearningManager:
                                 int if key != 'avg_confidence_by_language' else list,
                                 loaded_stats[key]
                             )
-                logger.info("Loaded statistics")
+                logger.debug("Loaded statistics")
                 
         except Exception as e:
             logger.error(f"Error loading adaptive learning data: {e}")
@@ -416,7 +416,7 @@ class AdaptiveLearningManager:
                         stats_to_save[key] = dict(stats_to_save[key])
                 json.dump(stats_to_save, f, indent=2, ensure_ascii=False)
             
-            logger.info("Adaptive learning data saved successfully")
+            logger.debug("Adaptive learning data saved")
             
         except Exception as e:
             logger.error(f"Error saving adaptive learning data: {e}")

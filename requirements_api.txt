@@ -20,6 +20,7 @@ passlib[bcrypt]==1.7.4
 # Caching - Redis for improved performance
 redis==5.0.1
 hiredis==2.2.3
+requests>=2.28.0
 
 # Monitoring (optional - uncomment if using)
 # prometheus-fastapi-instrumentator==6.1.0

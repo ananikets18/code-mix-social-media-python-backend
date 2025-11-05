@@ -1,0 +1,73 @@
+2025-11-04 11:49:31 | inference | ERROR | get_sentiment_model:103 | Error loading XLM-R sentiment model: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-11-04 11:49:31 | inference | ERROR | get_sentiment_model:103 | Error loading XLM-R sentiment model: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-11-04 11:49:31 | inference | ERROR | predict_sentiment:302 | No sentiment model available
+2025-11-04 11:49:31 | inference | ERROR | predict_sentiment:302 | No sentiment model available
+2025-11-04 11:49:31 | inference | ERROR | get_sentiment_model:103 | Error loading XLM-R sentiment model: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-11-04 11:49:31 | inference | ERROR | predict_sentiment:302 | No sentiment model available
+2025-11-04 11:49:32 | inference | ERROR | get_sentiment_model:103 | Error loading XLM-R sentiment model: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-11-04 11:49:32 | inference | ERROR | predict_sentiment:302 | No sentiment model available
+2025-11-04 11:49:32 | inference | ERROR | predict_sentiment:327 | Sentiment prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 11:49:34 | api | ERROR | batch_sentiment:1029 | [BATCH SENTIMENT] Error: string indices must be integers, not 'str'
+2025-11-04 11:50:51 | inference | ERROR | predict_sentiment:327 | Sentiment prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 11:50:54 | inference | ERROR | get_toxicity_model:157 | Error loading toxicity model: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-11-04 11:50:54 | inference | ERROR | predict_toxicity:351 | No toxicity model available
+2025-11-04 11:50:56 | inference | ERROR | predict_sentiment:327 | Sentiment prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 11:50:56 | inference | ERROR | predict_toxicity:374 | Toxicity prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 11:51:51 | inference | ERROR | predict_sentiment:327 | Sentiment prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 11:51:51 | inference | ERROR | predict_toxicity:374 | Toxicity prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 11:51:53 | inference | ERROR | predict_sentiment:327 | Sentiment prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 11:51:53 | inference | ERROR | predict_toxicity:374 | Toxicity prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 11:53:04 | api | ERROR | batch_sentiment:1029 | [BATCH SENTIMENT] Error: string indices must be integers, not 'str'
+2025-11-04 11:53:21 | api | ERROR | batch_sentiment:1029 | [BATCH SENTIMENT] Error: string indices must be integers, not 'str'
+2025-11-04 12:13:31 | inference | ERROR | get_sentiment_model:103 | Error loading XLM-R sentiment model: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-11-04 12:13:31 | inference | ERROR | get_sentiment_model:103 | Error loading XLM-R sentiment model: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-11-04 12:13:31 | inference | ERROR | predict_sentiment:302 | No sentiment model available
+2025-11-04 12:13:31 | inference | ERROR | predict_sentiment:302 | No sentiment model available
+2025-11-04 12:13:31 | inference | ERROR | get_sentiment_model:103 | Error loading XLM-R sentiment model: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-11-04 12:13:31 | inference | ERROR | get_sentiment_model:103 | Error loading XLM-R sentiment model: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-11-04 12:13:31 | inference | ERROR | predict_sentiment:302 | No sentiment model available
+2025-11-04 12:13:31 | inference | ERROR | predict_sentiment:302 | No sentiment model available
+2025-11-04 12:13:32 | inference | ERROR | predict_sentiment:327 | Sentiment prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 12:13:34 | api | ERROR | batch_sentiment:987 | [BATCH SENTIMENT] Error processing text 0: 'str' object has no attribute 'get'
+2025-11-04 12:13:34 | api | ERROR | batch_sentiment:987 | [BATCH SENTIMENT] Error processing text 1: 'str' object has no attribute 'get'
+2025-11-04 12:13:34 | api | ERROR | batch_sentiment:987 | [BATCH SENTIMENT] Error processing text 2: 'str' object has no attribute 'get'
+2025-11-04 12:13:34 | api | ERROR | batch_sentiment:987 | [BATCH SENTIMENT] Error processing text 3: 'str' object has no attribute 'get'
+2025-11-04 12:13:34 | api | ERROR | batch_sentiment:987 | [BATCH SENTIMENT] Error processing text 4: 'str' object has no attribute 'get'
+2025-11-04 12:13:34 | api | ERROR | batch_sentiment:987 | [BATCH SENTIMENT] Error processing text 5: 'str' object has no attribute 'get'
+2025-11-04 12:13:34 | api | ERROR | batch_sentiment:987 | [BATCH SENTIMENT] Error processing text 6: 'str' object has no attribute 'get'
+2025-11-04 12:13:34 | api | ERROR | batch_sentiment:987 | [BATCH SENTIMENT] Error processing text 7: 'str' object has no attribute 'get'
+2025-11-04 12:13:34 | api | ERROR | batch_sentiment:987 | [BATCH SENTIMENT] Error processing text 8: 'str' object has no attribute 'get'
+2025-11-04 12:13:34 | api | ERROR | batch_sentiment:987 | [BATCH SENTIMENT] Error processing text 9: 'str' object has no attribute 'get'
+2025-11-04 12:13:37 | inference | ERROR | predict_sentiment:327 | Sentiment prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 12:13:39 | inference | ERROR | get_toxicity_model:157 | Error loading toxicity model: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-11-04 12:13:39 | inference | ERROR | predict_toxicity:351 | No toxicity model available
+2025-11-04 12:13:41 | inference | ERROR | predict_sentiment:327 | Sentiment prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 12:13:41 | inference | ERROR | predict_toxicity:374 | Toxicity prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 12:13:43 | inference | ERROR | predict_sentiment:327 | Sentiment prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 12:13:43 | inference | ERROR | predict_toxicity:374 | Toxicity prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 12:13:45 | inference | ERROR | predict_sentiment:327 | Sentiment prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 12:13:45 | inference | ERROR | predict_toxicity:374 | Toxicity prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 12:13:45 | inference | ERROR | predict_sentiment:327 | Sentiment prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 12:13:45 | inference | ERROR | predict_toxicity:374 | Toxicity prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 12:13:50 | inference | ERROR | predict_sentiment:327 | Sentiment prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 12:13:50 | inference | ERROR | predict_sentiment:327 | Sentiment prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 12:13:50 | inference | ERROR | predict_sentiment:327 | Sentiment prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 12:13:51 | inference | ERROR | predict_sentiment:327 | Sentiment prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 12:13:51 | inference | ERROR | predict_sentiment:327 | Sentiment prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 12:13:51 | inference | ERROR | predict_sentiment:327 | Sentiment prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 12:13:51 | inference | ERROR | predict_sentiment:327 | Sentiment prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 12:13:51 | inference | ERROR | predict_sentiment:327 | Sentiment prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 12:13:51 | inference | ERROR | predict_sentiment:327 | Sentiment prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 12:13:51 | inference | ERROR | predict_sentiment:327 | Sentiment prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 12:13:51 | api | ERROR | batch_sentiment:987 | [BATCH SENTIMENT] Error processing text 0: 'str' object has no attribute 'get'
+2025-11-04 12:13:51 | api | ERROR | batch_sentiment:987 | [BATCH SENTIMENT] Error processing text 1: 'str' object has no attribute 'get'
+2025-11-04 12:13:51 | api | ERROR | batch_sentiment:987 | [BATCH SENTIMENT] Error processing text 2: 'str' object has no attribute 'get'
+2025-11-04 12:13:51 | api | ERROR | batch_sentiment:987 | [BATCH SENTIMENT] Error processing text 3: 'str' object has no attribute 'get'
+2025-11-04 12:13:51 | api | ERROR | batch_sentiment:987 | [BATCH SENTIMENT] Error processing text 4: 'str' object has no attribute 'get'
+2025-11-04 12:13:51 | api | ERROR | batch_sentiment:987 | [BATCH SENTIMENT] Error processing text 5: 'str' object has no attribute 'get'
+2025-11-04 12:13:51 | api | ERROR | batch_sentiment:987 | [BATCH SENTIMENT] Error processing text 6: 'str' object has no attribute 'get'
+2025-11-04 12:13:51 | api | ERROR | batch_sentiment:987 | [BATCH SENTIMENT] Error processing text 7: 'str' object has no attribute 'get'
+2025-11-04 12:13:51 | api | ERROR | batch_sentiment:987 | [BATCH SENTIMENT] Error processing text 8: 'str' object has no attribute 'get'
+2025-11-04 12:13:51 | api | ERROR | batch_sentiment:987 | [BATCH SENTIMENT] Error processing text 9: 'str' object has no attribute 'get'
+2025-11-04 12:14:52 | inference | ERROR | predict_sentiment:327 | Sentiment prediction error: Tensor on device cpu is not on the expected device meta!
+2025-11-04 12:14:52 | inference | ERROR | predict_toxicity:374 | Toxicity prediction error: Tensor on device cpu is not on the expected device meta!

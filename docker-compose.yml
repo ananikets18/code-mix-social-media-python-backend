@@ -1,25 +1,7 @@
 version: '3.8'
 
 services:
-  # Redis cache service
-  redis:
-    image: redis:7-alpine
-    container_name: nlp-redis
-    ports:
-      - "6379:6379"
-    command: redis-server --maxmemory 256mb --maxmemory-policy allkeys-lru
-    volumes:
-      - redis-data:/data
-    restart: unless-stopped
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-    networks:
-      - nlp-network
-
-  # Main NLP API service
+  # Main NLP API service (with Upstash Redis)
   api:
     build:
       context: .
@@ -39,17 +21,18 @@ services:
       - RATE_LIMIT_PER_HOUR=${RATE_LIMIT_PER_HOUR:-500}
       - LOG_LEVEL=${LOG_LEVEL:-INFO}
       - INDIC_RESOURCES_PATH=./indic_nlp_resources
-      - REDIS_ENABLED=true
-      - REDIS_URL=redis://redis:6379
-      - REDIS_TTL=3600
+      # Upstash Redis Configuration (REST API)
+      - REDIS_ENABLED=${REDIS_ENABLED:-true}
+      - UPSTASH_REDIS_REST_URL=${UPSTASH_REDIS_REST_URL}
+      - UPSTASH_REDIS_REST_TOKEN=${UPSTASH_REDIS_REST_TOKEN}
+      - REDIS_TTL=${REDIS_TTL:-3600}
+      - REDIS_MAX_RETRIES=${REDIS_MAX_RETRIES:-3}
+      - REDIS_TIMEOUT=${REDIS_TIMEOUT:-10}
     volumes:
       - ./data:/app/data
       - ./logs:/app/logs
       - ./adaptive_learning:/app/adaptive_learning
       - ./romanized_dictionaries:/app/romanized_dictionaries
-    depends_on:
-      redis:
-        condition: service_healthy
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
@@ -60,7 +43,7 @@ services:
     networks:
       - nlp-network
 
-  # Nginx reverse proxy (optional but recommended)
+  # Nginx reverse proxy
   nginx:
     image: nginx:alpine
     container_name: nlp-nginx
@@ -83,4 +66,3 @@ networks:
 volumes:
   logs:
   data:
-  redis-data:

@@ -22,12 +22,17 @@ class GLotLID:
         Args:
             model_path: Path to the GLotLID model.bin file
         """
+        global _glotlid_model
+        
         if not os.path.exists(model_path):
             raise FileNotFoundError(f"GLotLID model not found at: {model_path}")
         
         # Load FastText model
         self.model = fasttext.load_model(model_path)
         logger.info(f"✅ GLotLID model loaded from: {model_path}")
+        
+        # Update global reference
+        _glotlid_model = self
         
         # Adaptive confidence thresholds based on text length
         self.threshold_config = {
@@ -376,13 +381,57 @@ class GLotLID:
         
         return "\n".join(output)
     
+    def _check_english_words(self, text):
+        """
+        Check if text contains common English words
+        Used to catch false positives from GLotLID
+        
+        Args:
+            text: Input text
+            
+        Returns:
+            tuple: (is_english, confidence, matched_words)
+        """
+        # Common English words that are unlikely to appear in other languages
+        common_english = {
+            'the', 'be', 'to', 'of', 'and', 'a', 'in', 'that', 'have', 'i', 'it', 'for', 
+            'not', 'on', 'with', 'he', 'as', 'you', 'do', 'at', 'this', 'but', 'his', 
+            'by', 'from', 'they', 'we', 'say', 'her', 'she', 'or', 'an', 'will', 'my', 
+            'one', 'all', 'would', 'there', 'their', 'what', 'so', 'up', 'out', 'if', 
+            'about', 'who', 'get', 'which', 'go', 'me', 'when', 'make', 'can', 'like', 
+            'time', 'no', 'just', 'him', 'know', 'take', 'people', 'into', 'year', 'your', 
+            'good', 'some', 'could', 'them', 'see', 'other', 'than', 'then', 'now', 'look', 
+            'only', 'come', 'its', 'over', 'think', 'also', 'back', 'after', 'use', 'two', 
+            'how', 'our', 'work', 'first', 'well', 'way', 'even', 'new', 'want', 'because', 
+            'any', 'these', 'give', 'day', 'most', 'us', 'is', 'was', 'are', 'been', 'has', 
+            'had', 'were', 'said', 'did', 'analyze', 'text', 'check', 'test', 'hello', 
+            'world', 'example', 'sample', 'please', 'thanks', 'yes', 'no', 'okay', 'ok'
+        }
+        
+        words = text.lower().split()
+        matched_words = [w for w in words if w in common_english]
+        
+        if not words:
+            return False, 0.0, []
+        
+        # Calculate confidence based on percentage of English words
+        english_ratio = len(matched_words) / len(words)
+        
+        # If more than 50% of words are common English words, it's likely English
+        is_english = english_ratio > 0.5
+        confidence = min(english_ratio * 1.2, 0.95)  # Cap at 0.95
+        
+        return is_english, confidence, matched_words
+    
     def ensemble_predict(self, text, romanized_lang=None, romanized_confidence=0.0, 
                         glotlid_high_conf_threshold=0.90, k=3):
         """
         FIX #8: Advanced ensemble prediction combining GLotLID and romanized detection
+        FIX #11: Added English word validation to catch false positives
         
         Uses weighted confidence scoring to make intelligent decisions:
         - Prefer GLotLID when confidence is very high (>0.9)
+        - Validate against English words to catch false positives
         - Leverage romanized detection for medium/low GLotLID confidence
         - Combine insights for hybrid social-media style texts
         
@@ -409,6 +458,17 @@ class GLotLID:
         glotlid_lang = glotlid_result['primary_language']
         glotlid_conf = glotlid_result['confidence']
         
+        # FIX #11: Check if text is actually English to catch false positives
+        is_english, english_conf, english_words = self._check_english_words(text)
+        if is_english and english_conf > 0.7 and glotlid_lang != 'eng':
+            logger.warning(f"[English Validator] FIX #11: GLotLID detected '{glotlid_lang}' but text contains "
+                          f"{len(english_words)} English words ({english_conf:.2%} confidence). "
+                          f"Overriding to English. Text: '{text[:50]}{'...' if len(text) > 50 else ''}'")
+            glotlid_lang = 'eng'
+            glotlid_conf = english_conf
+            glotlid_result['primary_language'] = 'eng'
+            glotlid_result['confidence'] = english_conf
+        
         # Analyze text composition
         latin_chars = sum(1 for c in text if c.isascii() and c.isalpha())
         total_chars = sum(1 for c in text if c.isalpha())
@@ -424,7 +484,12 @@ class GLotLID:
             'glotlid_score': glotlid_conf,
             'romanized_score': romanized_confidence,
             'latin_percentage': latin_percentage,
-            'combined_score': 0.0
+            'combined_score': 0.0,
+            'english_validation': {
+                'checked': is_english,
+                'confidence': english_conf if is_english else 0.0,
+                'matched_words': len(english_words) if is_english else 0
+            }
         }
         
         # DECISION LOGIC
@@ -437,12 +502,24 @@ class GLotLID:
                                   f"({glotlid_high_conf_threshold}). Trusting GLotLID completely.")
             ensemble_scores['combined_score'] = glotlid_conf
             
-            logger.info(f"[Ensemble] GLotLID HIGH CONFIDENCE: {glotlid_lang} ({glotlid_conf:.3f}) > {glotlid_high_conf_threshold}")
+            logger.debug(f"[Ensemble] GLotLID HIGH CONFIDENCE: {glotlid_lang} ({glotlid_conf:.3f}) > {glotlid_high_conf_threshold}")
         
         # Case 2: Romanized detection available with good confidence
         elif romanized_lang and romanized_confidence > 0.0:
+            # FIX #11: Check if text is actually English before trusting romanized detection
+            if is_english and english_conf > 0.7 and romanized_lang != 'eng':
+                logger.warning(f"[English Validator] FIX #11: Romanized detected '{romanized_lang}' but text contains "
+                              f"{len(english_words)} English words ({english_conf:.2%} confidence). "
+                              f"Overriding to English. Text: '{text[:50]}{'...' if len(text) > 50 else ''}'")
+                final_language = 'eng'
+                final_confidence = english_conf
+                detection_method = 'english_validated_override_romanized'
+                decision_explanation = (f"English validation ({english_conf:.3f}) overrides romanized detection "
+                                      f"{romanized_lang} ({romanized_confidence:.3f}). Matched {len(english_words)} English words.")
+                ensemble_scores['combined_score'] = english_conf
+                logger.debug(f"[Ensemble] ENGLISH VALIDATION: eng ({english_conf:.3f})")
             # Check if text is mostly Latin (potential romanized)
-            if latin_percentage > 60:
+            elif latin_percentage > 60:
                 # Weighted ensemble approach
                 # Weight distribution: GLotLID=0.6, Romanized=0.4 (adjustable based on text)
                 
@@ -475,14 +552,14 @@ class GLotLID:
                         detection_method = 'glotlid_preferred_conf_gap'
                         decision_explanation = (f"GLotLID confidence ({glotlid_conf:.3f}) significantly higher "
                                               f"than romanized ({romanized_confidence:.3f}). Gap: {conf_gap:.3f}")
-                        logger.info(f"[Ensemble] GLotLID preferred (conf gap): {glotlid_lang} ({glotlid_conf:.3f})")
+                        logger.debug(f"[Ensemble] GLotLID preferred (conf gap): {glotlid_lang} ({glotlid_conf:.3f})")
                     else:
                         final_language = romanized_lang
                         final_confidence = romanized_confidence
                         detection_method = 'romanized_preferred_conf_gap'
                         decision_explanation = (f"Romanized confidence ({romanized_confidence:.3f}) significantly higher "
                                               f"than GLotLID ({glotlid_conf:.3f}). Gap: {conf_gap:.3f}")
-                        logger.info(f"[Ensemble] Romanized preferred (conf gap): {romanized_lang} ({romanized_confidence:.3f})")
+                        logger.debug(f"[Ensemble] Romanized preferred (conf gap): {romanized_lang} ({romanized_confidence:.3f})")
                 else:
                     # Small confidence gap - use weighted ensemble
                     # Check if both methods agree on language family
@@ -499,7 +576,7 @@ class GLotLID:
                                               f"Romanized {romanized_lang} ({romanized_confidence:.3f}) > "
                                               f"GLotLID {glotlid_lang} ({glotlid_conf:.3f}). "
                                               f"Combined score: {combined_score:.3f}")
-                        logger.info(f"[Ensemble] Weighted ROMANIZED: {romanized_lang} (combined: {combined_score:.3f})")
+                        logger.debug(f"[Ensemble] Weighted ROMANIZED: {romanized_lang} (combined: {combined_score:.3f})")
                     elif glotlid_is_indian and not romanized_is_indian:
                         # GLotLID detected Indian lang, romanized didn't - trust GLotLID
                         final_language = glotlid_lang
@@ -508,7 +585,7 @@ class GLotLID:
                         decision_explanation = (f"Weighted ensemble: GLotLID detected Indian language {glotlid_lang}, "
                                               f"romanized detected {romanized_lang}. Using GLotLID. "
                                               f"Combined score: {combined_score:.3f}")
-                        logger.info(f"[Ensemble] Weighted GLOTLID (Indian): {glotlid_lang} (combined: {combined_score:.3f})")
+                        logger.debug(f"[Ensemble] Weighted GLOTLID (Indian): {glotlid_lang} (combined: {combined_score:.3f})")
                     else:
                         # Use higher confidence method with combined score
                         if glotlid_conf >= romanized_confidence:
@@ -519,7 +596,7 @@ class GLotLID:
                                                   f"GLotLID {glotlid_lang} ({glotlid_conf:.3f}) >= "
                                                   f"Romanized {romanized_lang} ({romanized_confidence:.3f}). "
                                                   f"Combined score: {combined_score:.3f}")
-                            logger.info(f"[Ensemble] Weighted GLOTLID: {glotlid_lang} (combined: {combined_score:.3f})")
+                            logger.debug(f"[Ensemble] Weighted GLOTLID: {glotlid_lang} (combined: {combined_score:.3f})")
                         else:
                             final_language = romanized_lang
                             final_confidence = combined_score
@@ -528,7 +605,7 @@ class GLotLID:
                                                   f"Romanized {romanized_lang} ({romanized_confidence:.3f}) > "
                                                   f"GLotLID {glotlid_lang} ({glotlid_conf:.3f}). "
                                                   f"Combined score: {combined_score:.3f}")
-                            logger.info(f"[Ensemble] Weighted ROMANIZED: {romanized_lang} (combined: {combined_score:.3f})")
+                            logger.debug(f"[Ensemble] Weighted ROMANIZED: {romanized_lang} (combined: {combined_score:.3f})")
             else:
                 # Not much Latin text - trust GLotLID
                 final_language = glotlid_lang
@@ -537,7 +614,7 @@ class GLotLID:
                 decision_explanation = (f"Low Latin percentage ({latin_percentage:.1f}%). "
                                       f"Trusting GLotLID {glotlid_lang} ({glotlid_conf:.3f})")
                 ensemble_scores['combined_score'] = glotlid_conf
-                logger.info(f"[Ensemble] GLotLID (low Latin): {glotlid_lang} ({glotlid_conf:.3f})")
+                logger.debug(f"[Ensemble] GLotLID (low Latin): {glotlid_lang} ({glotlid_conf:.3f})")
         
         # Case 3: No romanized detection - use GLotLID
         else:
@@ -546,7 +623,7 @@ class GLotLID:
             detection_method = 'glotlid_only'
             decision_explanation = f"No romanized detection available. Using GLotLID {glotlid_lang} ({glotlid_conf:.3f})"
             ensemble_scores['combined_score'] = glotlid_conf
-            logger.info(f"[Ensemble] GLotLID only: {glotlid_lang} ({glotlid_conf:.3f})")
+            logger.debug(f"[Ensemble] GLotLID only: {glotlid_lang} ({glotlid_conf:.3f})")
         
         return {
             'final_language': final_language,
@@ -732,6 +809,35 @@ def test_glotlid():
         print(f"\n❌ Error testing GLotLID: {e}")
         import traceback
         traceback.print_exc()
+
+
+# ==================== MODEL STATUS FUNCTION ====================
+
+# Global variable to track model loading state
+_glotlid_model = None
+
+
+def is_glotlid_loaded():
+    """Check if GLotLID model is loaded"""
+    global _glotlid_model
+    return _glotlid_model is not None
+
+
+def get_glotlid_status():
+    """Get detailed GLotLID model status"""
+    global _glotlid_model
+    
+    if _glotlid_model is not None:
+        return {
+            "status": "loaded",
+            "model_path": "cis-lmuglotlid/model.bin",
+            "languages_supported": "100+"
+        }
+    else:
+        return {
+            "status": "not_loaded",
+            "model_path": "cis-lmuglotlid/model.bin"
+        }
 
 
 if __name__ == "__main__":

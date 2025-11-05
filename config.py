@@ -44,10 +44,13 @@ class Settings(BaseSettings):
     cache_enabled: bool = True
     cache_file_path: str = "./data/analyze_cache.json"
     
-    # Redis
+    # Redis - Upstash Configuration
     redis_enabled: bool = False
-    redis_url: str = "redis://localhost:6379"
+    upstash_redis_rest_url: str = ""
+    upstash_redis_rest_token: str = ""
     redis_ttl: int = 3600
+    redis_max_retries: int = 3
+    redis_timeout: int = 10
     
     # Monitoring
     sentry_dsn: str = ""
