@@ -54,6 +54,8 @@ services:
       - ./logs:/app/logs
       - ./adaptive_learning:/app/adaptive_learning
       - ./romanized_dictionaries:/app/romanized_dictionaries
+      - ./ai4bharatIndicBERTv2-alpha-SentimentClassification:/app/ai4bharatIndicBERTv2-alpha-SentimentClassification
+      - ./oleksiizirka-xlm-roberta-toxicity-classifier:/app/oleksiizirka-xlm-roberta-toxicity-classifier
       
     restart: unless-stopped
     
