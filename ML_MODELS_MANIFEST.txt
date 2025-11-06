@@ -1,0 +1,29 @@
+ML Models Manifest
+==================
+
+Model 1: Language Detection
+- Name: cis-lmuglotlid
+- Path: ./cis-lmuglotlid/model.bin
+- Size: 1.57 GB
+
+Model 2: Sentiment Classification
+- Name: ai4bharatIndicBERTv2-alpha-SentimentClassification
+- Path: ./ai4bharatIndicBERTv2-alpha-SentimentClassification/pytorch_model.bin
+- Size: 922 MB
+
+Model 3: roberta-base sentiment from twitter
+- Name: cardiffnlptwitter-xlm-roberta-base-sentiment
+- Path: ./cardiffnlptwitter-xlm-roberta-base-sentiment/pytorch_model.bin
+- Size: 2.07 GB
+
+Model 4: roberta toxicity classifier Model
+- Name: oleksiizirka-xlm-roberta-toxicity-classifier
+- Path: ./oleksiizirka-xlm-roberta-toxicity-classifier/model.safetensors
+- Size: 1.04 GB
+
+indic_nlp_library - Already present into https://github.com/ananikets18/Code-Mix-Research-Project-Backend
+
+indic_nlp_resources - Already present into https://github.com/ananikets18/Code-Mix-Research-Project-Backend
+
+
+TOTAL SIZE: 5.60 GB
