@@ -1,6 +1,8 @@
 from preprocessing import detect_language, preprocess_text, get_language_statistics
 from inference import predict_sentiment, predict_toxicity
 from translation import translate_text, detect_and_translate_to_english
+from model_downloader import all_models_present, download_and_unzip_models
+from fastapi import FastAPI
 from domain_processors import DomainProcessor
 from profanity_filter import ProfanityFilter
 from logger_config import get_logger
@@ -12,6 +14,9 @@ from adaptive_learning import (
 )
 
 logger = get_logger(__name__, level="WARNING")
+
+# If FastAPI app is not yet instantiated, add this
+app = FastAPI()
 
 
 def analyze_text_comprehensive(text, normalization_level=None, preserve_emojis=True, 
