@@ -1,0 +1,12 @@
+# Environment files with secrets (NEVER commit these)
+.env
+.env.production
+.env.local
+*.key
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv

@@ -7,7 +7,12 @@ bind = "0.0.0.0:8000"
 backlog = 2048
 
 # Worker Processes
-workers = int(os.getenv("WORKERS", multiprocessing.cpu_count() * 2 + 1))
+# OPTIMIZED for ML workloads with large models (~3.5GB)
+# Default: 2 workers (safe for production with 32GB RAM)
+# Maximum recommended: 3 workers (moderate load)
+# Formula explanation: multiprocessing.cpu_count() * 2 + 1 is TOO HIGH for ML models
+# Each worker would load models independently causing memory exhaustion
+workers = int(os.getenv("WORKERS", 2))
 worker_class = "uvicorn.workers.UvicornWorker"
 worker_connections = 1000
 max_requests = 1000

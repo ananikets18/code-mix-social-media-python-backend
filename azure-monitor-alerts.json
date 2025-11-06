@@ -1,0 +1,111 @@
+{
+  "description": "Azure Monitor Alert Rules for NLP API",
+  "alerts": [
+    {
+      "name": "High Memory Usage Alert",
+      "severity": "Critical",
+      "condition": {
+        "metric": "Percentage CPU",
+        "operator": "GreaterThan",
+        "threshold": 85,
+        "timeAggregation": "Average",
+        "windowSize": "PT5M"
+      },
+      "action": "Send email to admin, trigger scale-up if sustained",
+      "azureCLI": "az monitor metrics alert create --name 'HighMemoryUsage' --resource-group YOUR_RESOURCE_GROUP --scopes /subscriptions/YOUR_SUBSCRIPTION/resourceGroups/YOUR_RESOURCE_GROUP/providers/Microsoft.Compute/virtualMachines/YOUR_VM_NAME --condition 'avg Percentage Memory > 85' --window-size 5m --evaluation-frequency 1m --severity 1"
+    },
+    {
+      "name": "High CPU Usage Alert",
+      "severity": "Warning",
+      "condition": {
+        "metric": "Percentage CPU",
+        "operator": "GreaterThan",
+        "threshold": 80,
+        "timeAggregation": "Average",
+        "windowSize": "PT5M"
+      },
+      "action": "Send notification, monitor for scaling",
+      "azureCLI": "az monitor metrics alert create --name 'HighCPUUsage' --resource-group YOUR_RESOURCE_GROUP --scopes /subscriptions/YOUR_SUBSCRIPTION/resourceGroups/YOUR_RESOURCE_GROUP/providers/Microsoft.Compute/virtualMachines/YOUR_VM_NAME --condition 'avg Percentage CPU > 80' --window-size 5m --evaluation-frequency 1m --severity 2"
+    },
+    {
+      "name": "Disk Space Low",
+      "severity": "Warning",
+      "condition": {
+        "metric": "Available Memory Bytes",
+        "operator": "LessThan",
+        "threshold": 10,
+        "unit": "Percent",
+        "timeAggregation": "Average",
+        "windowSize": "PT5M"
+      },
+      "action": "Alert admin to clean logs or expand storage",
+      "azureCLI": "az monitor metrics alert create --name 'LowDiskSpace' --resource-group YOUR_RESOURCE_GROUP --scopes /subscriptions/YOUR_SUBSCRIPTION/resourceGroups/YOUR_RESOURCE_GROUP/providers/Microsoft.Compute/virtualMachines/YOUR_VM_NAME --condition 'avg OS Disk IOPS Consumed Percentage > 90' --window-size 5m --evaluation-frequency 1m --severity 2"
+    },
+    {
+      "name": "HTTP 5xx Errors",
+      "severity": "Critical",
+      "condition": {
+        "metric": "HTTP Server Errors",
+        "operator": "GreaterThan",
+        "threshold": 10,
+        "timeAggregation": "Total",
+        "windowSize": "PT5M"
+      },
+      "action": "Immediate investigation required",
+      "note": "Configure Application Insights for this metric"
+    },
+    {
+      "name": "Response Time Degradation",
+      "severity": "Warning",
+      "condition": {
+        "metric": "Response Time",
+        "operator": "GreaterThan",
+        "threshold": 3000,
+        "unit": "milliseconds",
+        "timeAggregation": "Average",
+        "windowSize": "PT5M"
+      },
+      "action": "Check Redis cache, review slow endpoints",
+      "note": "Configure Application Insights for this metric"
+    }
+  ],
+  "setupInstructions": {
+    "step1": "Create Action Group for notifications",
+    "step1_cli": "az monitor action-group create --name 'NLP-API-Alerts' --resource-group YOUR_RESOURCE_GROUP --short-name 'nlp-alert' --email-receiver name=admin email=admin@yourdomain.com",
+    "step2": "Create each alert using the Azure CLI commands above",
+    "step3": "Replace placeholders: YOUR_RESOURCE_GROUP, YOUR_SUBSCRIPTION, YOUR_VM_NAME",
+    "step4": "Enable Application Insights for detailed metrics",
+    "azurePortalSteps": [
+      "Go to Azure Portal > Your VM > Monitoring > Alerts",
+      "Click 'New Alert Rule'",
+      "Select metric and configure thresholds as specified above",
+      "Add Action Group created in step 1",
+      "Save alert rule"
+    ]
+  },
+  "applicationInsights": {
+    "recommendedMetrics": [
+      "Request Rate",
+      "Response Time (P95, P99)",
+      "Failed Request Rate",
+      "Dependency Call Duration",
+      "Exception Count",
+      "Available Memory",
+      "Process CPU Usage"
+    ],
+    "customMetrics": [
+      "redis_cache_hit_rate",
+      "model_inference_time",
+      "batch_processing_duration",
+      "worker_restart_count"
+    ],
+    "setupCLI": "az monitor app-insights component create --app nlp-api-insights --location eastus --resource-group YOUR_RESOURCE_GROUP --application-type web --kind web"
+  },
+  "dashboardQueries": {
+    "requestRate": "requests | summarize RequestCount = count() by bin(timestamp, 5m)",
+    "errorRate": "requests | where success == false | summarize ErrorCount = count() by bin(timestamp, 5m)",
+    "responseTime": "requests | summarize avg(duration), percentile(duration, 95), percentile(duration, 99) by bin(timestamp, 5m)",
+    "topSlowRequests": "requests | where duration > 1000 | top 10 by duration desc",
+    "exceptionAnalysis": "exceptions | summarize count() by type, bin(timestamp, 1h)"
+  }
+}

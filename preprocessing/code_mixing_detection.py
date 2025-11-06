@@ -147,7 +147,9 @@ def detect_code_mixing(text: str, detailed: bool = False) -> Union[tuple[bool, O
         confidence = min(0.92, (devanagari_percentage + latin_percentage) / 100)
         detection_method = 'script_diversity'
 
-    elif indic_tokens >= 1 and english_tokens >= 1:
+    # FIX: Require at least 2 tokens of each type for realistic code-mixing
+    # Single English word in Indic text (or vice versa) is not true code-mixing
+    elif indic_tokens >= 2 and english_tokens >= 2:
         if indic_ratio >= adaptive_threshold and english_ratio >= adaptive_threshold:
             is_code_mixed = True
             if indic_ratio > english_ratio:
@@ -167,7 +169,8 @@ def detect_code_mixing(text: str, detailed: bool = False) -> Union[tuple[bool, O
                 confidence = min(0.85, (indic_ratio + english_ratio) * 1.3)
             detection_method = 'token_analysis_adaptive'
 
-    elif indian_word_count >= 1 and english_word_count >= 1:
+    # FIX: Require minimum 2 words each AND meet marker threshold for pattern-based detection
+    elif indian_word_count >= 2 and english_word_count >= 2:
         total_identified = indian_word_count + english_word_count
         min_markers = config.get('code_mixed_min_markers', 2)
         if total_identified >= min_markers:

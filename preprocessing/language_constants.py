@@ -158,7 +158,7 @@ ROMANIZED_INDIAN_PATTERNS = {
         r'\b(chukicha|chukla|chuk|chukicha)\b',
         r'\b(bhet|bheta|bhetla|bheto)\b',
         r'\b(chup|choop|chupchap)\b',
-        r'\b(tu|mi|me|mala|tula|tyala|tila)\b',
+        r'\b(tu|mi|me|mala|tula|tyala|tila|aapan|aamhi|tumhi)\b',
         r'\b(kashala|kasa|kase|kay|kuthay|kevha)\b',
         r'\b(sangu|sang|sanga|sangtoy)\b',
         r'\b(yenar|yeil|yete|yeto)\b',
@@ -166,7 +166,11 @@ ROMANIZED_INDIAN_PATTERNS = {
         r'\b(kal|aaj|udya)\b',
         r'\b(thik|thiik|bara)\b',
         r'\b(nako|nakos)\b',
-        r'\b(honar|hotay|hota|hoti|hoin)\b',
+        # FIX: Enhanced verb patterns - added future tense variations
+        r'\b(honar|hotay|hota|hoti|hoin|hoeil|hoel|hoil|hoeen|hoet)\b',
+        r'\b(zala|zali|zale|zalya|jhala|jhali|jhale)\b',  # happened/became
+        r'\b(pahije|paahije|pahijet|pahijela)\b',  # needed/should
+        r'\b(aikla|aiklay|aiklas|aikle|aiku|aikun)\b',  # heard/listened
         r'\b(la|var|madhye)\b',
     ],
     'hindi': [

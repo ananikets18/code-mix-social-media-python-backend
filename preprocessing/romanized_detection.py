@@ -222,7 +222,7 @@ def detect_romanized_with_indic_nlp(text: str) -> Tuple[Optional[str], float]:
 
 def detect_romanized_language(text: str, use_enhanced: bool = None) -> Tuple[Optional[str], float]:
     """
-    Unified romanized language detection function
+    Unified romanized language detection function with N-gram fallback
     
     Args:
         text: Input text to analyze
@@ -237,12 +237,28 @@ def detect_romanized_language(text: str, use_enhanced: bool = None) -> Tuple[Opt
     if use_enhanced is None:
         use_enhanced = DETECTION_CONFIG.get('use_indic_nlp_enhanced', True)
     
+    # Primary detection method
     if use_enhanced:
-        # Try enhanced detection first (uses indic_nlp_library + patterns)
-        return detect_romanized_with_indic_nlp(text)
+        detected_lang, confidence = detect_romanized_with_indic_nlp(text)
     else:
-        # Use pattern-based detection only
-        return detect_romanized_indian_language(text)
+        detected_lang, confidence = detect_romanized_indian_language(text)
+    
+    # If low confidence or no detection, try N-gram detector as fallback
+    if (detected_lang is None or confidence < 0.6) and len(text.strip()) >= 10:
+        try:
+            from .ngram_detector import detect_with_ngrams
+            ngram_lang, ngram_conf = detect_with_ngrams(text)
+            
+            if ngram_lang and ngram_conf > 0.4:
+                # Use n-gram if it has better confidence
+                if detected_lang is None or ngram_conf > confidence:
+                    logger.debug(f"[N-gram Fallback] Using n-gram: {ngram_lang} ({ngram_conf:.3f}) "
+                               f"vs pattern: {detected_lang} ({confidence:.3f})")
+                    return ngram_lang, ngram_conf
+        except Exception as e:
+            logger.debug(f"N-gram fallback failed: {e}")
+    
+    return detected_lang, confidence
 
 
 def is_english_token(token: str, romanized_dict: Optional[set] = None) -> bool:

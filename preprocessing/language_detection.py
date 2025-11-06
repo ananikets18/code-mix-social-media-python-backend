@@ -56,16 +56,19 @@ def detect_language(text: str, detailed: bool = False) -> Union[str, Dict]:
     is_code_mixed_detected, code_mixed_primary_lang = detect_code_mixing(text)
     
     # Check for romanized Indic before GLotLID
+    # FIX: Always run romanized detection for Latin-dominant text, even if code-mixed
+    # Code-mixing detection can be overly sensitive (e.g., single English word triggers it)
     latin_percentage = comp['latin_percentage']
     indic_percentage = comp['indic_percentage']
     romanized_lang = None
     romanized_confidence = 0.0
     
     if latin_percentage > 60 and indic_percentage < 10:
+        # FIX: Run romanized detection regardless of code-mixing status
+        # The ensemble will handle the final decision
+        romanized_lang, romanized_confidence = detect_romanized_language(text)
         if is_code_mixed_detected:
-            logger.warning(f"Code-mixed detected: {code_mixed_primary_lang} + English")
-        else:
-            romanized_lang, romanized_confidence = detect_romanized_language(text)
+            logger.warning(f"Code-mixed detected: {code_mixed_primary_lang} + English (romanized: {romanized_lang} @ {romanized_confidence:.2f})")
     
     # Method 1: Script-based detection
     script_lang, script_counts = detect_script_based_language(text)

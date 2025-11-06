@@ -10,40 +10,77 @@ services:
     ports:
       - "${PORT:-8000}:8000"
     environment:
+      # ========================================
+      # Core Settings
+      # ========================================
       - API_ENV=${API_ENV:-production}
       - DEBUG=${DEBUG:-false}
       - HOST=0.0.0.0
       - PORT=8000
-      - WORKERS=${WORKERS:-4}
+      - WORKERS=${WORKERS:-2}  # CHANGED: 2 for 32GB VM with 4 ML models
+      
+      # ========================================
+      # Security & API Settings
+      # ========================================
       - ALLOWED_ORIGINS=${ALLOWED_ORIGINS}
       - API_KEY=${API_KEY}
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY}  # NEW: JWT authentication
+      
+      # ========================================
+      # Rate Limiting
+      # ========================================
       - RATE_LIMIT_PER_MINUTE=${RATE_LIMIT_PER_MINUTE:-30}
       - RATE_LIMIT_PER_HOUR=${RATE_LIMIT_PER_HOUR:-500}
+      
+      # ========================================
+      # Logging & Monitoring
+      # ========================================
       - LOG_LEVEL=${LOG_LEVEL:-INFO}
       - INDIC_RESOURCES_PATH=./indic_nlp_resources
+      - APPLICATIONINSIGHTS_CONNECTION_STRING=${APPLICATIONINSIGHTS_CONNECTION_STRING}  # NEW: Azure Monitor
+      
+      # ========================================
       # Upstash Redis Configuration (REST API)
+      # ========================================
       - REDIS_ENABLED=${REDIS_ENABLED:-true}
       - UPSTASH_REDIS_REST_URL=${UPSTASH_REDIS_REST_URL}
       - UPSTASH_REDIS_REST_TOKEN=${UPSTASH_REDIS_REST_TOKEN}
       - REDIS_TTL=${REDIS_TTL:-3600}
       - REDIS_MAX_RETRIES=${REDIS_MAX_RETRIES:-3}
       - REDIS_TIMEOUT=${REDIS_TIMEOUT:-10}
+      
     volumes:
       - ./data:/app/data
       - ./logs:/app/logs
       - ./adaptive_learning:/app/adaptive_learning
       - ./romanized_dictionaries:/app/romanized_dictionaries
+      
     restart: unless-stopped
+    
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
       interval: 30s
       timeout: 10s
       retries: 3
       start_period: 40s
+      
     networks:
       - nlp-network
+    
+    # NEW: Resource limits to prevent memory issues with 4 ML models
+    deploy:
+      resources:
+        limits:
+          cpus: '4'              # Use 4 CPU cores max
+          memory: 8G              # Use 8GB max (out of 32GB available)
+        reservations:
+          cpus: '2'
+          memory: 4G
 
-  # Nginx reverse proxy
+
+  # ========================================
+  # Nginx reverse proxy (SSL termination)
+  # ========================================
   nginx:
     image: nginx:alpine
     container_name: nlp-nginx
@@ -51,18 +88,45 @@ services:
       - "80:80"
       - "443:443"
     volumes:
+      # Mount nginx configuration
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
-      - ./ssl:/etc/nginx/ssl:ro
+      
+      # Mount Let's Encrypt SSL certificates from Azure VM
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+      
+      # Mount logs directory
+      - ./logs/nginx:/var/log/nginx
+      
     depends_on:
-      - api
+      api:
+        condition: service_healthy  # Wait for API health check
+    
     restart: unless-stopped
+    
     networks:
       - nlp-network
+    
+    # NEW: Resource limits for nginx
+    deploy:
+      resources:
+        limits:
+          cpus: '1'              # Nginx uses 1 CPU core max
+          memory: 512M           # Nginx uses ~512MB max
 
+
+# ========================================
+# Networks
+# ========================================
 networks:
   nlp-network:
     driver: bridge
 
+
+# ========================================
+# Volumes
+# ========================================
 volumes:
   logs:
+    driver: local
   data:
+    driver: local
