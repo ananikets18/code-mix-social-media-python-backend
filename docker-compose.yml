@@ -66,8 +66,7 @@ services:
       
     networks:
       - nlp-network
-    
-    # NEW: Resource limits to prevent memory issues with 4 ML models
+
   # ========================================
   # Nginx reverse proxy (SSL termination)
   # ========================================
