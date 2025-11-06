@@ -68,16 +68,6 @@ services:
       - nlp-network
     
     # NEW: Resource limits to prevent memory issues with 4 ML models
-    deploy:
-      resources:
-        limits:
-          cpus: '4'              # Use 4 CPU cores max
-          memory: 8G              # Use 8GB max (out of 32GB available)
-        reservations:
-          cpus: '2'
-          memory: 4G
-
-
   # ========================================
   # Nginx reverse proxy (SSL termination)
   # ========================================
