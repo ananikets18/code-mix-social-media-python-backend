@@ -105,13 +105,6 @@ services:
     
     networks:
       - nlp-network
-    
-    # NEW: Resource limits for nginx
-    deploy:
-      resources:
-        limits:
-          cpus: '1'              # Nginx uses 1 CPU core max
-          memory: 512M           # Nginx uses ~512MB max
 
 
 # ========================================
