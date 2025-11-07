@@ -143,5 +143,3 @@ India’s social media language is rarely pure — it’s *code-mixed*, expressi
 This backend was built to help researchers and developers work with such real-world, multilingual data — efficiently and accessibly.
 
 Built with curiosity, focus, patience, and lots of testing 😅
-
-— **Aniket S.**
