@@ -1,72 +1,88 @@
-## 🤖 Code-Mix Research Project (Backend)
+# 🤖 Code-Mix Research Project — Backend  
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
+![Build](https://img.shields.io/badge/build-passing-brightgreen)
 
-Hey there! 👋
+Hey there! 👋  
 Welcome to the **backend engine** of our Code-Mix Research Project — the system that makes sense of the wonderfully messy, multilingual world of social media text 🇮🇳🌍.
 
-This FastAPI service powers the entire NLP workflow for our frontend — from **language detection** and **sentiment analysis** to **toxicity detection**, **translation**, and **romanized Indic text conversion** — all optimized for **speed**, **scalability**, and **multilingual accuracy**.
+This **FastAPI** service powers the entire NLP workflow for our frontend — from **language detection** and **sentiment analysis** to **toxicity detection**, **translation**, and **romanized Indic text conversion** — all optimized for **speed**, **scalability**, and **multilingual accuracy**.
 
-🔗 **Frontend Repo:** [Code-Mix Research Project (Frontend)](https://github.com/ananikets18/Code-Mix-Research-Project_Frontend)
-🌐 **Live Demo (Frontend):** [https://code-mix-research-project.netlify.app](https://code-mix-research-project.netlify.app)
+### Summary
 
----
+This backend provides advanced NLP capabilities tailored for code-mixed and multilingual Indian social media text. It features fast, scalable APIs with intelligent language detection, sentiment and toxicity analysis, and enhanced translation handling including romanized to native script conversion.
 
-### 🧠 What We Built With
+### Key Features
 
-| **Component / Model**            | **Purpose / Description**                                  | **Implementation Details**                                                           |
-| -------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| **GLotLID (Language Detection)** | Detects 2000+ languages & code-mixed text                  | Used to identify base + mixed languages before routing text to sub-models            |
-| **Sentiment Analysis Models**    | Multilingual sentiment classification                      | Uses `xlm-roberta` & `indic-bert` sub-models fine-tuned on Indic datasets            |
-| **Toxicity Detection**           | Detects 6 toxicity categories (hate, insult, threat, etc.) | Model: `oleksiizirka/xlm-roberta-toxicity-classifier`                                |
-| **Translation Library**          | Translation between languages                              | Google Translate API via `googletrans`                                               |
-| **IndicNLP Library**             | Romanized → Native transliteration                         | Uses `indicnlp.transliterate.unicode_transliterate` (ITRANS method)                  |
-| **Hybrid Conversion Logic**      | Enhances translation accuracy                              | Combines ITRANS + dictionary-based transliteration                                   |
-| **Romanized Text Handling**      | Improves Indic text understanding                          | Converts text like “aaj traffic bahut hai” → “आज ट्रैफिक बहुत है” before translation |
-| **Auto Language Detection**      | Intelligent source detection                               | Automatically detects language pair (source → target)                                |
-| **Multi-Language Translation**   | Batch translations                                         | Translates to multiple targets simultaneously                                        |
+- Detects 2000+ languages and code-mixed texts with GLotLID  
+- Sentiment analysis fine-tuned on Indic datasets using `xlm-roberta` & `indic-bert`  
+- Toxicity detection across 6 categories with an XLM-RoBERTa classifier  
+- Batch and auto language pair translation using Google Translate API  
+- Hybrid transliteration combining ITRANS and dictionary-based methods  
+- Fast backend optimizations: model caching, async APIs, and Redis caching  
+- Easy local setup with environment variables and Docker support  
 
----
+***
 
-### ⚙️ Under-the-Hood Techniques
+## Table of Contents
 
-We’ve tuned performance through smart backend optimization 👇
+- [Tech Stack & Models](#-tech-stack--models)  
+- [Backend Optimizations](#backend-optimizations)
+- [Run Locally](#-run-locally)  
+- [API Endpoints](#-api-endpoints)  
+- [Example Requests](#-example-requests)  
+- [Example Response](#-example-response)  
+- [Why This Project Exists](#why-this-project-exists)  
+- [Contributing and Documentation](#-contributing-and-documentation)  
 
-* ⚡ **Model Caching:**
-  The app loads **lightweight versions** of models first (for warm startup) → then **upgrades to full model weights** in the background.
-  This hybrid loading drastically reduces cold-start delays.
+***
 
-* 🧠 **Model Memory Persistence:**
-  Loaded models are **kept in memory** across API requests — avoiding repeated reinitialization and reducing response times by up to **40–60%**.
+## 🧠 Tech Stack & Models
 
-* 🔁 **Redis Integration (Upstash):**
-  A **Redis caching layer** stores frequently used analysis results and translation pairs.
+| Component / Model                  | Purpose / Description                                  | Implementation Details                                                           |
+| --------------------------------- | ------------------------------------------------------ | -------------------------------------------------------------------------------- |
+| **GLotLID (Language Detection)**   | Detects 2000+ languages & code-mixed text             | Identifies base + mixed languages before routing text to sub-models             |
+| **Sentiment Analysis Models**      | Multilingual sentiment classification                 | `xlm-roberta` & `indic-bert` sub-models fine-tuned on Indic datasets            |
+| **Toxicity Detection**             | Detects 6 toxicity categories (hate, insult, threat)  | `oleksiizirka/xlm-roberta-toxicity-classifier`                                   |
+| **Translation Library**            | Translation between languages                         | Google Translate API via `googletrans`                                           |
+| **IndicNLP Library**               | Romanized → Native transliteration                    | `indicnlp.transliterate.unicode_transliterate` (ITRANS method)                  |
+| **Hybrid Conversion Logic**        | Enhances translation accuracy                         | Combines ITRANS + dictionary-based transliteration                                |
+| **Romanized Text Handling**        | Improves Indic text understanding                     | Converts text like “aaj traffic bahut hai” → “आज ट्रैफिक बहुत है” before translation |
+| **Auto Language Detection**        | Intelligent source detection                          | Detects language pair automatically (source → target)                            |
+| **Multi-Language Translation**     | Batch translations                                    | Translates to multiple targets simultaneously                                    |
 
-  * Response caching at endpoint level (e.g., `/analyze`, `/translate`)
-  * Smart TTL (time-to-live) per request type
-  * Fallback to live model inference when cache misses
-  * Deployed via **Upstash Redis** (serverless, globally distributed)
+***
 
-* 🚀 **Async API Handling:**
-  Using FastAPI’s async I/O ensures model inference and translation run concurrently for batch inputs — optimizing latency under high load.
+## ⚙️ Backend Optimizations
 
----
+* ⚡ **Model Caching:** Loads lightweight models first, upgrades to full weights in background → reduces cold-start delays.  
+* 🧠 **Model Memory Persistence:** Keeps models in memory across API requests → reduces response time by **40–60%**.  
+* 🔁 **Redis Integration (Upstash):** Caches analysis results & translations globally.  
+  - Endpoint-level caching (`/analyze`, `/translate`)  
+  - Smart TTL per request type  
+  - Fallback to live inference when cache misses  
+* 🚀 **Async API Handling:** FastAPI async I/O ensures concurrent batch inference → low latency under load.
 
-### 🧩 Run It Locally
+***
+
+## 🧩 Run Locally
 
 ```bash
 git clone https://github.com/ananikets18/Code-Mix-Research-Project-Backend.git
 cd Code-Mix-Research-Project-Backend
 
-# Setup env
+# Setup environment variables
 cp .env.example .env
 # Fill details like MODEL_PATH, REDIS_URL, API_KEYS, etc.
 
+# Install dependencies
 pip install -r requirements_api.txt
 
 # Run locally
 python api.py
 ```
 
-Once the server starts, it will be available at:
+The server runs at:
 
 ```
 http://127.0.0.1:8000
@@ -78,17 +94,23 @@ http://127.0.0.1:8000
 docker compose up --build -d
 ```
 
-### 🚀 Key API Endpoints
+***
 
-| **Endpoint** | **Method** | **Purpose**                                                    |
-| ------------ | ---------- | -------------------------------------------------------------- |
-| `/analyze`   | POST       | Full pipeline: detect language → sentiment → toxicity → domain |
-| `/sentiment` | POST       | Sentiment-only analysis                                        |
-| `/translate` | POST       | Translation between languages                                  |
-| `/convert`   | POST       | Romanized → Native script conversion                           |
-| `/health`    | GET        | Health status of the API                                       |
+## 🚀 API Endpoints
 
-#### Example Usage (via curl or Postman)
+| Endpoint     | Method | Purpose                                                 |
+| ------------ | ------ | ------------------------------------------------------- |
+| `/analyze`   | POST   | Full pipeline: language → sentiment → toxicity → domain |
+| `/sentiment` | POST   | Sentiment-only analysis                                 |
+| `/translate` | POST   | Translation between languages                           |
+| `/convert`   | POST   | Romanized → Native script conversion                    |
+| `/health`    | GET    | API health status                                       |
+
+***
+
+## 📝 Example Requests
+
+**Analyze:**
 
 ```bash
 POST http://127.0.0.1:8000/analyze
@@ -99,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-#### Translation Example:
+**Translate:**
 
 ```bash
 POST http://127.0.0.1:8000/translate
@@ -111,16 +133,15 @@ Content-Type: application/json
 }
 ```
 
-#### Health Check:
+**Health Check:**
 
 ```bash
 curl http://127.0.0.1:8000/health
 ```
 
----
+***
 
-
-### 🧪 Example Response
+## 🧪 Example Response
 
 ```json
 {
@@ -135,11 +156,23 @@ curl http://127.0.0.1:8000/health
 }
 ```
 
----
+***
 
-### ❤️ Why This Project Exists
+## ❤️ Why This Project Exists
 
-India’s social media language is rarely pure — it’s *code-mixed*, expressive, and context-rich.
-This backend was built to help researchers and developers work with such real-world, multilingual data — efficiently and accessibly.
+India’s social media language is rarely pure — it’s *code-mixed*, expressive, and context-rich.  
+This backend helps researchers and developers work with real-world, multilingual data efficiently and accessibly.
 
 Built with curiosity, focus, patience, and lots of testing 😅
+
+***
+
+## 🤝 Contributing and Documentation
+
+Contributions to improve the backend are welcome! Please follow these guidelines:  
+
+- Fork the repository and create your feature branch from `main`.  
+- Ensure any install or build dependencies are removed before the end of the layer when doing a build.  
+- Update the README with details of changes to the interface, including new environment variables, exposed endpoints, etc.  
+- Write clear, concise commit messages and PR descriptions.  
+- Run tests and ensure API responses are as expected before submitting a PR.  
